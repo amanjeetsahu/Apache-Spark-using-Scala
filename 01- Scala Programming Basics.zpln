@@ -1,0 +1,5103 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# Scala Programming Basics",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:17:04+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Scala Programming Basics</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392410936_-970639881",
+      "id": "paragraph_1594392410936_-970639881",
+      "dateCreated": "2020-07-10T20:16:50+0530",
+      "dateStarted": "2020-07-10T20:17:04+0530",
+      "dateFinished": "2020-07-10T20:17:04+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16684"
+    },
+    {
+      "text": "%spark\n\n100",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:23:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 100\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594388592855_-2088047811",
+      "id": "paragraph_1594388592855_-2088047811",
+      "dateCreated": "2020-07-10T19:13:12+0530",
+      "dateStarted": "2020-07-10T19:23:54+0530",
+      "dateFinished": "2020-07-10T19:24:57+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16685"
+    },
+    {
+      "text": "%spark\n\n2.5",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:24:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres2\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 2.5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389234141_1089280047",
+      "id": "paragraph_1594389234141_1089280047",
+      "dateCreated": "2020-07-10T19:23:54+0530",
+      "dateStarted": "2020-07-10T19:24:13+0530",
+      "dateFinished": "2020-07-10T19:24:59+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16686"
+    },
+    {
+      "text": "%spark\n\n1 + 1",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:24:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres3\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389253098_-198655399",
+      "id": "paragraph_1594389253098_-198655399",
+      "dateCreated": "2020-07-10T19:24:13+0530",
+      "dateStarted": "2020-07-10T19:24:57+0530",
+      "dateFinished": "2020-07-10T19:25:00+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16687"
+    },
+    {
+      "text": "%spark\n2 * 5",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:24:43+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres4\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 10\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389275379_1221676180",
+      "id": "paragraph_1594389275379_1221676180",
+      "dateCreated": "2020-07-10T19:24:35+0530",
+      "dateStarted": "2020-07-10T19:24:59+0530",
+      "dateFinished": "2020-07-10T19:25:01+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16688"
+    },
+    {
+      "text": "%spark\n1 / 2",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:24:56+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres5\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389284002_1592033825",
+      "id": "paragraph_1594389284002_1592033825",
+      "dateCreated": "2020-07-10T19:24:44+0530",
+      "dateStarted": "2020-07-10T19:25:00+0530",
+      "dateFinished": "2020-07-10T19:25:02+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16689"
+    },
+    {
+      "text": "%spark\n1.0 / 2",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:25:10+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres6\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 0.5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389296119_1453018738",
+      "id": "paragraph_1594389296119_1453018738",
+      "dateCreated": "2020-07-10T19:24:56+0530",
+      "dateStarted": "2020-07-10T19:25:10+0530",
+      "dateFinished": "2020-07-10T19:25:11+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16690"
+    },
+    {
+      "text": "%spark\n\nmath.pow(4,2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:25:47+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres7\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 16.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389310930_-2046033693",
+      "id": "paragraph_1594389310930_-2046033693",
+      "dateCreated": "2020-07-10T19:25:10+0530",
+      "dateStarted": "2020-07-10T19:25:47+0530",
+      "dateFinished": "2020-07-10T19:25:48+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16691"
+    },
+    {
+      "text": "%spark\nres1",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:26:24+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres9\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 100\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389347606_179622590",
+      "id": "paragraph_1594389347606_179622590",
+      "dateCreated": "2020-07-10T19:25:47+0530",
+      "dateStarted": "2020-07-10T19:26:24+0530",
+      "dateFinished": "2020-07-10T19:26:25+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16692"
+    },
+    {
+      "text": "%spark\n\n1 + 2 * 3 + 4",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:26:49+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres10\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 11\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389373121_2114547325",
+      "id": "paragraph_1594389373121_2114547325",
+      "dateCreated": "2020-07-10T19:26:13+0530",
+      "dateStarted": "2020-07-10T19:26:49+0530",
+      "dateFinished": "2020-07-10T19:26:50+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16693"
+    },
+    {
+      "text": "%md\n**We have two options when creating a new object in Scala**\n- val\n- var\n\n**val:** *Values(val) are immutable, once they are assigned they cannot be changed*\n**var:** *Variables(var) can be reassigned*\n\n> Note: When reassigning you must use the same Data Type \n\n- **General Format when creating an object:**\n    - `val <name>: <type> = <literal>`\n    - `val <name>: <type> = <literal>`",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:52:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><strong>We have two options when creating a new object in Scala</strong></p>\n<ul>\n<li>val</li>\n<li>var</li>\n</ul>\n<p><strong>val:</strong> <em>Values(val) are immutable, once they are assigned they cannot be changed</em><br />\n<strong>var:</strong> <em>Variables(var) can be reassigned</em></p>\n<blockquote>\n<p>Note: When reassigning you must use the same Data Type</p>\n</blockquote>\n<ul>\n<li><strong>General Format when creating an object:</strong>\n<ul>\n<li><code>val &lt;name&gt;: &lt;type&gt; = &lt;literal&gt;</code></li>\n<li><code>val &lt;name&gt;: &lt;type&gt; = &lt;literal&gt;</code></li>\n</ul>\n</li>\n</ul>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389505916_-110778726",
+      "id": "paragraph_1594389505916_-110778726",
+      "dateCreated": "2020-07-10T19:28:25+0530",
+      "dateStarted": "2020-07-10T19:52:32+0530",
+      "dateFinished": "2020-07-10T19:52:32+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16694"
+    },
+    {
+      "text": "%md\n\n## Basic Arithmetic",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:16:44+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Basic Arithmetic</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392393029_-588585806",
+      "id": "paragraph_1594392393029_-588585806",
+      "dateCreated": "2020-07-10T20:16:33+0530",
+      "dateStarted": "2020-07-10T20:16:44+0530",
+      "dateFinished": "2020-07-10T20:16:44+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16695"
+    },
+    {
+      "text": "%spark\n\nvar myvar: Int = 10",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:53:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmyvar\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 10\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594389409777_-841694465",
+      "id": "paragraph_1594389409777_-841694465",
+      "dateCreated": "2020-07-10T19:26:49+0530",
+      "dateStarted": "2020-07-10T19:53:25+0530",
+      "dateFinished": "2020-07-10T19:53:26+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16696"
+    },
+    {
+      "text": "%spark\n\nval myval: Double = 2.5",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:53:46+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmyval\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 2.5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391005062_1300452395",
+      "id": "paragraph_1594391005062_1300452395",
+      "dateCreated": "2020-07-10T19:53:25+0530",
+      "dateStarted": "2020-07-10T19:53:46+0530",
+      "dateFinished": "2020-07-10T19:53:47+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16697"
+    },
+    {
+      "text": "%spark\n\nmyvar = \"hello\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:53:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "<console>:25: \u001b[31merror: \u001b[0mtype mismatch;\n found   : String(\"hello\")\n required: Int\n       myvar = \"hello\"\n               ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391026252_1153717328",
+      "id": "paragraph_1594391026252_1153717328",
+      "dateCreated": "2020-07-10T19:53:46+0530",
+      "dateStarted": "2020-07-10T19:53:57+0530",
+      "dateFinished": "2020-07-10T19:53:57+0530",
+      "status": "ERROR",
+      "$$hashKey": "object:16698"
+    },
+    {
+      "text": "%spark\nmyvar = 100",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:54:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "myvar: Int = 100\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391037238_490028175",
+      "id": "paragraph_1594391037238_490028175",
+      "dateCreated": "2020-07-10T19:53:57+0530",
+      "dateStarted": "2020-07-10T19:54:14+0530",
+      "dateFinished": "2020-07-10T19:54:15+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16699"
+    },
+    {
+      "text": "%spark\n\nmyval= \"hello\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:54:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "<console>:25: \u001b[31merror: \u001b[0mreassignment to val\n       myval= \"hello\"\n            ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391054535_-950714202",
+      "id": "paragraph_1594391054535_-950714202",
+      "dateCreated": "2020-07-10T19:54:14+0530",
+      "dateStarted": "2020-07-10T19:54:33+0530",
+      "dateFinished": "2020-07-10T19:54:34+0530",
+      "status": "ERROR",
+      "$$hashKey": "object:16700"
+    },
+    {
+      "text": "%spark\n\nmyval = 10.1",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:54:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "<console>:25: \u001b[31merror: \u001b[0mreassignment to val\n       myval = 10.1\n             ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391073868_105080824",
+      "id": "paragraph_1594391073868_105080824",
+      "dateCreated": "2020-07-10T19:54:33+0530",
+      "dateStarted": "2020-07-10T19:54:54+0530",
+      "dateFinished": "2020-07-10T19:54:54+0530",
+      "status": "ERROR",
+      "$$hashKey": "object:16701"
+    },
+    {
+      "text": "%spark\nval c = 12",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:55:24+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mc\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 12\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391094588_-309048726",
+      "id": "paragraph_1594391094588_-309048726",
+      "dateCreated": "2020-07-10T19:54:54+0530",
+      "dateStarted": "2020-07-10T19:55:24+0530",
+      "dateFinished": "2020-07-10T19:55:25+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16702"
+    },
+    {
+      "text": "%spark\n\nval my_string = \"Hello\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:55:51+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmy_string\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = Hello\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391124123_-583350201",
+      "id": "paragraph_1594391124123_-583350201",
+      "dateCreated": "2020-07-10T19:55:24+0530",
+      "dateStarted": "2020-07-10T19:55:51+0530",
+      "dateFinished": "2020-07-10T19:55:52+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16703"
+    },
+    {
+      "text": "%md\n\n## Boolean",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:16:24+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Boolean</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392373309_-1297043354",
+      "id": "paragraph_1594392373309_-1297043354",
+      "dateCreated": "2020-07-10T20:16:13+0530",
+      "dateStarted": "2020-07-10T20:16:24+0530",
+      "dateFinished": "2020-07-10T20:16:24+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16704"
+    },
+    {
+      "text": "%spark\n\ntrue\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:57:45+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres11\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m = true\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391151008_1683919231",
+      "id": "paragraph_1594391151008_1683919231",
+      "dateCreated": "2020-07-10T19:55:51+0530",
+      "dateStarted": "2020-07-10T19:57:45+0530",
+      "dateFinished": "2020-07-10T19:57:46+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16705"
+    },
+    {
+      "text": "%spark\n\nfalse",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:57:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres12\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m = false\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391265486_1515572892",
+      "id": "paragraph_1594391265486_1515572892",
+      "dateCreated": "2020-07-10T19:57:45+0530",
+      "dateStarted": "2020-07-10T19:57:50+0530",
+      "dateFinished": "2020-07-10T19:57:51+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16706"
+    },
+    {
+      "text": "%spark\n\n5< 6",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:58:03+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres14\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m = true\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391270902_-245515778",
+      "id": "paragraph_1594391270902_-245515778",
+      "dateCreated": "2020-07-10T19:57:50+0530",
+      "dateStarted": "2020-07-10T19:58:03+0530",
+      "dateFinished": "2020-07-10T19:58:03+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16707"
+    },
+    {
+      "text": "%spark\n\n10>15",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:58:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres15\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m = false\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391277688_-1282852306",
+      "id": "paragraph_1594391277688_-1282852306",
+      "dateCreated": "2020-07-10T19:57:57+0530",
+      "dateStarted": "2020-07-10T19:58:11+0530",
+      "dateFinished": "2020-07-10T19:58:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16708"
+    },
+    {
+      "text": "%spark\n\n2!=4",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:58:19+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres16\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m = true\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391291665_-1714924030",
+      "id": "paragraph_1594391291665_-1714924030",
+      "dateCreated": "2020-07-10T19:58:11+0530",
+      "dateStarted": "2020-07-10T19:58:19+0530",
+      "dateFinished": "2020-07-10T19:58:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16709"
+    },
+    {
+      "text": "%spark\n4 % 2",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:58:51+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres17\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391299350_-205147652",
+      "id": "paragraph_1594391299350_-205147652",
+      "dateCreated": "2020-07-10T19:58:19+0530",
+      "dateStarted": "2020-07-10T19:58:28+0530",
+      "dateFinished": "2020-07-10T19:58:28+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16710"
+    },
+    {
+      "text": "%md \n## Strings\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:16:05+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Strings</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392355035_-819333105",
+      "id": "paragraph_1594392355035_-819333105",
+      "dateCreated": "2020-07-10T20:15:55+0530",
+      "dateStarted": "2020-07-10T20:16:05+0530",
+      "dateFinished": "2020-07-10T20:16:05+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16711"
+    },
+    {
+      "text": "%spark\n\nprintln(\"hello\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:59:37+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "hello\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391308172_-1396656247",
+      "id": "paragraph_1594391308172_-1396656247",
+      "dateCreated": "2020-07-10T19:58:28+0530",
+      "dateStarted": "2020-07-10T19:59:37+0530",
+      "dateFinished": "2020-07-10T19:59:38+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16712"
+    },
+    {
+      "text": "%spark\nprintln('hello')",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T19:59:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "<console>:1: \u001b[31merror: \u001b[0munclosed character literal\nprintln('hello')\n              ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391377890_313891589",
+      "id": "paragraph_1594391377890_313891589",
+      "dateCreated": "2020-07-10T19:59:37+0530",
+      "dateStarted": "2020-07-10T19:59:54+0530",
+      "dateFinished": "2020-07-10T19:59:54+0530",
+      "status": "ERROR",
+      "$$hashKey": "object:16713"
+    },
+    {
+      "text": "%spark\nval farewell = \"good\" + \"bye\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:00:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mfarewell\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = goodbye\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391394535_-888278113",
+      "id": "paragraph_1594391394535_-888278113",
+      "dateCreated": "2020-07-10T19:59:54+0530",
+      "dateStarted": "2020-07-10T20:00:11+0530",
+      "dateFinished": "2020-07-10T20:00:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16714"
+    },
+    {
+      "text": "%spark\n\n\"Hello \" * 10",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:00:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres20\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = \"Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello \"\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391411727_1937298421",
+      "id": "paragraph_1594391411727_1937298421",
+      "dateCreated": "2020-07-10T20:00:11+0530",
+      "dateStarted": "2020-07-10T20:00:33+0530",
+      "dateFinished": "2020-07-10T20:00:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16715"
+    },
+    {
+      "text": "%spark\nval st = \"Hello\" ",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:01:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mst\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = Hello\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391428466_427438926",
+      "id": "paragraph_1594391428466_427438926",
+      "dateCreated": "2020-07-10T20:00:28+0530",
+      "dateStarted": "2020-07-10T20:01:11+0530",
+      "dateFinished": "2020-07-10T20:01:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16716"
+    },
+    {
+      "text": "%spark\nst.length",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:01:44+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres21\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391471435_-1251681744",
+      "id": "paragraph_1594391471435_-1251681744",
+      "dateCreated": "2020-07-10T20:01:11+0530",
+      "dateStarted": "2020-07-10T20:01:44+0530",
+      "dateFinished": "2020-07-10T20:01:45+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16717"
+    },
+    {
+      "text": "%spark\nval name = \"Aman\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:03:02+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mname\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = Aman\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391569520_-1128267748",
+      "id": "paragraph_1594391569520_-1128267748",
+      "dateCreated": "2020-07-10T20:02:49+0530",
+      "dateStarted": "2020-07-10T20:03:02+0530",
+      "dateFinished": "2020-07-10T20:03:03+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16718"
+    },
+    {
+      "text": "%spark\nval greet = s\"Hello ${name}\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:03:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mgreet\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = Hello Aman\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391504314_2129437330",
+      "id": "paragraph_1594391504314_2129437330",
+      "dateCreated": "2020-07-10T20:01:44+0530",
+      "dateStarted": "2020-07-10T20:03:07+0530",
+      "dateFinished": "2020-07-10T20:03:08+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16719"
+    },
+    {
+      "text": "%spark\nval greet = f\"hello $name\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:03:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mgreet\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = hello Aman\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391587046_-1428062930",
+      "id": "paragraph_1594391587046_-1428062930",
+      "dateCreated": "2020-07-10T20:03:07+0530",
+      "dateStarted": "2020-07-10T20:03:36+0530",
+      "dateFinished": "2020-07-10T20:03:37+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16720"
+    },
+    {
+      "text": "%spark\nprintf(\"A string %s, and integer %d , a float %f\", \"Hi\", 10, 12.345)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:04:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "A string Hi, and integer 10 , a float 12.345000"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391616030_2072423149",
+      "id": "paragraph_1594391616030_2072423149",
+      "dateCreated": "2020-07-10T20:03:36+0530",
+      "dateStarted": "2020-07-10T20:04:41+0530",
+      "dateFinished": "2020-07-10T20:04:42+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16721"
+    },
+    {
+      "text": "%spark\nprintf(\"A string %s, and integer %d , a float %1.2f\", \"Hi\", 10, 12.345)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:05:20+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "A string Hi, and integer 10 , a float 12.35"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391681548_-1519111345",
+      "id": "paragraph_1594391681548_-1519111345",
+      "dateCreated": "2020-07-10T20:04:41+0530",
+      "dateStarted": "2020-07-10T20:05:20+0530",
+      "dateFinished": "2020-07-10T20:05:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16722"
+    },
+    {
+      "text": "%spark\nprintf(\"A string %s, and integer %d , a float %1.3f\", \"Hi\", 10, 12.345)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:05:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "A string Hi, and integer 10 , a float 12.345"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391720192_806857036",
+      "id": "paragraph_1594391720192_806857036",
+      "dateCreated": "2020-07-10T20:05:20+0530",
+      "dateStarted": "2020-07-10T20:05:28+0530",
+      "dateFinished": "2020-07-10T20:05:29+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16723"
+    },
+    {
+      "text": "%spark\n\nval st = \"This is a long string\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:07:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mst\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = This is a long string\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391728902_400303709",
+      "id": "paragraph_1594391728902_400303709",
+      "dateCreated": "2020-07-10T20:05:28+0530",
+      "dateStarted": "2020-07-10T20:07:25+0530",
+      "dateFinished": "2020-07-10T20:07:25+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16724"
+    },
+    {
+      "text": "%spark\nst.charAt(0)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:07:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres25\u001b[0m: \u001b[1m\u001b[32mChar\u001b[0m = T\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391845026_1005026656",
+      "id": "paragraph_1594391845026_1005026656",
+      "dateCreated": "2020-07-10T20:07:25+0530",
+      "dateStarted": "2020-07-10T20:07:41+0530",
+      "dateFinished": "2020-07-10T20:07:41+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16725"
+    },
+    {
+      "text": "%spark\nst.charAt(3)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:07:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres26\u001b[0m: \u001b[1m\u001b[32mChar\u001b[0m = s\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391861152_1857880894",
+      "id": "paragraph_1594391861152_1857880894",
+      "dateCreated": "2020-07-10T20:07:41+0530",
+      "dateStarted": "2020-07-10T20:07:57+0530",
+      "dateFinished": "2020-07-10T20:07:58+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16726"
+    },
+    {
+      "text": "%spark\nst.indexOf('h')",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:09:27+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres27\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391877926_1058902496",
+      "id": "paragraph_1594391877926_1058902496",
+      "dateCreated": "2020-07-10T20:07:57+0530",
+      "dateStarted": "2020-07-10T20:09:27+0530",
+      "dateFinished": "2020-07-10T20:09:28+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16727"
+    },
+    {
+      "text": "%spark\nst slice (0,4)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:10:47+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres31\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = This\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391967276_867222394",
+      "id": "paragraph_1594391967276_867222394",
+      "dateCreated": "2020-07-10T20:09:27+0530",
+      "dateStarted": "2020-07-10T20:10:47+0530",
+      "dateFinished": "2020-07-10T20:10:48+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16728"
+    },
+    {
+      "text": "%spark\nst slice (10,14)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:10:45+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres30\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = long\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594391994918_845186250",
+      "id": "paragraph_1594391994918_845186250",
+      "dateCreated": "2020-07-10T20:09:54+0530",
+      "dateStarted": "2020-07-10T20:10:45+0530",
+      "dateFinished": "2020-07-10T20:10:46+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16729"
+    },
+    {
+      "text": "%spark\nval st = \"term1 term2 term3\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:11:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mst\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = term1 term2 term3\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392045339_-529347840",
+      "id": "paragraph_1594392045339_-529347840",
+      "dateCreated": "2020-07-10T20:10:45+0530",
+      "dateStarted": "2020-07-10T20:11:39+0530",
+      "dateFinished": "2020-07-10T20:11:40+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16730"
+    },
+    {
+      "text": "%spark\n\nst matches \"term1\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:12:04+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres32\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m = false\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392093648_469832336",
+      "id": "paragraph_1594392093648_469832336",
+      "dateCreated": "2020-07-10T20:11:33+0530",
+      "dateStarted": "2020-07-10T20:12:04+0530",
+      "dateFinished": "2020-07-10T20:12:05+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16731"
+    },
+    {
+      "text": "%spark\n\nst contains \"term1\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:12:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres33\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m = true\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392124956_300846607",
+      "id": "paragraph_1594392124956_300846607",
+      "dateCreated": "2020-07-10T20:12:04+0530",
+      "dateStarted": "2020-07-10T20:12:34+0530",
+      "dateFinished": "2020-07-10T20:12:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16732"
+    },
+    {
+      "text": "%md\n## Tuples",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:15:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Tuples</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392323542_-1077414795",
+      "id": "paragraph_1594392323542_-1077414795",
+      "dateCreated": "2020-07-10T20:15:23+0530",
+      "dateStarted": "2020-07-10T20:15:34+0530",
+      "dateFinished": "2020-07-10T20:15:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16733"
+    },
+    {
+      "text": "%spark\n\n(1,2,2,\"hello\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:13:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres34\u001b[0m: \u001b[1m\u001b[32m(Int, Int, Int, String)\u001b[0m = (1,2,2,hello)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392154381_1409899778",
+      "id": "paragraph_1594392154381_1409899778",
+      "dateCreated": "2020-07-10T20:12:34+0530",
+      "dateStarted": "2020-07-10T20:13:48+0530",
+      "dateFinished": "2020-07-10T20:13:49+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16734"
+    },
+    {
+      "text": "%spark\n\n(3,1, 4, (5,6))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:14:10+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres35\u001b[0m: \u001b[1m\u001b[32m(Int, Int, Int, (Int, Int))\u001b[0m = (3,1,4,(5,6))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392228673_-639662886",
+      "id": "paragraph_1594392228673_-639662886",
+      "dateCreated": "2020-07-10T20:13:48+0530",
+      "dateStarted": "2020-07-10T20:14:10+0530",
+      "dateFinished": "2020-07-10T20:14:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16735"
+    },
+    {
+      "text": "%spark\nval mytup =(3,1, 4, (5,6))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:14:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmytup\u001b[0m: \u001b[1m\u001b[32m(Int, Int, Int, (Int, Int))\u001b[0m = (3,1,4,(5,6))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392250920_-110989598",
+      "id": "paragraph_1594392250920_-110989598",
+      "dateCreated": "2020-07-10T20:14:10+0530",
+      "dateStarted": "2020-07-10T20:14:35+0530",
+      "dateFinished": "2020-07-10T20:14:36+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16736"
+    },
+    {
+      "text": "%spark\nmytup._1",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:14:58+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres36\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 3\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392269152_-1490025446",
+      "id": "paragraph_1594392269152_-1490025446",
+      "dateCreated": "2020-07-10T20:14:29+0530",
+      "dateStarted": "2020-07-10T20:14:58+0530",
+      "dateFinished": "2020-07-10T20:14:59+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16737"
+    },
+    {
+      "text": "%spark\nmytup._3",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:15:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres37\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 4\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392298469_754242675",
+      "id": "paragraph_1594392298469_754242675",
+      "dateCreated": "2020-07-10T20:14:58+0530",
+      "dateStarted": "2020-07-10T20:15:13+0530",
+      "dateFinished": "2020-07-10T20:15:14+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16738"
+    },
+    {
+      "text": "%md\n\n## Scala Collections\n\n- Lists\n- Sets\n- Maps\n- Arrays",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:18:24+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Scala Collections</h2>\n<ul>\n<li>Lists</li>\n<li>Sets</li>\n<li>Maps</li>\n<li>Arrays</li>\n</ul>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392466144_213706527",
+      "id": "paragraph_1594392466144_213706527",
+      "dateCreated": "2020-07-10T20:17:46+0530",
+      "dateStarted": "2020-07-10T20:18:24+0530",
+      "dateFinished": "2020-07-10T20:18:24+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16739"
+    },
+    {
+      "text": "%md\n## Lists",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:19:02+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Lists</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392538049_-1857805571",
+      "id": "paragraph_1594392538049_-1857805571",
+      "dateCreated": "2020-07-10T20:18:58+0530",
+      "dateStarted": "2020-07-10T20:19:02+0530",
+      "dateFinished": "2020-07-10T20:19:02+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16740"
+    },
+    {
+      "text": "%spark\n\nval evens= List(2,4,6,8,10)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:19:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mevens\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(2, 4, 6, 8, 10)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392313723_-1853630853",
+      "id": "paragraph_1594392313723_-1853630853",
+      "dateCreated": "2020-07-10T20:15:13+0530",
+      "dateStarted": "2020-07-10T20:19:40+0530",
+      "dateFinished": "2020-07-10T20:19:41+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16741"
+    },
+    {
+      "text": "%spark\nList(3, 4, 6 , 3.4, \"hello\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:33:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres38\u001b[0m: \u001b[1m\u001b[32mList[Any]\u001b[0m = List(3, 4, 6, 3.4, hello)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594392566379_533551891",
+      "id": "paragraph_1594392566379_533551891",
+      "dateCreated": "2020-07-10T20:19:26+0530",
+      "dateStarted": "2020-07-10T20:33:17+0530",
+      "dateFinished": "2020-07-10T20:33:18+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16742"
+    },
+    {
+      "text": "%spark\n\nevens",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:33:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres39\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(2, 4, 6, 8, 10)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393397719_-1122163790",
+      "id": "paragraph_1594393397719_-1122163790",
+      "dateCreated": "2020-07-10T20:33:17+0530",
+      "dateStarted": "2020-07-10T20:33:40+0530",
+      "dateFinished": "2020-07-10T20:33:41+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16743"
+    },
+    {
+      "text": "%spark\nevens(0)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:33:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres40\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393420502_-219824471",
+      "id": "paragraph_1594393420502_-219824471",
+      "dateCreated": "2020-07-10T20:33:40+0530",
+      "dateStarted": "2020-07-10T20:33:48+0530",
+      "dateFinished": "2020-07-10T20:33:49+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16744"
+    },
+    {
+      "text": "%spark\nevens(4)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:33:58+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres41\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 10\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393428997_-5347005",
+      "id": "paragraph_1594393428997_-5347005",
+      "dateCreated": "2020-07-10T20:33:48+0530",
+      "dateStarted": "2020-07-10T20:33:58+0530",
+      "dateFinished": "2020-07-10T20:33:59+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16745"
+    },
+    {
+      "text": "%spark\nevens.head",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:34:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres43\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393438424_1936162240",
+      "id": "paragraph_1594393438424_1936162240",
+      "dateCreated": "2020-07-10T20:33:58+0530",
+      "dateStarted": "2020-07-10T20:34:28+0530",
+      "dateFinished": "2020-07-10T20:34:29+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16746"
+    },
+    {
+      "text": "%spark\nevens.tail",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:34:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres44\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(4, 6, 8, 10)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393462842_183400482",
+      "id": "paragraph_1594393462842_183400482",
+      "dateCreated": "2020-07-10T20:34:22+0530",
+      "dateStarted": "2020-07-10T20:34:41+0530",
+      "dateFinished": "2020-07-10T20:34:42+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16747"
+    },
+    {
+      "text": "%spark\nList(List(3,4,7), List(27,77))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:35:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres45\u001b[0m: \u001b[1m\u001b[32mList[List[Int]]\u001b[0m = List(List(3, 4, 7), List(27, 77))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393540080_-1090261891",
+      "id": "paragraph_1594393540080_-1090261891",
+      "dateCreated": "2020-07-10T20:35:40+0530",
+      "dateStarted": "2020-07-10T20:35:52+0530",
+      "dateFinished": "2020-07-10T20:35:52+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16748"
+    },
+    {
+      "text": "%spark\nval my_list= List(1,2,3, List(3,4,7), List(27,77))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:35:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmy_list\u001b[0m: \u001b[1m\u001b[32mList[Any]\u001b[0m = List(1, 2, 3, List(3, 4, 7), List(27, 77))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393481946_2056780902",
+      "id": "paragraph_1594393481946_2056780902",
+      "dateCreated": "2020-07-10T20:34:41+0530",
+      "dateStarted": "2020-07-10T20:35:25+0530",
+      "dateFinished": "2020-07-10T20:35:26+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16749"
+    },
+    {
+      "text": "%spark\nval my_list = List(3,6,1,7,10)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:36:20+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmy_list\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(3, 6, 1, 7, 10)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393525693_529836584",
+      "id": "paragraph_1594393525693_529836584",
+      "dateCreated": "2020-07-10T20:35:25+0530",
+      "dateStarted": "2020-07-10T20:36:20+0530",
+      "dateFinished": "2020-07-10T20:36:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16750"
+    },
+    {
+      "text": "%spark\nmy_list.size",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:36:31+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres46\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393580670_1424616289",
+      "id": "paragraph_1594393580670_1424616289",
+      "dateCreated": "2020-07-10T20:36:20+0530",
+      "dateStarted": "2020-07-10T20:36:31+0530",
+      "dateFinished": "2020-07-10T20:36:31+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16751"
+    },
+    {
+      "text": "%spark\nmy_list.max",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:36:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres48\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 10\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393591014_31868091",
+      "id": "paragraph_1594393591014_31868091",
+      "dateCreated": "2020-07-10T20:36:31+0530",
+      "dateStarted": "2020-07-10T20:36:50+0530",
+      "dateFinished": "2020-07-10T20:36:51+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16752"
+    },
+    {
+      "text": "%spark\nmy_list.min",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:37:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres50\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393601863_-1511110907",
+      "id": "paragraph_1594393601863_-1511110907",
+      "dateCreated": "2020-07-10T20:36:41+0530",
+      "dateStarted": "2020-07-10T20:37:14+0530",
+      "dateFinished": "2020-07-10T20:37:14+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16753"
+    },
+    {
+      "text": "%spark\nmy_list.drop(2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:37:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres51\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(1, 7, 10)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393627610_1703124115",
+      "id": "paragraph_1594393627610_1703124115",
+      "dateCreated": "2020-07-10T20:37:07+0530",
+      "dateStarted": "2020-07-10T20:37:34+0530",
+      "dateFinished": "2020-07-10T20:37:35+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16754"
+    },
+    {
+      "text": "%spark\nmy_list.takeRight(2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:38:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres52\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(7, 10)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393654853_-2122082642",
+      "id": "paragraph_1594393654853_-2122082642",
+      "dateCreated": "2020-07-10T20:37:34+0530",
+      "dateStarted": "2020-07-10T20:38:07+0530",
+      "dateFinished": "2020-07-10T20:38:08+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16755"
+    },
+    {
+      "text": "%spark\n\nmy_list slice (0, 2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:38:44+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres53\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(3, 6)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393687859_-414984362",
+      "id": "paragraph_1594393687859_-414984362",
+      "dateCreated": "2020-07-10T20:38:07+0530",
+      "dateStarted": "2020-07-10T20:38:44+0530",
+      "dateFinished": "2020-07-10T20:38:45+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16756"
+    },
+    {
+      "text": "%md\n\n## Arrays\n\n*Arrays are mutable, unlike a List.*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:41:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Arrays</h2>\n<p><em>Arrays are mutable, unlike a List.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393813358_1048174351",
+      "id": "paragraph_1594393813358_1048174351",
+      "dateCreated": "2020-07-10T20:40:13+0530",
+      "dateStarted": "2020-07-10T20:41:01+0530",
+      "dateFinished": "2020-07-10T20:41:01+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16757"
+    },
+    {
+      "text": "%spark\nval arr = Array(1,2,3)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:41:26+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34marr\u001b[0m: \u001b[1m\u001b[32mArray[Int]\u001b[0m = Array(1, 2, 3)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393724801_-1184700703",
+      "id": "paragraph_1594393724801_-1184700703",
+      "dateCreated": "2020-07-10T20:38:44+0530",
+      "dateStarted": "2020-07-10T20:41:26+0530",
+      "dateFinished": "2020-07-10T20:41:27+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16758"
+    },
+    {
+      "text": "%spark\nval arr = Array(\"a\", \"b\", \"c\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:42:04+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34marr\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(a, b, c)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393886819_386923713",
+      "id": "paragraph_1594393886819_386923713",
+      "dateCreated": "2020-07-10T20:41:26+0530",
+      "dateStarted": "2020-07-10T20:42:04+0530",
+      "dateFinished": "2020-07-10T20:42:05+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16759"
+    },
+    {
+      "text": "%spark\nval arr = Array(1,2,2,true)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:42:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34marr\u001b[0m: \u001b[1m\u001b[32mArray[AnyVal]\u001b[0m = Array(1, 2, 2, true)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393907783_-68034980",
+      "id": "paragraph_1594393907783_-68034980",
+      "dateCreated": "2020-07-10T20:41:47+0530",
+      "dateStarted": "2020-07-10T20:42:34+0530",
+      "dateFinished": "2020-07-10T20:42:35+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16760"
+    },
+    {
+      "text": "%spark\nArray.range(0,10)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:42:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres54\u001b[0m: \u001b[1m\u001b[32mArray[Int]\u001b[0m = Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393954792_1248470924",
+      "id": "paragraph_1594393954792_1248470924",
+      "dateCreated": "2020-07-10T20:42:34+0530",
+      "dateStarted": "2020-07-10T20:42:52+0530",
+      "dateFinished": "2020-07-10T20:42:52+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16761"
+    },
+    {
+      "text": "%spark\nArray.range(0,10,2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:43:06+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres55\u001b[0m: \u001b[1m\u001b[32mArray[Int]\u001b[0m = Array(0, 2, 4, 6, 8)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393972297_404529957",
+      "id": "paragraph_1594393972297_404529957",
+      "dateCreated": "2020-07-10T20:42:52+0530",
+      "dateStarted": "2020-07-10T20:43:06+0530",
+      "dateFinished": "2020-07-10T20:43:06+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16762"
+    },
+    {
+      "text": "%spark\nRange(1,10)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:43:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres56\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Range\u001b[0m = Range(1, 2, 3, 4, 5, 6, 7, 8, 9)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393986027_395439589",
+      "id": "paragraph_1594393986027_395439589",
+      "dateCreated": "2020-07-10T20:43:06+0530",
+      "dateStarted": "2020-07-10T20:43:16+0530",
+      "dateFinished": "2020-07-10T20:43:17+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16763"
+    },
+    {
+      "text": "%spark\n\nval s  = Set()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:44:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34ms\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Set[Nothing]\u001b[0m = Set()\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594393996533_-1615606040",
+      "id": "paragraph_1594393996533_-1615606040",
+      "dateCreated": "2020-07-10T20:43:16+0530",
+      "dateStarted": "2020-07-10T20:44:33+0530",
+      "dateFinished": "2020-07-10T20:44:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16764"
+    },
+    {
+      "text": "%spark\nval s = Set(1,2,3)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:44:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34ms\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Set[Int]\u001b[0m = Set(1, 2, 3)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394073235_781030508",
+      "id": "paragraph_1594394073235_781030508",
+      "dateCreated": "2020-07-10T20:44:33+0530",
+      "dateStarted": "2020-07-10T20:44:50+0530",
+      "dateFinished": "2020-07-10T20:44:51+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16765"
+    },
+    {
+      "text": "%spark\nval s = Set(1,1,2,2,2,2,2,3,3,3)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:45:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34ms\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Set[Int]\u001b[0m = Set(1, 2, 3)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394090300_-1206058413",
+      "id": "paragraph_1594394090300_-1206058413",
+      "dateCreated": "2020-07-10T20:44:50+0530",
+      "dateStarted": "2020-07-10T20:45:17+0530",
+      "dateFinished": "2020-07-10T20:45:18+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16766"
+    },
+    {
+      "text": "%spark\nval s= collection.mutable.Set(1, 2, 3)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:45:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34ms\u001b[0m: \u001b[1m\u001b[32mscala.collection.mutable.Set[Int]\u001b[0m = Set(1, 2, 3)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394117974_-243840594",
+      "id": "paragraph_1594394117974_-243840594",
+      "dateCreated": "2020-07-10T20:45:17+0530",
+      "dateStarted": "2020-07-10T20:45:42+0530",
+      "dateFinished": "2020-07-10T20:45:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16767"
+    },
+    {
+      "text": "%spark\n s+=4",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:46:08+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres58\u001b[0m: \u001b[1m\u001b[32ms.type\u001b[0m = Set(1, 2, 3, 4)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394142264_-1121872005",
+      "id": "paragraph_1594394142264_-1121872005",
+      "dateCreated": "2020-07-10T20:45:42+0530",
+      "dateStarted": "2020-07-10T20:46:08+0530",
+      "dateFinished": "2020-07-10T20:46:09+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16768"
+    },
+    {
+      "text": "%spark\nval s = Set(1,1,2,2,2,2,2,3,3,3)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:46:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34ms\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Set[Int]\u001b[0m = Set(1, 2, 3)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394164515_473276731",
+      "id": "paragraph_1594394164515_473276731",
+      "dateCreated": "2020-07-10T20:46:04+0530",
+      "dateStarted": "2020-07-10T20:46:35+0530",
+      "dateFinished": "2020-07-10T20:46:36+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16769"
+    },
+    {
+      "text": "%spark\ns.max",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:50:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres59\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 3\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394195823_1032084698",
+      "id": "paragraph_1594394195823_1032084698",
+      "dateCreated": "2020-07-10T20:46:35+0530",
+      "dateStarted": "2020-07-10T20:50:32+0530",
+      "dateFinished": "2020-07-10T20:50:32+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16770"
+    },
+    {
+      "text": "%spark\nval mylist= List(2,3,4,5,6)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:51:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmylist\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(2, 3, 4, 5, 6)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394432073_-670516805",
+      "id": "paragraph_1594394432073_-670516805",
+      "dateCreated": "2020-07-10T20:50:32+0530",
+      "dateStarted": "2020-07-10T20:51:18+0530",
+      "dateFinished": "2020-07-10T20:51:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16771"
+    },
+    {
+      "text": "%spark\nmylist.toSet",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:51:29+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres60\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Set[Int]\u001b[0m = Set(5, 6, 2, 3, 4)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394464186_-1447461308",
+      "id": "paragraph_1594394464186_-1447461308",
+      "dateCreated": "2020-07-10T20:51:04+0530",
+      "dateStarted": "2020-07-10T20:51:29+0530",
+      "dateFinished": "2020-07-10T20:51:30+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16772"
+    },
+    {
+      "text": "%spark\nval myset= mylist.toSet",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:52:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmyset\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Set[Int]\u001b[0m = Set(5, 6, 2, 3, 4)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394489777_-2019628580",
+      "id": "paragraph_1594394489777_-2019628580",
+      "dateCreated": "2020-07-10T20:51:29+0530",
+      "dateStarted": "2020-07-10T20:52:28+0530",
+      "dateFinished": "2020-07-10T20:52:29+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16773"
+    },
+    {
+      "text": "%spark\nval mymap = Map((\"a\", 1), (\"b\", 2), (\"c\", 3))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:53:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmymap\u001b[0m: \u001b[1m\u001b[32mscala.collection.immutable.Map[String,Int]\u001b[0m = Map(a -> 1, b -> 2, c -> 3)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394512692_-1797366427",
+      "id": "paragraph_1594394512692_-1797366427",
+      "dateCreated": "2020-07-10T20:51:52+0530",
+      "dateStarted": "2020-07-10T20:53:11+0530",
+      "dateFinished": "2020-07-10T20:53:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16774"
+    },
+    {
+      "text": "%spark\nmymap(\"a\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:53:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres61\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394591520_286504230",
+      "id": "paragraph_1594394591520_286504230",
+      "dateCreated": "2020-07-10T20:53:11+0530",
+      "dateStarted": "2020-07-10T20:53:34+0530",
+      "dateFinished": "2020-07-10T20:53:35+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16775"
+    },
+    {
+      "text": "%spark\nmymap(\"b\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:53:45+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres62\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394614954_1692749804",
+      "id": "paragraph_1594394614954_1692749804",
+      "dateCreated": "2020-07-10T20:53:34+0530",
+      "dateStarted": "2020-07-10T20:53:45+0530",
+      "dateFinished": "2020-07-10T20:53:46+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16776"
+    },
+    {
+      "text": "%spark\nmymap(\"d\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:54:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.util.NoSuchElementException: key not found: d\n  at scala.collection.MapLike$class.default(MapLike.scala:228)\n  at scala.collection.AbstractMap.default(Map.scala:59)\n  at scala.collection.MapLike$class.apply(MapLike.scala:141)\n  at scala.collection.AbstractMap.apply(Map.scala:59)\n  ... 45 elided\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394625623_-1900882555",
+      "id": "paragraph_1594394625623_-1900882555",
+      "dateCreated": "2020-07-10T20:53:45+0530",
+      "dateStarted": "2020-07-10T20:54:01+0530",
+      "dateFinished": "2020-07-10T20:54:03+0530",
+      "status": "ERROR",
+      "$$hashKey": "object:16777"
+    },
+    {
+      "text": "%spark\nmymap get \"a\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:54:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres64\u001b[0m: \u001b[1m\u001b[32mOption[Int]\u001b[0m = Some(1)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394641832_648299599",
+      "id": "paragraph_1594394641832_648299599",
+      "dateCreated": "2020-07-10T20:54:01+0530",
+      "dateStarted": "2020-07-10T20:54:22+0530",
+      "dateFinished": "2020-07-10T20:54:22+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16778"
+    },
+    {
+      "text": "%spark\nmymap get \"d\"",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:54:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres65\u001b[0m: \u001b[1m\u001b[32mOption[Int]\u001b[0m = None\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394661997_1649310623",
+      "id": "paragraph_1594394661997_1649310623",
+      "dateCreated": "2020-07-10T20:54:21+0530",
+      "dateStarted": "2020-07-10T20:54:33+0530",
+      "dateFinished": "2020-07-10T20:54:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16779"
+    },
+    {
+      "text": "%spark\nval mymutmap= collection.mutable.Map((\"x\", 1),(\"y\", 2),(\"z\", 3))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:56:22+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmymutmap\u001b[0m: \u001b[1m\u001b[32mscala.collection.mutable.Map[String,Int]\u001b[0m = Map(z -> 3, y -> 2, x -> 1)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394673525_-277088967",
+      "id": "paragraph_1594394673525_-277088967",
+      "dateCreated": "2020-07-10T20:54:33+0530",
+      "dateStarted": "2020-07-10T20:56:22+0530",
+      "dateFinished": "2020-07-10T20:56:23+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16780"
+    },
+    {
+      "text": "%spark\nmymutmap += (\"newkey\" -> 999)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:56:53+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres66\u001b[0m: \u001b[1m\u001b[32mmymutmap.type\u001b[0m = Map(z -> 3, y -> 2, x -> 1, newkey -> 999)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394782390_-86895197",
+      "id": "paragraph_1594394782390_-86895197",
+      "dateCreated": "2020-07-10T20:56:22+0530",
+      "dateStarted": "2020-07-10T20:56:53+0530",
+      "dateFinished": "2020-07-10T20:56:54+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16781"
+    },
+    {
+      "text": "%spark\nmymap.keys",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:57:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres67\u001b[0m: \u001b[1m\u001b[32mIterable[String]\u001b[0m = Set(a, b, c)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394813476_409278083",
+      "id": "paragraph_1594394813476_409278083",
+      "dateCreated": "2020-07-10T20:56:53+0530",
+      "dateStarted": "2020-07-10T20:57:32+0530",
+      "dateFinished": "2020-07-10T20:57:33+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16782"
+    },
+    {
+      "text": "%spark\nmymap.values",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T20:57:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres68\u001b[0m: \u001b[1m\u001b[32mIterable[Int]\u001b[0m = MapLike(1, 2, 3)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394852309_1160461526",
+      "id": "paragraph_1594394852309_1160461526",
+      "dateCreated": "2020-07-10T20:57:32+0530",
+      "dateStarted": "2020-07-10T20:57:52+0530",
+      "dateFinished": "2020-07-10T20:57:53+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16783"
+    },
+    {
+      "text": "%md\n\n## Control Flow\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:02:19+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Control Flow</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395127721_349039405",
+      "id": "paragraph_1594395127721_349039405",
+      "dateCreated": "2020-07-10T21:02:07+0530",
+      "dateStarted": "2020-07-10T21:02:19+0530",
+      "dateFinished": "2020-07-10T21:02:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16784"
+    },
+    {
+      "text": "%spark\nif(true){\n  println(\"I will print if True\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:02:26+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "I will print if True\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594394872307_-489482979",
+      "id": "paragraph_1594394872307_-489482979",
+      "dateCreated": "2020-07-10T20:57:52+0530",
+      "dateStarted": "2020-07-10T21:02:26+0530",
+      "dateFinished": "2020-07-10T21:02:26+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16785"
+    },
+    {
+      "text": "%spark\nif(true){\n  println(\"I will print if True\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:02:37+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "I will print if True\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395146629_1811776437",
+      "id": "paragraph_1594395146629_1811776437",
+      "dateCreated": "2020-07-10T21:02:26+0530",
+      "dateStarted": "2020-07-10T21:02:37+0530",
+      "dateFinished": "2020-07-10T21:02:38+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16786"
+    },
+    {
+      "text": "%spark\nval x = \"hello\"\n\nif(x.endsWith(\"o\")){\n  println(\"The value x ends with o\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:02:49+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "The value x ends with o\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = hello\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395157930_1727374823",
+      "id": "paragraph_1594395157930_1727374823",
+      "dateCreated": "2020-07-10T21:02:37+0530",
+      "dateStarted": "2020-07-10T21:02:49+0530",
+      "dateFinished": "2020-07-10T21:02:49+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16787"
+    },
+    {
+      "text": "%spark\nval x = \"hello\"\n\nif(x.endsWith(\"o\")){\n  println(\"The value x ends with o\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:03:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "The value x ends with o\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = hello\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395169506_-1807232957",
+      "id": "paragraph_1594395169506_-1807232957",
+      "dateCreated": "2020-07-10T21:02:49+0530",
+      "dateStarted": "2020-07-10T21:03:01+0530",
+      "dateFinished": "2020-07-10T21:03:02+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16788"
+    },
+    {
+      "text": "%spark\nif(2 > 3){\n  println(\" 2 is greater than 3\")\n}else{\n  println(\" 2 is not great than 3\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:03:12+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": " 2 is not great than 3\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395181783_-359067798",
+      "id": "paragraph_1594395181783_-359067798",
+      "dateCreated": "2020-07-10T21:03:01+0530",
+      "dateStarted": "2020-07-10T21:03:12+0530",
+      "dateFinished": "2020-07-10T21:03:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16789"
+    },
+    {
+      "text": "%spark\nval person = \"George\"\n\nif(person == \"Sammy\"){\n    println(\"Welcome Sammy!\")\n}else if(person ==\"George\"){\n    println(\"Welcome George!\")\n}else{\n    println(\"Welcome, what's your name?\")\n}\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:03:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Welcome George!\n\u001b[1m\u001b[34mperson\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = George\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395192480_1868834045",
+      "id": "paragraph_1594395192480_1868834045",
+      "dateCreated": "2020-07-10T21:03:12+0530",
+      "dateStarted": "2020-07-10T21:03:35+0530",
+      "dateFinished": "2020-07-10T21:03:35+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16790"
+    },
+    {
+      "text": "%spark\nprintln((1 == 2) && (2 == 2)) // false\nprintln((1 == 1) && (2 == 2)) // true",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:04:02+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\ntrue\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395215036_1746346723",
+      "id": "paragraph_1594395215036_1746346723",
+      "dateCreated": "2020-07-10T21:03:35+0530",
+      "dateStarted": "2020-07-10T21:04:02+0530",
+      "dateFinished": "2020-07-10T21:04:02+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16791"
+    },
+    {
+      "text": "%spark\nprintln((1 == 2) || (2 == 2)) // true\nprintln((1 == 1) || (2 == 2)) // true",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:04:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "true\ntrue\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395242248_1163035630",
+      "id": "paragraph_1594395242248_1163035630",
+      "dateCreated": "2020-07-10T21:04:02+0530",
+      "dateStarted": "2020-07-10T21:04:28+0530",
+      "dateFinished": "2020-07-10T21:04:28+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16792"
+    },
+    {
+      "text": "%spark\nprintln(!(1==1)) // false\nprintln(!(2==1)) // true",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:04:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\ntrue\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395253711_2132433941",
+      "id": "paragraph_1594395253711_2132433941",
+      "dateCreated": "2020-07-10T21:04:13+0530",
+      "dateStarted": "2020-07-10T21:04:54+0530",
+      "dateFinished": "2020-07-10T21:04:55+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16793"
+    },
+    {
+      "text": "%md\n## For Loops",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:05:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>For Loops</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395331345_1286638824",
+      "id": "paragraph_1594395331345_1286638824",
+      "dateCreated": "2020-07-10T21:05:31+0530",
+      "dateStarted": "2020-07-10T21:05:42+0530",
+      "dateFinished": "2020-07-10T21:05:42+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16794"
+    },
+    {
+      "text": "%spark\nfor(item <- List(\"a\",\"b\",\"c\")){\n  println(item)\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:06:05+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "a\nb\nc\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395278836_-657265164",
+      "id": "paragraph_1594395278836_-657265164",
+      "dateCreated": "2020-07-10T21:04:38+0530",
+      "dateStarted": "2020-07-10T21:06:05+0530",
+      "dateFinished": "2020-07-10T21:06:07+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16795"
+    },
+    {
+      "text": "%spark\nfor(num <- Range(0,3)){\n  println(num)\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:06:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0\n1\n2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395365992_-824016666",
+      "id": "paragraph_1594395365992_-824016666",
+      "dateCreated": "2020-07-10T21:06:05+0530",
+      "dateStarted": "2020-07-10T21:06:42+0530",
+      "dateFinished": "2020-07-10T21:06:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16796"
+    },
+    {
+      "text": "%spark\nfor(anything <- Range(0,3)){\n  println(\"hello\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:07:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "hello\nhello\nhello\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395380486_143262230",
+      "id": "paragraph_1594395380486_143262230",
+      "dateCreated": "2020-07-10T21:06:20+0530",
+      "dateStarted": "2020-07-10T21:07:13+0530",
+      "dateFinished": "2020-07-10T21:07:13+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16797"
+    },
+    {
+      "text": "%spark\nfor(num <- Range(0,10)){\n  if(num % 2 == 0){\n    println(s\"$num is even\")\n  }else{\n    println(s\"$num is odd\")\n  }\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:07:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0 is even\n1 is odd\n2 is even\n3 is odd\n4 is even\n5 is odd\n6 is even\n7 is odd\n8 is even\n9 is odd\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395433120_1056052970",
+      "id": "paragraph_1594395433120_1056052970",
+      "dateCreated": "2020-07-10T21:07:13+0530",
+      "dateStarted": "2020-07-10T21:07:35+0530",
+      "dateFinished": "2020-07-10T21:07:35+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16798"
+    },
+    {
+      "text": "%spark\nval names = List(\"John\",\"Abe\",\"Cindy\",\"Cat\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:07:49+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mnames\u001b[0m: \u001b[1m\u001b[32mList[String]\u001b[0m = List(John, Abe, Cindy, Cat)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395455024_-418821188",
+      "id": "paragraph_1594395455024_-418821188",
+      "dateCreated": "2020-07-10T21:07:35+0530",
+      "dateStarted": "2020-07-10T21:07:49+0530",
+      "dateFinished": "2020-07-10T21:07:50+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16799"
+    },
+    {
+      "text": "%spark\nfor(name <- names){\n  if(name.startsWith(\"C\")){\n    println(\"$name starts with a C\")\n  }\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:08:12+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "$name starts with a C\n$name starts with a C\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395469857_-2008380374",
+      "id": "paragraph_1594395469857_-2008380374",
+      "dateCreated": "2020-07-10T21:07:49+0530",
+      "dateStarted": "2020-07-10T21:08:12+0530",
+      "dateFinished": "2020-07-10T21:08:13+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16800"
+    },
+    {
+      "text": "%md\n\n## Functions\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:10:37+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Functions</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395492926_1868426295",
+      "id": "paragraph_1594395492926_1868426295",
+      "dateCreated": "2020-07-10T21:08:12+0530",
+      "dateStarted": "2020-07-10T21:10:37+0530",
+      "dateFinished": "2020-07-10T21:10:37+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16801"
+    },
+    {
+      "text": "%spark\ndef simple(): Unit = {\n  println(\"Simple Print\")\n}\nsimple()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:11:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Simple Print\n\u001b[1m\u001b[34msimple\u001b[0m: \u001b[1m\u001b[32m()Unit\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395664444_1420763975",
+      "id": "paragraph_1594395664444_1420763975",
+      "dateCreated": "2020-07-10T21:11:04+0530",
+      "dateStarted": "2020-07-10T21:11:16+0530",
+      "dateFinished": "2020-07-10T21:11:17+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16802"
+    },
+    {
+      "text": "%spark\n// Adding two inputs\ndef adder(num1:Int,num2:Int): Int = {\n  return num1 + num2\n}\n\nval x = adder(2,3)\nprintln(x)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:11:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "5\n\u001b[1m\u001b[34madder\u001b[0m: \u001b[1m\u001b[32m(num1: Int, num2: Int)Int\u001b[0m\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395683674_-1807619919",
+      "id": "paragraph_1594395683674_-1807619919",
+      "dateCreated": "2020-07-10T21:11:23+0530",
+      "dateStarted": "2020-07-10T21:11:33+0530",
+      "dateFinished": "2020-07-10T21:11:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16803"
+    },
+    {
+      "text": "%spark\n// Greeting Someone\ndef greetName(name:String): String = {\n  return s\"Hello $name\"\n}\nval fullgreet = greetName(\"Jose\")\nprintln(fullgreet)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:11:53+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hello Jose\n\u001b[1m\u001b[34mgreetName\u001b[0m: \u001b[1m\u001b[32m(name: String)String\u001b[0m\n\u001b[1m\u001b[34mfullgreet\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = Hello Jose\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395699542_-1121972101",
+      "id": "paragraph_1594395699542_-1121972101",
+      "dateCreated": "2020-07-10T21:11:39+0530",
+      "dateStarted": "2020-07-10T21:11:53+0530",
+      "dateFinished": "2020-07-10T21:11:53+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16804"
+    },
+    {
+      "text": "%spark\n// Check if a number is prime\ndef isPrime(numcheck:Int): Boolean = {\n  for(n <- Range(2,numcheck)){\n    if(numcheck%n == 0){\n      return false\n    }\n    }\n    return true\n}\n\n\nprintln(isPrime(10))\nprintln(isPrime(23))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:12:12+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "false\ntrue\n\u001b[1m\u001b[34misPrime\u001b[0m: \u001b[1m\u001b[32m(numcheck: Int)Boolean\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395719949_851784126",
+      "id": "paragraph_1594395719949_851784126",
+      "dateCreated": "2020-07-10T21:11:59+0530",
+      "dateStarted": "2020-07-10T21:12:12+0530",
+      "dateFinished": "2020-07-10T21:12:13+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16805"
+    },
+    {
+      "text": "%spark\n// Using Collections\n\nval numbers = List(1,2,3,7)\ndef check(nums:List[Int]): List[Int]={\n  return nums\n}\n\nprintln(check(numbers))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:12:29+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "List(1, 2, 3, 7)\n\u001b[1m\u001b[34mnumbers\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m = List(1, 2, 3, 7)\n\u001b[1m\u001b[34mcheck\u001b[0m: \u001b[1m\u001b[32m(nums: List[Int])List[Int]\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395745282_593501611",
+      "id": "paragraph_1594395745282_593501611",
+      "dateCreated": "2020-07-10T21:12:25+0530",
+      "dateStarted": "2020-07-10T21:12:29+0530",
+      "dateFinished": "2020-07-10T21:12:30+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16806"
+    },
+    {
+      "text": "%spark\n// \"One Line Functions\"\ndef quickgreet(name:String) = s\"Hello $name\"\nprintln(quickgreet(\"Sammy\"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-10T21:12:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hello Sammy\n\u001b[1m\u001b[34mquickgreet\u001b[0m: \u001b[1m\u001b[32m(name: String)String\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594395756220_587883",
+      "id": "paragraph_1594395756220_587883",
+      "dateCreated": "2020-07-10T21:12:36+0530",
+      "dateStarted": "2020-07-10T21:12:48+0530",
+      "dateFinished": "2020-07-10T21:12:49+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:16807"
+    }
+  ],
+  "name": "Scala Programming Basics",
+  "id": "2FCXFB48Q",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/Scala Programming Basics"
+}
