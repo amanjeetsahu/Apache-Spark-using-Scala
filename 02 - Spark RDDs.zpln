@@ -1,0 +1,3465 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n![Spark Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:42:55+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png\" alt=\"Spark Image\" /></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594462627092_-1616142961",
+      "id": "paragraph_1594462627092_-1616142961",
+      "dateCreated": "2020-07-11T15:47:07+0530",
+      "dateStarted": "2020-07-11T15:57:28+0530",
+      "dateFinished": "2020-07-11T15:57:28+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:177"
+    },
+    {
+      "text": "%md\n# Low-Level Unstructured APIs",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Low-Level Unstructured APIs</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463248088_-1814261592",
+      "id": "paragraph_1594463248088_-1814261592",
+      "dateCreated": "2020-07-11T15:57:28+0530",
+      "dateStarted": "2020-07-11T15:57:57+0530",
+      "dateFinished": "2020-07-11T15:57:57+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:178"
+    },
+    {
+      "text": "%md\nIn this notebook we will discuss the oldest fundamental concept in spark called *RDDs(Resilient distributed datasets)*.<br> \nTo truly understand how Spark works, `you must understand the essence of RDDs`.They provide an extremely solid foundation that other abstractions are built upon. Starting with Spark 2.0, Spark users will have fewer needs for directly interacting with RDD, but having a strong mental model of how RDD works is essential. `In a nutshell, Spark revolves around the concept of RDDs`.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:03+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>In this notebook we will discuss the oldest fundamental concept in spark called <em>RDDs(Resilient distributed datasets)</em>.<br><br />\nTo truly understand how Spark works, <code>you must understand the essence of RDDs</code>.They provide an extremely solid foundation that other abstractions are built upon. Starting with Spark 2.0, Spark users will have fewer needs for directly interacting with RDD, but having a strong mental model of how RDD works is essential. <code>In a nutshell, Spark revolves around the concept of RDDs</code>.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463277792_-1635940060",
+      "id": "paragraph_1594463277792_-1635940060",
+      "dateCreated": "2020-07-11T15:57:57+0530",
+      "dateStarted": "2020-07-11T16:00:32+0530",
+      "dateFinished": "2020-07-11T16:00:32+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:179"
+    },
+    {
+      "text": "%md\n## Introduction to RDDs",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Introduction to RDDs</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463331339_-192595939",
+      "id": "paragraph_1594463331339_-192595939",
+      "dateCreated": "2020-07-11T15:58:51+0530",
+      "dateStarted": "2020-07-11T15:58:56+0530",
+      "dateFinished": "2020-07-11T15:58:56+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:180"
+    },
+    {
+      "text": "%md\nAn RDD in Spark is simply an immutable distributed collection of objects. Each is split into multiple partitions, which may be computed on different nodes of the cluster.<br>\nRDDs are `immutable`, `fault-tolerant`, `parallel data structures` that let users explicitly persist intermediate results `in memory`, control their partitioning to optimize data placement, and `manipulate` them using a rich set of `operators`.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:19+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>An RDD in Spark is simply an immutable distributed collection of objects. Each is split into multiple partitions, which may be computed on different nodes of the cluster.<br><br />\nRDDs are <code>immutable</code>, <code>fault-tolerant</code>, <code>parallel data structures</code> that let users explicitly persist intermediate results <code>in memory</code>, control their partitioning to optimize data placement, and <code>manipulate</code> them using a rich set of <code>operators</code>.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463336436_666718934",
+      "id": "paragraph_1594463336436_666718934",
+      "dateCreated": "2020-07-11T15:58:56+0530",
+      "dateStarted": "2020-07-11T15:59:45+0530",
+      "dateFinished": "2020-07-11T15:59:45+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:181"
+    },
+    {
+      "text": "%md\n## Immutable\n\nRDDs are designed to be immutable, which means you `can’t` specifically `modify a particular row` in the dataset represented by that RDD. You can call one of the available RDD operations to manipulate the rows in the RDD into the way you want, but that operation will `return a new RDD`. The `basic RDD will stay unchanged`, and the new RDD\nwill contain the data in the way that you want. *Spark leverages Immutability to efficiently provide the fault tolerance capability.* ",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:22+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Immutable</h2>\n<p>RDDs are designed to be immutable, which means you <code>can’t</code> specifically <code>modify a particular row</code> in the dataset represented by that RDD. You can call one of the available RDD operations to manipulate the rows in the RDD into the way you want, but that operation will <code>return a new RDD</code>. The <code>basic RDD will stay unchanged</code>, and the new RDD<br />\nwill contain the data in the way that you want. <em>Spark leverages Immutability to efficiently provide the fault tolerance capability.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463385416_-1734436528",
+      "id": "paragraph_1594463385416_-1734436528",
+      "dateCreated": "2020-07-11T15:59:45+0530",
+      "dateStarted": "2020-07-11T16:01:02+0530",
+      "dateFinished": "2020-07-11T16:01:02+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:182"
+    },
+    {
+      "text": "%md\n## Fault Tolerant\n\nThe ability to process multiple datasets in parallel usually requires a cluster of machines to host and execute the computational logic. If one or more machices dies due to unexpected circumstances then whats happens to the data in those machines?.  Spark automatically takes care of handling the failure on behalf of its users by rebuilding the failed portion using the lineage information.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Fault Tolerant</h2>\n<p>The ability to process multiple datasets in parallel usually requires a cluster of machines to host and execute the computational logic. If one or more machices dies due to unexpected circumstances then whats happens to the data in those machines?.  Spark automatically takes care of handling the failure on behalf of its users by rebuilding the failed portion using the lineage information.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463462741_614379402",
+      "id": "paragraph_1594463462741_614379402",
+      "dateCreated": "2020-07-11T16:01:02+0530",
+      "dateStarted": "2020-07-11T16:01:16+0530",
+      "dateFinished": "2020-07-11T16:01:16+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:183"
+    },
+    {
+      "text": "%md\n## Parallel Data Structures\n\nSuppose you have huge amount of data and you need process each and every row of the datset. One solution will be to iterate over each row and process it one by one. But that would be very slow. So instead we will divide the huge chuck of Data in smaller chunks of Data. Each chunk contains a collection of rows, and all the chunks are being processed in parallel. This is where the phrase parallel data structures comes from.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Parallel Data Structures</h2>\n<p>Suppose you have huge amount of data and you need process each and every row of the datset. One solution will be to iterate over each row and process it one by one. But that would be very slow. So instead we will divide the huge chuck of Data in smaller chunks of Data. Each chunk contains a collection of rows, and all the chunks are being processed in parallel. This is where the phrase parallel data structures comes from.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463476277_-568975134",
+      "id": "paragraph_1594463476277_-568975134",
+      "dateCreated": "2020-07-11T16:01:16+0530",
+      "dateStarted": "2020-07-11T16:01:30+0530",
+      "dateFinished": "2020-07-11T16:01:30+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:184"
+    },
+    {
+      "text": "%md\n## In-Memory Computing\n\nThe idea of speeding up the computation of large datasets that reside on disks in a parallelized manner using a cluster of machines was introduced by a MapReduce paper from Google. RDD pushes the speed boundary by introducing a novel idea, which is the ability to do distributed in-memory computation.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:31+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>In-Memory Computing</h2>\n<p>The idea of speeding up the computation of large datasets that reside on disks in a parallelized manner using a cluster of machines was introduced by a MapReduce paper from Google. RDD pushes the speed boundary by introducing a novel idea, which is the ability to do distributed in-memory computation.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463490176_2016858053",
+      "id": "paragraph_1594463490176_2016858053",
+      "dateCreated": "2020-07-11T16:01:30+0530",
+      "dateStarted": "2020-07-11T16:02:03+0530",
+      "dateFinished": "2020-07-11T16:02:03+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:185"
+    },
+    {
+      "text": "%md\n## RDD Operations\n\nRDDs provide a rich set of commonly needed data processing operations. They include the ability to perform data transformation, filtering, grouping, joining, aggregation, sorting, and counting.<br>\nEach row in a dataset is represented as a Java object, and the structure of this Java object is opaque to Spark. The user of RDD has complete control over how to manipulate this Java object. This flexibility comes with a lot of responsibilities, meaning some of the commonly needed operations such as the computing average will have to be handcrafted. Higher-level abstractions such as the Spark SQL component will provide this functionality out of the box.<br>\n\n***The RDD operations are classified into two types: `transformations` and `actions`***\n\n| Type | Evaluation | Returned Value |\n|------|------------|----------------|\n| Transformation | Lazy | Another RDD |\n| Action | Eager | Some result or write result to disk |\n\nTransformation operations are lazily evaluated, meaning Spark will delay the evaluations of the invoked operations until an action is taken. In other words, the transformation operations merely record the specified transformation logic and will apply them at a later point. On the other hand, invoking an action operation will trigger the evaluation of all the transformations that preceded it, and it will either return some result to the driver or write data to a storage system, such as HDFS or the local file system.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>RDD Operations</h2>\n<p>RDDs provide a rich set of commonly needed data processing operations. They include the ability to perform data transformation, filtering, grouping, joining, aggregation, sorting, and counting.<br><br />\nEach row in a dataset is represented as a Java object, and the structure of this Java object is opaque to Spark. The user of RDD has complete control over how to manipulate this Java object. This flexibility comes with a lot of responsibilities, meaning some of the commonly needed operations such as the computing average will have to be handcrafted. Higher-level abstractions such as the Spark SQL component will provide this functionality out of the box.<br></p>\n<p><em><strong>The RDD operations are classified into two types: <code>transformations</code> and <code>actions</code></strong></em></p>\n<table>\n<thead>\n<tr><th>Type</th><th>Evaluation</th><th>Returned Value</th></tr>\n</thead>\n<tbody>\n<tr><td>Transformation</td><td>Lazy</td><td>Another RDD</td></tr>\n<tr><td>Action</td><td>Eager</td><td>Some result or write result to disk</td></tr>\n</tbody>\n</table>\n<p>Transformation operations are lazily evaluated, meaning Spark will delay the evaluations of the invoked operations until an action is taken. In other words, the transformation operations merely record the specified transformation logic and will apply them at a later point. On the other hand, invoking an action operation will trigger the evaluation of all the transformations that preceded it, and it will either return some result to the driver or write data to a storage system, such as HDFS or the local file system.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463523237_-2091844488",
+      "id": "paragraph_1594463523237_-2091844488",
+      "dateCreated": "2020-07-11T16:02:03+0530",
+      "dateStarted": "2020-07-11T16:04:39+0530",
+      "dateFinished": "2020-07-11T16:04:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:186"
+    },
+    {
+      "text": "%md\n## Initialising Spark",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Initialising Spark</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463541600_-103509143",
+      "id": "paragraph_1594463541600_-103509143",
+      "dateCreated": "2020-07-11T16:02:21+0530",
+      "dateStarted": "2020-07-11T16:05:06+0530",
+      "dateFinished": "2020-07-11T16:05:06+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:187"
+    },
+    {
+      "text": "%md\n## Creating RDDs",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Creating RDDs</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463706414_-1584576438",
+      "id": "paragraph_1594463706414_-1584576438",
+      "dateCreated": "2020-07-11T16:05:06+0530",
+      "dateStarted": "2020-07-11T16:09:12+0530",
+      "dateFinished": "2020-07-11T16:09:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:188"
+    },
+    {
+      "text": "val stringList = Array(\"Spark is awesome\",\"Spark is cool\")\nval stringRDD = spark.sparkContext.parallelize(stringList)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T16:54:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mstringList\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(Spark is awesome, Spark is cool)\n\u001b[1m\u001b[34mstringRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = ParallelCollectionRDD[0] at parallelize at <console>:24\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463952035_-596370387",
+      "id": "paragraph_1594463952035_-596370387",
+      "dateCreated": "2020-07-11T16:09:12+0530",
+      "dateStarted": "2020-07-11T16:54:43+0530",
+      "dateFinished": "2020-07-11T16:55:55+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:189"
+    },
+    {
+      "text": "val fileRDD = spark.sparkContext.textFile(\"data/ml-1m/ratings.dat\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T16:56:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mfileRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = data/ml-1m/ratings.dat MapPartitionsRDD[2] at textFile at <console>:23\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594463993065_-1513600553",
+      "id": "paragraph_1594463993065_-1513600553",
+      "dateCreated": "2020-07-11T16:09:53+0530",
+      "dateStarted": "2020-07-11T16:56:01+0530",
+      "dateFinished": "2020-07-11T16:56:06+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:190"
+    },
+    {
+      "text": "fileRDD.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T16:56:09+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(1::1193::5::978300760, 1::661::3::978302109, 1::914::3::978301968, 1::3408::4::978300275, 1::2355::5::978824291)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=0",
+              "$$hashKey": "object:2947"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594465229583_-1927177209",
+      "id": "paragraph_1594465229583_-1927177209",
+      "dateCreated": "2020-07-11T16:30:29+0530",
+      "dateStarted": "2020-07-11T16:56:09+0530",
+      "dateFinished": "2020-07-11T16:56:13+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:191"
+    },
+    {
+      "text": "%md\n\n## Transformations\n\nTransformations are operations on RDDs that return a new RDD. Transformed RDDs are computed lazily, only when you\nuse them in an action.\n\nFollowing Table describes commonly used transformations.\n\n<table>\n<tbody><tr><th style=\"width:25%\">Transformation</th><th>Meaning</th></tr>\n<tr>\n  <td> <b>map</b>(<i>func</i>) </td>\n  <td> Return a new distributed dataset formed by passing each element of the source through a function <i>func</i>. </td>\n</tr>\n<tr>\n  <td> <b>filter</b>(<i>func</i>) </td>\n  <td> Return a new dataset formed by selecting those elements of the source on which <i>func</i> returns true. </td>\n</tr>\n<tr>\n  <td> <b>flatMap</b>(<i>func</i>) </td>\n  <td> Similar to map, but each input item can be mapped to 0 or more output items (so <i>func</i> should return a Seq rather than a single item). </td>\n</tr>\n<tr>\n  <td> <b>mapPartitions</b>(<i>func</i>) <a name=\"MapPartLink\"></a> </td>\n  <td> Similar to map, but runs separately on each partition (block) of the RDD, so <i>func</i> must be of type\n    Iterator&lt;T&gt; =&gt; Iterator&lt;U&gt; when running on an RDD of type T. </td>\n</tr>\n<tr>\n  <td> <b>mapPartitionsWithIndex</b>(<i>func</i>) </td>\n  <td> Similar to mapPartitions, but also provides <i>func</i> with an integer value representing the index of\n  the partition, so <i>func</i> must be of type (Int, Iterator&lt;T&gt;) =&gt; Iterator&lt;U&gt; when running on an RDD of type T.\n  </td>\n</tr>\n<tr>\n  <td> <b>sample</b>(<i>withReplacement</i>, <i>fraction</i>, <i>seed</i>) </td>\n  <td> Sample a fraction <i>fraction</i> of the data, with or without replacement, using a given random number generator seed. </td>\n</tr>\n<tr>\n  <td> <b>union</b>(<i>otherDataset</i>) </td>\n  <td> Return a new dataset that contains the union of the elements in the source dataset and the argument. </td>\n</tr>\n<tr>\n  <td> <b>intersection</b>(<i>otherDataset</i>) </td>\n  <td> Return a new RDD that contains the intersection of elements in the source dataset and the argument. </td>\n</tr>\n<tr>\n  <td> <b>distinct</b>([<i>numPartitions</i>])) </td>\n  <td> Return a new dataset that contains the distinct elements of the source dataset.</td>\n</tr>\n<tr>\n  <td> <b>groupByKey</b>([<i>numPartitions</i>]) <a name=\"GroupByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs, returns a dataset of (K, Iterable&lt;V&gt;) pairs. <br>\n    <b>Note:</b> If you are grouping in order to perform an aggregation (such as a sum or\n      average) over each key, using <code>reduceByKey</code> or <code>aggregateByKey</code> will yield much better\n      performance.\n    <br>\n    <b>Note:</b> By default, the level of parallelism in the output depends on the number of partitions of the parent RDD.\n      You can pass an optional <code>numPartitions</code> argument to set a different number of tasks.\n  </td>\n</tr>\n<tr>\n  <td> <b>reduceByKey</b>(<i>func</i>, [<i>numPartitions</i>]) <a name=\"ReduceByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs, returns a dataset of (K, V) pairs where the values for each key are aggregated using the given reduce function <i>func</i>, which must be of type (V,V) =&gt; V. Like in <code>groupByKey</code>, the number of reduce tasks is configurable through an optional second argument. </td>\n</tr>\n<tr>\n  <td> <b>aggregateByKey</b>(<i>zeroValue</i>)(<i>seqOp</i>, <i>combOp</i>, [<i>numPartitions</i>]) <a name=\"AggregateByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs, returns a dataset of (K, U) pairs where the values for each key are aggregated using the given combine functions and a neutral \"zero\" value. Allows an aggregated value type that is different than the input value type, while avoiding unnecessary allocations. Like in <code>groupByKey</code>, the number of reduce tasks is configurable through an optional second argument. </td>\n</tr>\n<tr>\n  <td> <b>sortByKey</b>([<i>ascending</i>], [<i>numPartitions</i>]) <a name=\"SortByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs where K implements Ordered, returns a dataset of (K, V) pairs sorted by keys in ascending or descending order, as specified in the boolean <code>ascending</code> argument.</td>\n</tr>\n<tr>\n  <td> <b>join</b>(<i>otherDataset</i>, [<i>numPartitions</i>]) <a name=\"JoinLink\"></a> </td>\n  <td> When called on datasets of type (K, V) and (K, W), returns a dataset of (K, (V, W)) pairs with all pairs of elements for each key.\n    Outer joins are supported through <code>leftOuterJoin</code>, <code>rightOuterJoin</code>, and <code>fullOuterJoin</code>.\n  </td>\n</tr>\n<tr>\n  <td> <b>cogroup</b>(<i>otherDataset</i>, [<i>numPartitions</i>]) <a name=\"CogroupLink\"></a> </td>\n  <td> When called on datasets of type (K, V) and (K, W), returns a dataset of (K, (Iterable&lt;V&gt;, Iterable&lt;W&gt;)) tuples. This operation is also called <code>groupWith</code>. </td>\n</tr>\n<tr>\n  <td> <b>cartesian</b>(<i>otherDataset</i>) </td>\n  <td> When called on datasets of types T and U, returns a dataset of (T, U) pairs (all pairs of elements). </td>\n</tr>\n<tr>\n  <td> <b>pipe</b>(<i>command</i>, <i>[envVars]</i>) </td>\n  <td> Pipe each partition of the RDD through a shell command, e.g. a Perl or bash script. RDD elements are written to the\n    process's stdin and lines output to its stdout are returned as an RDD of strings. </td>\n</tr>\n<tr>\n  <td> <b>coalesce</b>(<i>numPartitions</i>) <a name=\"CoalesceLink\"></a> </td>\n  <td> Decrease the number of partitions in the RDD to numPartitions. Useful for running operations more efficiently\n    after filtering down a large dataset. </td>\n</tr>\n<tr>\n  <td> <b>repartition</b>(<i>numPartitions</i>) </td>\n  <td> Reshuffle the data in the RDD randomly to create either more or fewer partitions and balance it across them.\n    This always shuffles all data over the network. <a name=\"RepartitionLink\"></a></td>\n</tr>\n<tr>\n  <td> <b>repartitionAndSortWithinPartitions</b>(<i>partitioner</i>) <a name=\"Repartition2Link\"></a></td>\n  <td> Repartition the RDD according to the given partitioner and, within each resulting partition,\n  sort records by their keys. This is more efficient than calling <code>repartition</code> and then sorting within\n  each partition because it can push the sorting down into the shuffle machinery. </td>\n</tr>\n</tbody></table>",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:44+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Transformations</h2>\n<p>Transformations are operations on RDDs that return a new RDD. Transformed RDDs are computed lazily, only when you<br />\nuse them in an action.</p>\n<p>Following Table describes commonly used transformations.</p>\n<table>\n<tbody><tr><th style=\"width:25%\">Transformation</th><th>Meaning</th></tr>\n<tr>\n  <td> <b>map</b>(<i>func</i>) </td>\n  <td> Return a new distributed dataset formed by passing each element of the source through a function <i>func</i>. </td>\n</tr>\n<tr>\n  <td> <b>filter</b>(<i>func</i>) </td>\n  <td> Return a new dataset formed by selecting those elements of the source on which <i>func</i> returns true. </td>\n</tr>\n<tr>\n  <td> <b>flatMap</b>(<i>func</i>) </td>\n  <td> Similar to map, but each input item can be mapped to 0 or more output items (so <i>func</i> should return a Seq rather than a single item). </td>\n</tr>\n<tr>\n  <td> <b>mapPartitions</b>(<i>func</i>) <a name=\"MapPartLink\"></a> </td>\n  <td> Similar to map, but runs separately on each partition (block) of the RDD, so <i>func</i> must be of type\n    Iterator&lt;T&gt; =&gt; Iterator&lt;U&gt; when running on an RDD of type T. </td>\n</tr>\n<tr>\n  <td> <b>mapPartitionsWithIndex</b>(<i>func</i>) </td>\n  <td> Similar to mapPartitions, but also provides <i>func</i> with an integer value representing the index of\n  the partition, so <i>func</i> must be of type (Int, Iterator&lt;T&gt;) =&gt; Iterator&lt;U&gt; when running on an RDD of type T.\n  </td>\n</tr>\n<tr>\n  <td> <b>sample</b>(<i>withReplacement</i>, <i>fraction</i>, <i>seed</i>) </td>\n  <td> Sample a fraction <i>fraction</i> of the data, with or without replacement, using a given random number generator seed. </td>\n</tr>\n<tr>\n  <td> <b>union</b>(<i>otherDataset</i>) </td>\n  <td> Return a new dataset that contains the union of the elements in the source dataset and the argument. </td>\n</tr>\n<tr>\n  <td> <b>intersection</b>(<i>otherDataset</i>) </td>\n  <td> Return a new RDD that contains the intersection of elements in the source dataset and the argument. </td>\n</tr>\n<tr>\n  <td> <b>distinct</b>([<i>numPartitions</i>])) </td>\n  <td> Return a new dataset that contains the distinct elements of the source dataset.</td>\n</tr>\n<tr>\n  <td> <b>groupByKey</b>([<i>numPartitions</i>]) <a name=\"GroupByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs, returns a dataset of (K, Iterable&lt;V&gt;) pairs. <br>\n    <b>Note:</b> If you are grouping in order to perform an aggregation (such as a sum or\n      average) over each key, using <code>reduceByKey</code> or <code>aggregateByKey</code> will yield much better\n      performance.\n    <br>\n    <b>Note:</b> By default, the level of parallelism in the output depends on the number of partitions of the parent RDD.\n      You can pass an optional <code>numPartitions</code> argument to set a different number of tasks.\n  </td>\n</tr>\n<tr>\n  <td> <b>reduceByKey</b>(<i>func</i>, [<i>numPartitions</i>]) <a name=\"ReduceByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs, returns a dataset of (K, V) pairs where the values for each key are aggregated using the given reduce function <i>func</i>, which must be of type (V,V) =&gt; V. Like in <code>groupByKey</code>, the number of reduce tasks is configurable through an optional second argument. </td>\n</tr>\n<tr>\n  <td> <b>aggregateByKey</b>(<i>zeroValue</i>)(<i>seqOp</i>, <i>combOp</i>, [<i>numPartitions</i>]) <a name=\"AggregateByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs, returns a dataset of (K, U) pairs where the values for each key are aggregated using the given combine functions and a neutral \"zero\" value. Allows an aggregated value type that is different than the input value type, while avoiding unnecessary allocations. Like in <code>groupByKey</code>, the number of reduce tasks is configurable through an optional second argument. </td>\n</tr>\n<tr>\n  <td> <b>sortByKey</b>([<i>ascending</i>], [<i>numPartitions</i>]) <a name=\"SortByLink\"></a> </td>\n  <td> When called on a dataset of (K, V) pairs where K implements Ordered, returns a dataset of (K, V) pairs sorted by keys in ascending or descending order, as specified in the boolean <code>ascending</code> argument.</td>\n</tr>\n<tr>\n  <td> <b>join</b>(<i>otherDataset</i>, [<i>numPartitions</i>]) <a name=\"JoinLink\"></a> </td>\n  <td> When called on datasets of type (K, V) and (K, W), returns a dataset of (K, (V, W)) pairs with all pairs of elements for each key.\n    Outer joins are supported through <code>leftOuterJoin</code>, <code>rightOuterJoin</code>, and <code>fullOuterJoin</code>.\n  </td>\n</tr>\n<tr>\n  <td> <b>cogroup</b>(<i>otherDataset</i>, [<i>numPartitions</i>]) <a name=\"CogroupLink\"></a> </td>\n  <td> When called on datasets of type (K, V) and (K, W), returns a dataset of (K, (Iterable&lt;V&gt;, Iterable&lt;W&gt;)) tuples. This operation is also called <code>groupWith</code>. </td>\n</tr>\n<tr>\n  <td> <b>cartesian</b>(<i>otherDataset</i>) </td>\n  <td> When called on datasets of types T and U, returns a dataset of (T, U) pairs (all pairs of elements). </td>\n</tr>\n<tr>\n  <td> <b>pipe</b>(<i>command</i>, <i>[envVars]</i>) </td>\n  <td> Pipe each partition of the RDD through a shell command, e.g. a Perl or bash script. RDD elements are written to the\n    process's stdin and lines output to its stdout are returned as an RDD of strings. </td>\n</tr>\n<tr>\n  <td> <b>coalesce</b>(<i>numPartitions</i>) <a name=\"CoalesceLink\"></a> </td>\n  <td> Decrease the number of partitions in the RDD to numPartitions. Useful for running operations more efficiently\n    after filtering down a large dataset. </td>\n</tr>\n<tr>\n  <td> <b>repartition</b>(<i>numPartitions</i>) </td>\n  <td> Reshuffle the data in the RDD randomly to create either more or fewer partitions and balance it across them.\n    This always shuffles all data over the network. <a name=\"RepartitionLink\"></a></td>\n</tr>\n<tr>\n  <td> <b>repartitionAndSortWithinPartitions</b>(<i>partitioner</i>) <a name=\"Repartition2Link\"></a></td>\n  <td> Repartition the RDD according to the given partitioner and, within each resulting partition,\n  sort records by their keys. This is more efficient than calling <code>repartition</code> and then sorting within\n  each partition because it can push the sorting down into the shuffle machinery. </td>\n</tr>\n</tbody></table>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594465264447_1265777333",
+      "id": "paragraph_1594465264447_1265777333",
+      "dateCreated": "2020-07-11T16:31:04+0530",
+      "dateStarted": "2020-07-11T16:57:04+0530",
+      "dateFinished": "2020-07-11T16:57:09+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:192"
+    },
+    {
+      "text": "%md\n## Transformation Examples\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:49+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Transformation Examples</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594466824219_-671221834",
+      "id": "paragraph_1594466824219_-671221834",
+      "dateCreated": "2020-07-11T16:57:04+0530",
+      "dateStarted": "2020-07-11T16:57:37+0530",
+      "dateFinished": "2020-07-11T16:57:37+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:193"
+    },
+    {
+      "text": "%md\n### Map transformation\n\n*Return a new RDD by applying a function to each element of this RDD*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:51+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Map transformation</h3>\n<p><em>Return a new RDD by applying a function to each element of this RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594466857489_-824995736",
+      "id": "paragraph_1594466857489_-824995736",
+      "dateCreated": "2020-07-11T16:57:37+0530",
+      "dateStarted": "2020-07-11T16:57:48+0530",
+      "dateFinished": "2020-07-11T16:57:48+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:194"
+    },
+    {
+      "text": "%spark\nval allCapsRDD = stringRDD.map(line => line.toUpperCase)\nallCapsRDD.collect().foreach(println)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:55+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "SPARK IS AWESOME\nSPARK IS COOL\n\u001b[1m\u001b[34mallCapsRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = MapPartitionsRDD[3] at map at <console>:25\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=1",
+              "$$hashKey": "object:6400"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594466868461_-957226987",
+      "id": "paragraph_1594466868461_-957226987",
+      "dateCreated": "2020-07-11T16:57:48+0530",
+      "dateStarted": "2020-07-11T16:58:27+0530",
+      "dateFinished": "2020-07-11T16:58:29+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:195"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(\"b\", \"a\", \"c\"))\nval y = x.map(z => (z,1))\nprintln(x.collect().mkString(\", \"))\nprintln(y.collect().mkString(\", \"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:00:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "b, a, c\n(b,1), (a,1), (c,1)\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = ParallelCollectionRDD[4] at parallelize at <console>:27\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m = MapPartitionsRDD[5] at map at <console>:28\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=2",
+              "$$hashKey": "object:3159"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=3",
+              "$$hashKey": "object:3160"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594466907315_2108044324",
+      "id": "paragraph_1594466907315_2108044324",
+      "dateCreated": "2020-07-11T16:58:27+0530",
+      "dateStarted": "2020-07-11T17:00:41+0530",
+      "dateFinished": "2020-07-11T17:00:45+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:196"
+    },
+    {
+      "text": "%md\n### FILTER\n\n*Return a new RDD containing only the elements that satisfy a predicate*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:43:58+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>FILTER</h3>\n<p><em>Return a new RDD containing only the elements that satisfy a predicate</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467041409_-1643245291",
+      "id": "paragraph_1594467041409_-1643245291",
+      "dateCreated": "2020-07-11T17:00:41+0530",
+      "dateStarted": "2020-07-11T17:01:43+0530",
+      "dateFinished": "2020-07-11T17:01:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:197"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1,2,3))\nval y = x.filter(n => n%2 == 1)\nprintln(x.collect().mkString(\", \"))\nprintln(y.collect().mkString(\", \"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:02:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "1, 2, 3\n1, 3\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[6] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = MapPartitionsRDD[7] at filter at <console>:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=4",
+              "$$hashKey": "object:3250"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=5",
+              "$$hashKey": "object:3251"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467084604_-1920201898",
+      "id": "paragraph_1594467084604_-1920201898",
+      "dateCreated": "2020-07-11T17:01:24+0530",
+      "dateStarted": "2020-07-11T17:02:01+0530",
+      "dateFinished": "2020-07-11T17:02:03+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:198"
+    },
+    {
+      "text": "%md\n### FLATMAP\n\n*Return a new RDD by first applying a function to all elements of this RDD, and then flattening the results*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:00+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>FLATMAP</h3>\n<p><em>Return a new RDD by first applying a function to all elements of this RDD, and then flattening the results</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467121192_-1608924462",
+      "id": "paragraph_1594467121192_-1608924462",
+      "dateCreated": "2020-07-11T17:02:01+0530",
+      "dateStarted": "2020-07-11T17:02:53+0530",
+      "dateFinished": "2020-07-11T17:02:54+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:199"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1,2,3))\nval y = x.flatMap(n => Array(n, n*100, 42))\nprintln(x.collect().mkString(\", \"))\nprintln(y.collect().mkString(\", \"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:03:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "1, 2, 3\n1, 100, 42, 2, 200, 42, 3, 300, 42\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[8] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = MapPartitionsRDD[9] at flatMap at <console>:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=6",
+              "$$hashKey": "object:3341"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=7",
+              "$$hashKey": "object:3342"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467159212_-558358582",
+      "id": "paragraph_1594467159212_-558358582",
+      "dateCreated": "2020-07-11T17:02:39+0530",
+      "dateStarted": "2020-07-11T17:03:07+0530",
+      "dateFinished": "2020-07-11T17:03:09+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:200"
+    },
+    {
+      "text": "%md\n### GROUPBY\n\n*Group the data in the original RDD. Create pairs where the key is the output of a user function, and the value is all items for which the function yields this key.*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:04+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>GROUPBY</h3>\n<p><em>Group the data in the original RDD. Create pairs where the key is the output of a user function, and the value is all items for which the function yields this key.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467187493_-1279941705",
+      "id": "paragraph_1594467187493_-1279941705",
+      "dateCreated": "2020-07-11T17:03:07+0530",
+      "dateStarted": "2020-07-11T17:03:46+0530",
+      "dateFinished": "2020-07-11T17:03:46+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:201"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(\"John\", \"Fred\", \"Anna\", \"James\"))\nval y = x.groupBy(w => w.charAt(0))\nprintln(y.collect().mkString(\", \"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:04:03+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(A,CompactBuffer(Anna)), (J,CompactBuffer(John, James)), (F,CompactBuffer(Fred))\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = ParallelCollectionRDD[10] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Char, Iterable[String])]\u001b[0m = ShuffledRDD[12] at groupBy at <console>:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=8",
+              "$$hashKey": "object:3432"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467226145_-476902921",
+      "id": "paragraph_1594467226145_-476902921",
+      "dateCreated": "2020-07-11T17:03:46+0530",
+      "dateStarted": "2020-07-11T17:04:03+0530",
+      "dateFinished": "2020-07-11T17:04:12+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:202"
+    },
+    {
+      "text": "%md\n### GROUPBYKEY\n\n*Group the values for each key in the original RDD. Create a new pair where the original key corresponds to this collected group of values.*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>GROUPBYKEY</h3>\n<p><em>Group the values for each key in the original RDD. Create a new pair where the original key corresponds to this collected group of values.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467243581_787558283",
+      "id": "paragraph_1594467243581_787558283",
+      "dateCreated": "2020-07-11T17:04:03+0530",
+      "dateStarted": "2020-07-11T17:05:32+0530",
+      "dateFinished": "2020-07-11T17:05:32+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:203"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize( Array(('B',5),('B',4),('A',3),('A',2),('A',1)))\nval y = x.groupByKey()\nprintln(x.collect().mkString(\", \"))\nprintln(y.collect().mkString(\", \"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:05:46+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(B,5), (B,4), (A,3), (A,2), (A,1)\n(B,CompactBuffer(5, 4)), (A,CompactBuffer(3, 2, 1))\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Char, Int)]\u001b[0m = ParallelCollectionRDD[13] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Char, Iterable[Int])]\u001b[0m = ShuffledRDD[14] at groupByKey at <console>:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=9",
+              "$$hashKey": "object:3518"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=10",
+              "$$hashKey": "object:3519"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467328646_1914414691",
+      "id": "paragraph_1594467328646_1914414691",
+      "dateCreated": "2020-07-11T17:05:28+0530",
+      "dateStarted": "2020-07-11T17:05:46+0530",
+      "dateFinished": "2020-07-11T17:05:48+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:204"
+    },
+    {
+      "text": "%md\n### MAPPARTITIONS\n\n*Return a new RDD by applying a function to each partition of this RDD*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:10+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>MAPPARTITIONS</h3>\n<p><em>Return a new RDD by applying a function to each partition of this RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467346136_271265622",
+      "id": "paragraph_1594467346136_271265622",
+      "dateCreated": "2020-07-11T17:05:46+0530",
+      "dateStarted": "2020-07-11T17:06:46+0530",
+      "dateFinished": "2020-07-11T17:06:46+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:205"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1,2,3), 2)\ndef f(i:Iterator[Int])={ (i.sum,42).productIterator }\nval y = x.mapPartitions(f)\n// glom() flattens elements on the same partition\nval xOut = x.glom().collect()\nval yOut = y.glom().collect()\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:07:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[15] at parallelize at <console>:28\n\u001b[1m\u001b[34mf\u001b[0m: \u001b[1m\u001b[32m(i: Iterator[Int])Iterator[Any]\u001b[0m\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Any]\u001b[0m = MapPartitionsRDD[16] at mapPartitions at <console>:30\n\u001b[1m\u001b[34mxOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Int]]\u001b[0m = Array(Array(1), Array(2, 3))\n\u001b[1m\u001b[34myOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Any]]\u001b[0m = Array(Array(1, 42), Array(5, 42))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=11",
+              "$$hashKey": "object:3609"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=12",
+              "$$hashKey": "object:3610"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467406308_965813253",
+      "id": "paragraph_1594467406308_965813253",
+      "dateCreated": "2020-07-11T17:06:46+0530",
+      "dateStarted": "2020-07-11T17:07:25+0530",
+      "dateFinished": "2020-07-11T17:07:26+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:206"
+    },
+    {
+      "text": "%md\n### REDUCEBYKEY VS GROUPBYKEY\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>REDUCEBYKEY VS GROUPBYKEY</h3>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467445107_-112888596",
+      "id": "paragraph_1594467445107_-112888596",
+      "dateCreated": "2020-07-11T17:07:25+0530",
+      "dateStarted": "2020-07-11T17:07:57+0530",
+      "dateFinished": "2020-07-11T17:07:57+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:207"
+    },
+    {
+      "text": "%spark\n\nval words = Array(\"one\", \"two\", \"two\", \"three\", \"three\", \"three\")\nval wordPairsRDD = sc.parallelize(words).map(word => (word, 1))\nval wordCountsWithReduce = wordPairsRDD\n.reduceByKey(_ + _)\n.collect()\n\nval wordCountsWithGroup = wordPairsRDD\n.groupByKey()\n.map(t => (t._1, t._2.sum))\n.collect()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:08:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mwords\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(one, two, two, three, three, three)\n\u001b[1m\u001b[34mwordPairsRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m = MapPartitionsRDD[20] at map at <console>:26\n\u001b[1m\u001b[34mwordCountsWithReduce\u001b[0m: \u001b[1m\u001b[32mArray[(String, Int)]\u001b[0m = Array((two,2), (one,1), (three,3))\n\u001b[1m\u001b[34mwordCountsWithGroup\u001b[0m: \u001b[1m\u001b[32mArray[(String, Int)]\u001b[0m = Array((two,2), (one,1), (three,3))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=13",
+              "$$hashKey": "object:3700"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=14",
+              "$$hashKey": "object:3701"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467477007_-1766867152",
+      "id": "paragraph_1594467477007_-1766867152",
+      "dateCreated": "2020-07-11T17:07:57+0530",
+      "dateStarted": "2020-07-11T17:08:17+0530",
+      "dateFinished": "2020-07-11T17:08:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:208"
+    },
+    {
+      "text": "%md\n\n### MAPPARTITIONSWITHINDEX\n\n*Return a new RDD by applying a function to each partition of this RDD, while tracking the index of the original partition.*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>MAPPARTITIONSWITHINDEX</h3>\n<p><em>Return a new RDD by applying a function to each partition of this RDD, while tracking the index of the original partition.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467497938_278838126",
+      "id": "paragraph_1594467497938_278838126",
+      "dateCreated": "2020-07-11T17:08:17+0530",
+      "dateStarted": "2020-07-11T17:10:05+0530",
+      "dateFinished": "2020-07-11T17:10:05+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:209"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1,2,3), 2)\ndef f(partitionIndex:Int, i:Iterator[Int]) = {\n(partitionIndex, i.sum).productIterator\n}\nval y = x.mapPartitionsWithIndex(f)\n// glom() flattens elements on the same partition\nval xOut = x.glom().collect()\nval yOut = y.glom().collect()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:09:30+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[24] at parallelize at <console>:29\n\u001b[1m\u001b[34mf\u001b[0m: \u001b[1m\u001b[32m(partitionIndex: Int, i: Iterator[Int])Iterator[Any]\u001b[0m\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Any]\u001b[0m = MapPartitionsRDD[25] at mapPartitionsWithIndex at <console>:33\n\u001b[1m\u001b[34mxOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Int]]\u001b[0m = Array(Array(1), Array(2, 3))\n\u001b[1m\u001b[34myOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Any]]\u001b[0m = Array(Array(0, 1), Array(1, 5))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=15",
+              "$$hashKey": "object:3791"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=16",
+              "$$hashKey": "object:3792"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467541628_2083238952",
+      "id": "paragraph_1594467541628_2083238952",
+      "dateCreated": "2020-07-11T17:09:01+0530",
+      "dateStarted": "2020-07-11T17:09:30+0530",
+      "dateFinished": "2020-07-11T17:09:32+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:210"
+    },
+    {
+      "text": "%md\n### SAMPLE\n\n*Return a new RDD containing a statistical sample of the original RDD*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:19+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>SAMPLE</h3>\n<p><em>Return a new RDD containing a statistical sample of the original RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467570302_-2140096988",
+      "id": "paragraph_1594467570302_-2140096988",
+      "dateCreated": "2020-07-11T17:09:30+0530",
+      "dateStarted": "2020-07-11T17:10:22+0530",
+      "dateFinished": "2020-07-11T17:10:22+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:211"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1, 2, 3, 4, 5))\nval y = x.sample(false, 0.4)\n// omitting seed will yield different output\nprintln(y.collect().mkString(\", \"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:10:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "1, 2, 5\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[28] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = PartitionwiseSampledRDD[29] at sample at <console>:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=17",
+              "$$hashKey": "object:3882"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467622355_-524264917",
+      "id": "paragraph_1594467622355_-524264917",
+      "dateCreated": "2020-07-11T17:10:22+0530",
+      "dateStarted": "2020-07-11T17:10:42+0530",
+      "dateFinished": "2020-07-11T17:10:44+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:212"
+    },
+    {
+      "text": "%md\n\n### UNION\n\n*Return a new RDD containing all items from two original RDDs. Duplicates are not culled.*\n\n`union(otherRDD)`\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>UNION</h3>\n<p><em>Return a new RDD containing all items from two original RDDs. Duplicates are not culled.</em></p>\n<p><code>union(otherRDD)</code></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467642870_-708864225",
+      "id": "paragraph_1594467642870_-708864225",
+      "dateCreated": "2020-07-11T17:10:42+0530",
+      "dateStarted": "2020-07-11T17:11:45+0530",
+      "dateFinished": "2020-07-11T17:11:45+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:213"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1,2,3), 2)\nval y = sc.parallelize(Array(3,4), 1)\nval z = x.union(y)\nval zOut = z.glom().collect()\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:12:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[30] at parallelize at <console>:30\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[31] at parallelize at <console>:31\n\u001b[1m\u001b[34mz\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = UnionRDD[32] at union at <console>:32\n\u001b[1m\u001b[34mzOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Int]]\u001b[0m = Array(Array(1), Array(2, 3), Array(3, 4))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=18",
+              "$$hashKey": "object:3968"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467663817_1229212604",
+      "id": "paragraph_1594467663817_1229212604",
+      "dateCreated": "2020-07-11T17:11:03+0530",
+      "dateStarted": "2020-07-11T17:12:01+0530",
+      "dateFinished": "2020-07-11T17:12:03+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:214"
+    },
+    {
+      "text": "%md\n### JOIN\n\n*Return a new RDD containing all pairs of elements having the same key in the original RDDs*\n\n`union(otherRDD, numPartitions=None)`\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:24+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>JOIN</h3>\n<p><em>Return a new RDD containing all pairs of elements having the same key in the original RDDs</em></p>\n<p><code>union(otherRDD, numPartitions=None)</code></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467721726_-1027901021",
+      "id": "paragraph_1594467721726_-1027901021",
+      "dateCreated": "2020-07-11T17:12:01+0530",
+      "dateStarted": "2020-07-11T17:12:40+0530",
+      "dateFinished": "2020-07-11T17:12:40+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:215"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array((\"a\", 1), (\"b\", 2)))\nval y = sc.parallelize(Array((\"a\", 3), (\"a\", 4), (\"b\", 5)))\nval z = x.join(y)\nprintln(z.collect().mkString(\", \"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:12:55+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(a,(1,3)), (a,(1,4)), (b,(2,5))\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m = ParallelCollectionRDD[34] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m = ParallelCollectionRDD[35] at parallelize at <console>:30\n\u001b[1m\u001b[34mz\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, (Int, Int))]\u001b[0m = MapPartitionsRDD[38] at join at <console>:31\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=19",
+              "$$hashKey": "object:4054"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467760491_-485641812",
+      "id": "paragraph_1594467760491_-485641812",
+      "dateCreated": "2020-07-11T17:12:40+0530",
+      "dateStarted": "2020-07-11T17:12:55+0530",
+      "dateFinished": "2020-07-11T17:12:56+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:216"
+    },
+    {
+      "text": "%md\n\n### DISTINCT\n\n*Return a new RDD containing distinct items from the original RDD (omitting all duplicates)*\n\n`distinct(numPartitions=None)`\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>DISTINCT</h3>\n<p><em>Return a new RDD containing distinct items from the original RDD (omitting all duplicates)</em></p>\n<p><code>distinct(numPartitions=None)</code></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467775024_-781899289",
+      "id": "paragraph_1594467775024_-781899289",
+      "dateCreated": "2020-07-11T17:12:55+0530",
+      "dateStarted": "2020-07-11T17:13:38+0530",
+      "dateFinished": "2020-07-11T17:13:38+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:217"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1,2,3,3,4))\nval y = x.distinct()\nprintln(y.collect().mkString(\", \"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:13:55+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "4, 1, 3, 2\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[39] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = MapPartitionsRDD[42] at distinct at <console>:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=20",
+              "$$hashKey": "object:4140"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467818861_937213253",
+      "id": "paragraph_1594467818861_937213253",
+      "dateCreated": "2020-07-11T17:13:38+0530",
+      "dateStarted": "2020-07-11T17:13:55+0530",
+      "dateFinished": "2020-07-11T17:13:56+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:218"
+    },
+    {
+      "text": "%md\n### COALESCE\n\n*Return a new RDD which is reduced to a smaller number of partitions*\n\n`coalesce(numPartitions, shuffle=False)`\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>COALESCE</h3>\n<p><em>Return a new RDD which is reduced to a smaller number of partitions</em></p>\n<p><code>coalesce(numPartitions, shuffle=False)</code></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467835119_1060826078",
+      "id": "paragraph_1594467835119_1060826078",
+      "dateCreated": "2020-07-11T17:13:55+0530",
+      "dateStarted": "2020-07-11T17:14:38+0530",
+      "dateFinished": "2020-07-11T17:14:38+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:219"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1, 2, 3, 4, 5), 3)\nval y = x.coalesce(2)\nval xOut = x.glom().collect()\nval yOut = y.glom().collect()\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:14:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[43] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = CoalescedRDD[44] at coalesce at <console>:29\n\u001b[1m\u001b[34mxOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Int]]\u001b[0m = Array(Array(1), Array(2, 3), Array(4, 5))\n\u001b[1m\u001b[34myOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Int]]\u001b[0m = Array(Array(1), Array(2, 3, 4, 5))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=21",
+              "$$hashKey": "object:4226"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=22",
+              "$$hashKey": "object:4227"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467878428_2103756795",
+      "id": "paragraph_1594467878428_2103756795",
+      "dateCreated": "2020-07-11T17:14:38+0530",
+      "dateStarted": "2020-07-11T17:14:53+0530",
+      "dateFinished": "2020-07-11T17:14:54+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:220"
+    },
+    {
+      "text": "%md\n### KEYBY\n\n*Create a Pair RDD, forming one pair for each item in the original RDD. The pair’s key is calculated from the value via a user-supplied function.*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:37+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>KEYBY</h3>\n<p><em>Create a Pair RDD, forming one pair for each item in the original RDD. The pair’s key is calculated from the value via a user-supplied function.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467893008_-2088270622",
+      "id": "paragraph_1594467893008_-2088270622",
+      "dateCreated": "2020-07-11T17:14:53+0530",
+      "dateStarted": "2020-07-11T17:15:34+0530",
+      "dateFinished": "2020-07-11T17:15:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:221"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(\nArray(\"John\", \"Fred\", \"Anna\", \"James\"))\nval y = x.keyBy(w => w.charAt(0))\nprintln(y.collect().mkString(\", \"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:15:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(J,John), (F,Fred), (A,Anna), (J,James)\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = ParallelCollectionRDD[47] at parallelize at <console>:28\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Char, String)]\u001b[0m = MapPartitionsRDD[48] at keyBy at <console>:30\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=23",
+              "$$hashKey": "object:4317"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467934111_529288270",
+      "id": "paragraph_1594467934111_529288270",
+      "dateCreated": "2020-07-11T17:15:34+0530",
+      "dateStarted": "2020-07-11T17:15:50+0530",
+      "dateFinished": "2020-07-11T17:15:51+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:222"
+    },
+    {
+      "text": "%md\n### PARTITIONBY\n\n*Return a new RDD with the specified number of partitions, placing original items into the partition returned by a user supplied function*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>PARTITIONBY</h3>\n<p><em>Return a new RDD with the specified number of partitions, placing original items into the partition returned by a user supplied function</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467950917_-1436222488",
+      "id": "paragraph_1594467950917_-1436222488",
+      "dateCreated": "2020-07-11T17:15:50+0530",
+      "dateStarted": "2020-07-11T17:16:21+0530",
+      "dateFinished": "2020-07-11T17:16:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:223"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.Partitioner\nval x = sc.parallelize(Array(('J',\"James\"),('F',\"Fred\"),\n('A',\"Anna\"),('J',\"John\")), 3)\nval y = x.partitionBy(new Partitioner() {\nval numPartitions = 2\ndef getPartition(k:Any) = {\nif (k.asInstanceOf[Char] < 'H') 0 else 1\n}\n})\nval yOut = y.glom().collect()\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:16:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.Partitioner\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Char, String)]\u001b[0m = ParallelCollectionRDD[49] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Char, String)]\u001b[0m = ShuffledRDD[50] at partitionBy at <console>:31\n\u001b[1m\u001b[34myOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[(Char, String)]]\u001b[0m = Array(Array((F,Fred), (A,Anna)), Array((J,James), (J,John)))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=24",
+              "$$hashKey": "object:4403"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467981697_1675777908",
+      "id": "paragraph_1594467981697_1675777908",
+      "dateCreated": "2020-07-11T17:16:21+0530",
+      "dateStarted": "2020-07-11T17:16:39+0530",
+      "dateFinished": "2020-07-11T17:16:40+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:224"
+    },
+    {
+      "text": "%md\n### ZIP\n\n*Return a new RDD containing pairs whose key is the item in the original RDD, and whose value is that item’s corresponding element (same partition, same index) in a second RDD*\n\n`zip(otherRDD)`",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>ZIP</h3>\n<p><em>Return a new RDD containing pairs whose key is the item in the original RDD, and whose value is that item’s corresponding element (same partition, same index) in a second RDD</em></p>\n<p><code>zip(otherRDD)</code></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594467999192_223525093",
+      "id": "paragraph_1594467999192_223525093",
+      "dateCreated": "2020-07-11T17:16:39+0530",
+      "dateStarted": "2020-07-11T17:17:31+0530",
+      "dateFinished": "2020-07-11T17:17:31+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:225"
+    },
+    {
+      "text": "%spark\nval x = sc.parallelize(Array(1,2,3))\nval y = x.map(n=>n*n)\nval z = x.zip(y)\nprintln(z.collect().mkString(\", \"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:17:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(1,1), (2,4), (3,9)\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[52] at parallelize at <console>:31\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = MapPartitionsRDD[53] at map at <console>:32\n\u001b[1m\u001b[34mz\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = ZippedPartitionsRDD2[54] at zip at <console>:33\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=25",
+              "$$hashKey": "object:4489"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468045347_1920771810",
+      "id": "paragraph_1594468045347_1920771810",
+      "dateCreated": "2020-07-11T17:17:25+0530",
+      "dateStarted": "2020-07-11T17:17:42+0530",
+      "dateFinished": "2020-07-11T17:17:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:226"
+    },
+    {
+      "text": "%md\n\n## Actions\n<table class=\"table\">\n<tbody><tr><th>Action</th><th>Meaning</th></tr>\n<tr>\n  <td> <b>reduce</b>(<i>func</i>) </td>\n  <td> Aggregate the elements of the dataset using a function <i>func</i> (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel. </td>\n</tr>\n<tr>\n  <td> <b>collect</b>() </td>\n  <td> Return all the elements of the dataset as an array at the driver program. This is usually useful after a filter or other operation that returns a sufficiently small subset of the data. </td>\n</tr>\n<tr>\n  <td> <b>count</b>() </td>\n  <td> Return the number of elements in the dataset. </td>\n</tr>\n<tr>\n  <td> <b>first</b>() </td>\n  <td> Return the first element of the dataset (similar to take(1)). </td>\n</tr>\n<tr>\n  <td> <b>take</b>(<i>n</i>) </td>\n  <td> Return an array with the first <i>n</i> elements of the dataset. </td>\n</tr>\n<tr>\n  <td> <b>takeSample</b>(<i>withReplacement</i>, <i>num</i>, [<i>seed</i>]) </td>\n  <td> Return an array with a random sample of <i>num</i> elements of the dataset, with or without replacement, optionally pre-specifying a random number generator seed.</td>\n</tr>\n<tr>\n  <td> <b>takeOrdered</b>(<i>n</i>, <i>[ordering]</i>) </td>\n  <td> Return the first <i>n</i> elements of the RDD using either their natural order or a custom comparator. </td>\n</tr>\n<tr>\n  <td> <b>saveAsTextFile</b>(<i>path</i>) </td>\n  <td> Write the elements of the dataset as a text file (or set of text files) in a given directory in the local filesystem, HDFS or any other Hadoop-supported file system. Spark will call toString on each element to convert it to a line of text in the file. </td>\n</tr>\n<tr>\n  <td> <b>saveAsSequenceFile</b>(<i>path</i>) <br> (Java and Scala) </td>\n  <td> Write the elements of the dataset as a Hadoop SequenceFile in a given path in the local filesystem, HDFS or any other Hadoop-supported file system. This is available on RDDs of key-value pairs that implement Hadoop's Writable interface. In Scala, it is also\n   available on types that are implicitly convertible to Writable (Spark includes conversions for basic types like Int, Double, String, etc). </td>\n</tr>\n<tr>\n  <td> <b>saveAsObjectFile</b>(<i>path</i>) <br> (Java and Scala) </td>\n  <td> Write the elements of the dataset in a simple format using Java serialization, which can then be loaded using\n    <code>SparkContext.objectFile()</code>. </td>\n</tr>\n<tr>\n  <td> <b>countByKey</b>() <a name=\"CountByLink\"></a> </td>\n  <td> Only available on RDDs of type (K, V). Returns a hashmap of (K, Int) pairs with the count of each key. </td>\n</tr>\n<tr>\n  <td> <b>foreach</b>(<i>func</i>) </td>\n  <td> Run a function <i>func</i> on each element of the dataset. This is usually done for side effects such as updating an Accumulator or interacting with external storage systems.\n  <br><b>Note</b>: modifying variables other than Accumulators outside of the <code>foreach()</code> may result in undefined behavior. See Understanding closures for more details.</td>\n</tr>\n</tbody></table>\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:45+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Actions</h2>\n<table class=\"table\">\n<tbody><tr><th>Action</th><th>Meaning</th></tr>\n<tr>\n  <td> <b>reduce</b>(<i>func</i>) </td>\n  <td> Aggregate the elements of the dataset using a function <i>func</i> (which takes two arguments and returns one). The function should be commutative and associative so that it can be computed correctly in parallel. </td>\n</tr>\n<tr>\n  <td> <b>collect</b>() </td>\n  <td> Return all the elements of the dataset as an array at the driver program. This is usually useful after a filter or other operation that returns a sufficiently small subset of the data. </td>\n</tr>\n<tr>\n  <td> <b>count</b>() </td>\n  <td> Return the number of elements in the dataset. </td>\n</tr>\n<tr>\n  <td> <b>first</b>() </td>\n  <td> Return the first element of the dataset (similar to take(1)). </td>\n</tr>\n<tr>\n  <td> <b>take</b>(<i>n</i>) </td>\n  <td> Return an array with the first <i>n</i> elements of the dataset. </td>\n</tr>\n<tr>\n  <td> <b>takeSample</b>(<i>withReplacement</i>, <i>num</i>, [<i>seed</i>]) </td>\n  <td> Return an array with a random sample of <i>num</i> elements of the dataset, with or without replacement, optionally pre-specifying a random number generator seed.</td>\n</tr>\n<tr>\n  <td> <b>takeOrdered</b>(<i>n</i>, <i>[ordering]</i>) </td>\n  <td> Return the first <i>n</i> elements of the RDD using either their natural order or a custom comparator. </td>\n</tr>\n<tr>\n  <td> <b>saveAsTextFile</b>(<i>path</i>) </td>\n  <td> Write the elements of the dataset as a text file (or set of text files) in a given directory in the local filesystem, HDFS or any other Hadoop-supported file system. Spark will call toString on each element to convert it to a line of text in the file. </td>\n</tr>\n<tr>\n  <td> <b>saveAsSequenceFile</b>(<i>path</i>) <br> (Java and Scala) </td>\n  <td> Write the elements of the dataset as a Hadoop SequenceFile in a given path in the local filesystem, HDFS or any other Hadoop-supported file system. This is available on RDDs of key-value pairs that implement Hadoop's Writable interface. In Scala, it is also\n   available on types that are implicitly convertible to Writable (Spark includes conversions for basic types like Int, Double, String, etc). </td>\n</tr>\n<tr>\n  <td> <b>saveAsObjectFile</b>(<i>path</i>) <br> (Java and Scala) </td>\n  <td> Write the elements of the dataset in a simple format using Java serialization, which can then be loaded using\n    <code>SparkContext.objectFile()</code>. </td>\n</tr>\n<tr>\n  <td> <b>countByKey</b>() <a name=\"CountByLink\"></a> </td>\n  <td> Only available on RDDs of type (K, V). Returns a hashmap of (K, Int) pairs with the count of each key. </td>\n</tr>\n<tr>\n  <td> <b>foreach</b>(<i>func</i>) </td>\n  <td> Run a function <i>func</i> on each element of the dataset. This is usually done for side effects such as updating an Accumulator or interacting with external storage systems.\n  <br><b>Note</b>: modifying variables other than Accumulators outside of the <code>foreach()</code> may result in undefined behavior. See Understanding closures for more details.</td>\n</tr>\n</tbody></table>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468062738_1391695737",
+      "id": "paragraph_1594468062738_1391695737",
+      "dateCreated": "2020-07-11T17:17:42+0530",
+      "dateStarted": "2020-07-11T17:18:21+0530",
+      "dateFinished": "2020-07-11T17:18:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:227"
+    },
+    {
+      "text": "%md\n\n### GETNUMPARTITIONS\n\n*Return the number of partitions in RDD*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:49+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>GETNUMPARTITIONS</h3>\n<p><em>Return the number of partitions in RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468101424_-1945850916",
+      "id": "paragraph_1594468101424_-1945850916",
+      "dateCreated": "2020-07-11T17:18:21+0530",
+      "dateStarted": "2020-07-11T17:19:14+0530",
+      "dateFinished": "2020-07-11T17:19:14+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:228"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(1,2,3), 2)\nval y = x.partitions.size\nval xOut = x.glom().collect()\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:19:19+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[55] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 2\n\u001b[1m\u001b[34mxOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Int]]\u001b[0m = Array(Array(1), Array(2, 3))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=26",
+              "$$hashKey": "object:4615"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468138218_691590850",
+      "id": "paragraph_1594468138218_691590850",
+      "dateCreated": "2020-07-11T17:18:58+0530",
+      "dateStarted": "2020-07-11T17:19:19+0530",
+      "dateFinished": "2020-07-11T17:19:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:229"
+    },
+    {
+      "text": "%md\n### COLLECT\n\n*Return all items in the RDD to the driver in a single list*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>COLLECT</h3>\n<p><em>Return all items in the RDD to the driver in a single list</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468159796_9365208",
+      "id": "paragraph_1594468159796_9365208",
+      "dateCreated": "2020-07-11T17:19:19+0530",
+      "dateStarted": "2020-07-11T17:20:33+0530",
+      "dateFinished": "2020-07-11T17:20:33+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:230"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(1,2,3), 2)\nval y = x.collect()\nval xOut = x.glom().collect()\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:20:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[I@63411c26\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[57] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mArray[Int]\u001b[0m = Array(1, 2, 3)\n\u001b[1m\u001b[34mxOut\u001b[0m: \u001b[1m\u001b[32mArray[Array[Int]]\u001b[0m = Array(Array(1), Array(2, 3))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=27",
+              "$$hashKey": "object:4701"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=28",
+              "$$hashKey": "object:4702"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468233795_1369442566",
+      "id": "paragraph_1594468233795_1369442566",
+      "dateCreated": "2020-07-11T17:20:33+0530",
+      "dateStarted": "2020-07-11T17:20:52+0530",
+      "dateFinished": "2020-07-11T17:20:52+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:231"
+    },
+    {
+      "text": "%md\n\n### REDUCE\n\n*Aggregate all the elements of the RDD by applying a user function pairwise to elements and partial results, and returns a result to the driver*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:44:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>REDUCE</h3>\n<p><em>Aggregate all the elements of the RDD by applying a user function pairwise to elements and partial results, and returns a result to the driver</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468252087_360321033",
+      "id": "paragraph_1594468252087_360321033",
+      "dateCreated": "2020-07-11T17:20:52+0530",
+      "dateStarted": "2020-07-11T17:21:23+0530",
+      "dateFinished": "2020-07-11T17:21:23+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:232"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(1,2,3,4))\nval y = x.reduce((a,b) => a+b)\nprintln(x.collect.mkString(\", \"))\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:21:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "1, 2, 3, 4\n10\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[59] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 10\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=29",
+              "$$hashKey": "object:4792"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=30",
+              "$$hashKey": "object:4793"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468283340_-604777486",
+      "id": "paragraph_1594468283340_-604777486",
+      "dateCreated": "2020-07-11T17:21:23+0530",
+      "dateStarted": "2020-07-11T17:21:39+0530",
+      "dateFinished": "2020-07-11T17:21:40+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:233"
+    },
+    {
+      "text": "%md\n\n### AGGREGATE\n\n*Aggregate all the elements of the RDD by:*\n*- applying a user function to combine elements with user-supplied objects,*\n*- then combining those user-defined results via a second user function,*\n*- and finally returning a result to the driver.*\n\n`aggregate(identity, seqOp, combOp)`\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:00+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>AGGREGATE</h3>\n<p><em>Aggregate all the elements of the RDD by:</em><br />\n<em>- applying a user function to combine elements with user-supplied objects,</em><br />\n<em>- then combining those user-defined results via a second user function,</em><br />\n<em>- and finally returning a result to the driver.</em></p>\n<p><code>aggregate(identity, seqOp, combOp)</code></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468299992_451714940",
+      "id": "paragraph_1594468299992_451714940",
+      "dateCreated": "2020-07-11T17:21:39+0530",
+      "dateStarted": "2020-07-11T17:22:51+0530",
+      "dateFinished": "2020-07-11T17:22:51+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:234"
+    },
+    {
+      "text": "%spark\ndef seqOp = (data:(Array[Int], Int), item:Int) => (data._1 :+ item, data._2 + item)\ndef combOp = (d1:(Array[Int], Int), d2:(Array[Int], Int)) => (d1._1.union(d2._1), d1._2 + d2._2)\nval x = sc.parallelize(Array(1,2,3,4))\nval y = x.aggregate((Array[Int](), 0))(seqOp, combOp)\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:23:31+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "([I@7b1e4615,10)\n\u001b[1m\u001b[34mseqOp\u001b[0m: \u001b[1m\u001b[32m((Array[Int], Int), Int) => (Array[Int], Int)\u001b[0m\n\u001b[1m\u001b[34mcombOp\u001b[0m: \u001b[1m\u001b[32m((Array[Int], Int), (Array[Int], Int)) => (Array[Int], Int)\u001b[0m\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[60] at parallelize at <console>:31\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32m(Array[Int], Int)\u001b[0m = (Array(1, 2, 3, 4),10)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=31",
+              "$$hashKey": "object:4883"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468354913_608698639",
+      "id": "paragraph_1594468354913_608698639",
+      "dateCreated": "2020-07-11T17:22:34+0530",
+      "dateStarted": "2020-07-11T17:23:31+0530",
+      "dateFinished": "2020-07-11T17:23:33+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:235"
+    },
+    {
+      "text": "%md\n\n### MAX\n\n*Return the maximum item in the RDD*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:04+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>MAX</h3>\n<p><em>Return the maximum item in the RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468411130_1719760155",
+      "id": "paragraph_1594468411130_1719760155",
+      "dateCreated": "2020-07-11T17:23:31+0530",
+      "dateStarted": "2020-07-11T17:24:07+0530",
+      "dateFinished": "2020-07-11T17:24:07+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:236"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(2,4,1))\nval y = x.max\nprintln(x.collect().mkString(\", \"))\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:24:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2, 4, 1\n4\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[61] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 4\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=32",
+              "$$hashKey": "object:4969"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=33",
+              "$$hashKey": "object:4970"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468447699_-2081510563",
+      "id": "paragraph_1594468447699_-2081510563",
+      "dateCreated": "2020-07-11T17:24:07+0530",
+      "dateStarted": "2020-07-11T17:24:28+0530",
+      "dateFinished": "2020-07-11T17:24:29+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:237"
+    },
+    {
+      "text": "%md\n\n### SUM\n\n*Return the sum of the items in the RDD*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>SUM</h3>\n<p><em>Return the sum of the items in the RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468468040_343198136",
+      "id": "paragraph_1594468468040_343198136",
+      "dateCreated": "2020-07-11T17:24:28+0530",
+      "dateStarted": "2020-07-11T17:25:04+0530",
+      "dateFinished": "2020-07-11T17:25:04+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:238"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(2,4,1))\nval y = x.sum\nprintln(x.collect().mkString(\", \"))\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:25:19+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2, 4, 1\n7.0\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[62] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 7.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=34",
+              "$$hashKey": "object:5060"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=35",
+              "$$hashKey": "object:5061"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468504981_-141513384",
+      "id": "paragraph_1594468504981_-141513384",
+      "dateCreated": "2020-07-11T17:25:04+0530",
+      "dateStarted": "2020-07-11T17:25:19+0530",
+      "dateFinished": "2020-07-11T17:25:20+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:239"
+    },
+    {
+      "text": "%md\n\n### MEAN\n\n*Return the mean of the items in the RDD*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:10+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>MEAN</h3>\n<p><em>Return the mean of the items in the RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468519618_-510695825",
+      "id": "paragraph_1594468519618_-510695825",
+      "dateCreated": "2020-07-11T17:25:19+0530",
+      "dateStarted": "2020-07-11T17:26:39+0530",
+      "dateFinished": "2020-07-11T17:26:39+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:240"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(2,4,1))\nval y = x.mean\nprintln(x.collect().mkString(\", \"))\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:26:43+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2, 4, 1\n2.3333333333333335\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[64] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 2.3333333333333335\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=36",
+              "$$hashKey": "object:5151"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=37",
+              "$$hashKey": "object:5152"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468547383_-1299374013",
+      "id": "paragraph_1594468547383_-1299374013",
+      "dateCreated": "2020-07-11T17:25:47+0530",
+      "dateStarted": "2020-07-11T17:26:43+0530",
+      "dateFinished": "2020-07-11T17:26:44+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:241"
+    },
+    {
+      "text": "%md\n\n### STDEV\n\n*Return the standard deviation of the items in the RDD*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>STDEV</h3>\n<p><em>Return the standard deviation of the items in the RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468603428_-761506356",
+      "id": "paragraph_1594468603428_-761506356",
+      "dateCreated": "2020-07-11T17:26:43+0530",
+      "dateStarted": "2020-07-11T17:27:54+0530",
+      "dateFinished": "2020-07-11T17:27:54+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:242"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(2,4,1))\nval y = x.stdev\nprintln(x.collect().mkString(\", \"))\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:27:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2, 4, 1\n1.247219128924647\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[67] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 1.247219128924647\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=38",
+              "$$hashKey": "object:5242"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=39",
+              "$$hashKey": "object:5243"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468644060_-746731582",
+      "id": "paragraph_1594468644060_-746731582",
+      "dateCreated": "2020-07-11T17:27:24+0530",
+      "dateStarted": "2020-07-11T17:27:36+0530",
+      "dateFinished": "2020-07-11T17:27:37+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:243"
+    },
+    {
+      "text": "%md\n\n### COUNTBYKEY\n\n*Return a map of keys and counts of their occurrences in the RDD*\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:15+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>COUNTBYKEY</h3>\n<p><em>Return a map of keys and counts of their occurrences in the RDD</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594468656312_787716768",
+      "id": "paragraph_1594468656312_787716768",
+      "dateCreated": "2020-07-11T17:27:36+0530",
+      "dateStarted": "2020-07-11T17:41:05+0530",
+      "dateFinished": "2020-07-11T17:41:05+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:244"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(('J',\"James\"),('F',\"Fred\"),('A',\"Anna\"),('J',\"John\")))\nval y = x.countByKey()\nprintln(y)\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:41:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Map(A -> 1, J -> 2, F -> 1)\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Char, String)]\u001b[0m = ParallelCollectionRDD[70] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32mscala.collection.Map[Char,Long]\u001b[0m = Map(A -> 1, J -> 2, F -> 1)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=40",
+              "$$hashKey": "object:5333"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594469465794_-1592112757",
+      "id": "paragraph_1594469465794_-1592112757",
+      "dateCreated": "2020-07-11T17:41:05+0530",
+      "dateStarted": "2020-07-11T17:41:25+0530",
+      "dateFinished": "2020-07-11T17:41:27+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:245"
+    },
+    {
+      "text": "%md\n\n### SAVEASTEXTFILE\n\n*Save the RDD to the filesystem indicated in the path*\n\n`saveAsTextFile(path, compressionCodecClass=None)`\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>SAVEASTEXTFILE</h3>\n<p><em>Save the RDD to the filesystem indicated in the path</em></p>\n<p><code>saveAsTextFile(path, compressionCodecClass=None)</code></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594469485937_1323499794",
+      "id": "paragraph_1594469485937_1323499794",
+      "dateCreated": "2020-07-11T17:41:25+0530",
+      "dateStarted": "2020-07-11T17:42:07+0530",
+      "dateFinished": "2020-07-11T17:42:07+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:246"
+    },
+    {
+      "text": "%spark\n\nval x = sc.parallelize(Array(2,4,1))\nx.saveAsTextFile(\"/temp/demo\")\nval y = sc.textFile(\"/temp/demo\")\nprintln(y.collect().mkString(\", \"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:45:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=41",
+              "$$hashKey": "object:6671"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=42",
+              "$$hashKey": "object:6672"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594469527496_1904068304",
+      "id": "paragraph_1594469527496_1904068304",
+      "dateCreated": "2020-07-11T17:42:07+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:247",
+      "dateFinished": "2020-07-11T17:45:53+0530",
+      "dateStarted": "2020-07-11T17:45:52+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2, 4, 1\n\u001b[1m\u001b[34mx\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[Int]\u001b[0m = ParallelCollectionRDD[73] at parallelize at <console>:29\n\u001b[1m\u001b[34my\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = /temp/demo MapPartitionsRDD[76] at textFile at <console>:31\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n---\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T17:46:47+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594469789470_1630479396",
+      "id": "paragraph_1594469789470_1630479396",
+      "dateCreated": "2020-07-11T17:46:29+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6688",
+      "dateFinished": "2020-07-11T17:46:35+0530",
+      "dateStarted": "2020-07-11T17:46:35+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<hr />\n\n</div>"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "Spark RDDs",
+  "id": "2FD53FX4W",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/Spark RDDs"
+}
