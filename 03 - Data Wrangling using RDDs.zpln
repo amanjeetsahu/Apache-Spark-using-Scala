@@ -1,0 +1,2384 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n![Spark Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:00:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png\" alt=\"Spark Image\" /></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594470568211_1048219954",
+      "id": "paragraph_1594470568211_1048219954",
+      "dateCreated": "2020-07-11T17:59:28+0530",
+      "dateStarted": "2020-07-11T18:00:18+0530",
+      "dateFinished": "2020-07-11T18:00:18+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2406"
+    },
+    {
+      "text": "%md\n# Data Wrangling using RDDs",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:00:37+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Data Wrangling using RDDs</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594470618347_-1900757693",
+      "id": "paragraph_1594470618347_-1900757693",
+      "dateCreated": "2020-07-11T18:00:18+0530",
+      "dateStarted": "2020-07-11T18:00:34+0530",
+      "dateFinished": "2020-07-11T18:00:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2407"
+    },
+    {
+      "text": "%spark\nsc",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:19:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres23\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.SparkContext\u001b[0m = org.apache.spark.SparkContext@105413d2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594471092024_-1785554297",
+      "id": "paragraph_1594471092024_-1785554297",
+      "dateCreated": "2020-07-11T18:08:12+0530",
+      "dateStarted": "2020-07-11T18:19:42+0530",
+      "dateFinished": "2020-07-11T18:19:42+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2408"
+    },
+    {
+      "text": "%spark\nval ratingsRDD = sc.textFile(\"data/ml-1m/ratings.dat\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:21:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mratingsRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = data/ml-1m/ratings.dat MapPartitionsRDD[80] at textFile at <console>:34\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594471782450_-211589672",
+      "id": "paragraph_1594471782450_-211589672",
+      "dateCreated": "2020-07-11T18:19:42+0530",
+      "dateStarted": "2020-07-11T18:21:25+0530",
+      "dateFinished": "2020-07-11T18:21:25+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2409"
+    },
+    {
+      "text": "%spark\nratingsRDD.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:21:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres24\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(1::1193::5::978300760, 1::661::3::978302109, 1::914::3::978301968, 1::3408::4::978300275, 1::2355::5::978824291)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=43",
+              "$$hashKey": "object:3451"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594471865242_-1113067307",
+      "id": "paragraph_1594471865242_-1113067307",
+      "dateCreated": "2020-07-11T18:21:05+0530",
+      "dateStarted": "2020-07-11T18:21:36+0530",
+      "dateFinished": "2020-07-11T18:21:37+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2410"
+    },
+    {
+      "text": "%md\n*Thats it We have read the Text file and we are printing out the first 5 rows using `take action` and make sure you don't use a collect action here because that will printout the whole.*\n\n*Now if you check the readme file provided in the Dataset these are the columns in the Data*\n\n>*UserID::MovieID::Rating::Timestamp*\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:22:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><em>Thats it We have read the Text file and we are printing out the first 5 rows using <code>take action</code> and make sure you don&rsquo;t use a collect action here because that will printout the whole.</em></p>\n<p><em>Now if you check the readme file provided in the Dataset these are the columns in the Data</em></p>\n<blockquote>\n<p><em>UserID::MovieID::Rating::Timestamp</em></p>\n</blockquote>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594471896883_1263250482",
+      "id": "paragraph_1594471896883_1263250482",
+      "dateCreated": "2020-07-11T18:21:36+0530",
+      "dateStarted": "2020-07-11T18:22:18+0530",
+      "dateFinished": "2020-07-11T18:22:18+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2411"
+    },
+    {
+      "text": "%spark\nval ratings = ratingsRDD.map(x => x.toString().split(\"::\")(2))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:25:59+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mratings\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = MapPartitionsRDD[81] at map at <console>:36\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594471938484_-1146029368",
+      "id": "paragraph_1594471938484_-1146029368",
+      "dateCreated": "2020-07-11T18:22:18+0530",
+      "dateStarted": "2020-07-11T18:25:59+0530",
+      "dateFinished": "2020-07-11T18:26:01+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2412"
+    },
+    {
+      "text": "%spark\nratings.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:26:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres25\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(5, 3, 3, 4, 5)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=44",
+              "$$hashKey": "object:3577"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472143201_-75327330",
+      "id": "paragraph_1594472143201_-75327330",
+      "dateCreated": "2020-07-11T18:25:43+0530",
+      "dateStarted": "2020-07-11T18:26:14+0530",
+      "dateFinished": "2020-07-11T18:26:15+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2413"
+    },
+    {
+      "text": "%spark\nval result = ratings.countByValue()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:26:43+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mresult\u001b[0m: \u001b[1m\u001b[32mscala.collection.Map[String,Long]\u001b[0m = Map(4 -> 348971, 5 -> 226310, 1 -> 56174, 2 -> 107557, 3 -> 261197)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=45",
+              "$$hashKey": "object:3623"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472174993_-1364610146",
+      "id": "paragraph_1594472174993_-1364610146",
+      "dateCreated": "2020-07-11T18:26:14+0530",
+      "dateStarted": "2020-07-11T18:26:43+0530",
+      "dateFinished": "2020-07-11T18:26:50+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2414"
+    },
+    {
+      "text": "%spark\nval sortedResults = result.toSeq.sortBy(_._1)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:27:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34msortedResults\u001b[0m: \u001b[1m\u001b[32mSeq[(String, Long)]\u001b[0m = ArrayBuffer((1,56174), (2,107557), (3,261197), (4,348971), (5,226310))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472203772_1856866414",
+      "id": "paragraph_1594472203772_1856866414",
+      "dateCreated": "2020-07-11T18:26:43+0530",
+      "dateStarted": "2020-07-11T18:27:52+0530",
+      "dateFinished": "2020-07-11T18:27:54+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2415"
+    },
+    {
+      "text": "%spark\nsortedResults.foreach(println)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:28:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(1,56174)\n(2,107557)\n(3,261197)\n(4,348971)\n(5,226310)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472266765_-1823496467",
+      "id": "paragraph_1594472266765_-1823496467",
+      "dateCreated": "2020-07-11T18:27:46+0530",
+      "dateStarted": "2020-07-11T18:28:16+0530",
+      "dateFinished": "2020-07-11T18:28:16+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2416"
+    },
+    {
+      "text": "%md\n*Lets look at another example and check which are the most rated movies.*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:31:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><em>Lets look at another example and check which are the most rated movies.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472296083_1183293315",
+      "id": "paragraph_1594472296083_1183293315",
+      "dateCreated": "2020-07-11T18:28:16+0530",
+      "dateStarted": "2020-07-11T18:28:52+0530",
+      "dateFinished": "2020-07-11T18:28:52+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2417"
+    },
+    {
+      "text": "%spark\nval movies = ratingsRDD.map(x => (x.split(\"::\")(1).toInt, 1))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:32:29+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmovies\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = MapPartitionsRDD[86] at map at <console>:36\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472332778_529141405",
+      "id": "paragraph_1594472332778_529141405",
+      "dateCreated": "2020-07-11T18:28:52+0530",
+      "dateStarted": "2020-07-11T18:32:29+0530",
+      "dateFinished": "2020-07-11T18:32:30+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2418"
+    },
+    {
+      "text": "%spark\n\n// Map to (movieID, 1) tuples\nmovies.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:32:53+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres28\u001b[0m: \u001b[1m\u001b[32mArray[(Int, Int)]\u001b[0m = Array((1193,1), (661,1), (914,1), (3408,1), (2355,1))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=47",
+              "$$hashKey": "object:3829"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472491191_1741790901",
+      "id": "paragraph_1594472491191_1741790901",
+      "dateCreated": "2020-07-11T18:31:31+0530",
+      "dateStarted": "2020-07-11T18:32:34+0530",
+      "dateFinished": "2020-07-11T18:32:35+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2419"
+    },
+    {
+      "text": "%spark\n\n// Count up all the 1's for each movie\nval movieCounts = movies.reduceByKey( (x, y) => x + y )",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:33:15+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmovieCounts\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = ShuffledRDD[87] at reduceByKey at <console>:38\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472511162_1364554651",
+      "id": "paragraph_1594472511162_1364554651",
+      "dateCreated": "2020-07-11T18:31:51+0530",
+      "dateStarted": "2020-07-11T18:33:15+0530",
+      "dateFinished": "2020-07-11T18:33:16+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2420"
+    },
+    {
+      "text": "%spark\n\nmovieCounts.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:33:31+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres29\u001b[0m: \u001b[1m\u001b[32mArray[(Int, Int)]\u001b[0m = Array((3586,28), (1084,686), (3702,1066), (3007,295), (667,47))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=48",
+              "$$hashKey": "object:3915"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472595631_1572667363",
+      "id": "paragraph_1594472595631_1572667363",
+      "dateCreated": "2020-07-11T18:33:15+0530",
+      "dateStarted": "2020-07-11T18:33:31+0530",
+      "dateFinished": "2020-07-11T18:33:37+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2421"
+    },
+    {
+      "text": "%spark\n\n// Count up all the 1's for each movie\nval movieCounts = movies.reduceByKey( (x, y) => x + y )",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:33:59+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmovieCounts\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = ShuffledRDD[88] at reduceByKey at <console>:38\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472611402_-945250041",
+      "id": "paragraph_1594472611402_-945250041",
+      "dateCreated": "2020-07-11T18:33:31+0530",
+      "dateStarted": "2020-07-11T18:33:59+0530",
+      "dateFinished": "2020-07-11T18:34:00+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2422"
+    },
+    {
+      "text": "%spark\n// Flip (movieID, count) to (count, movieID)\nval flipped = movieCounts.map( x => (x._2, x._1) )",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:34:56+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mflipped\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = MapPartitionsRDD[89] at map at <console>:37\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472676292_-1180775823",
+      "id": "paragraph_1594472676292_-1180775823",
+      "dateCreated": "2020-07-11T18:34:36+0530",
+      "dateStarted": "2020-07-11T18:34:56+0530",
+      "dateFinished": "2020-07-11T18:34:57+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2423"
+    },
+    {
+      "text": "%spark\n// Sort\nval sortedMovies = flipped.sortByKey()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:35:12+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34msortedMovies\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = ShuffledRDD[90] at sortByKey at <console>:35\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472639364_-1282718597",
+      "id": "paragraph_1594472639364_-1282718597",
+      "dateCreated": "2020-07-11T18:33:59+0530",
+      "dateStarted": "2020-07-11T18:35:12+0530",
+      "dateFinished": "2020-07-11T18:35:13+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2424"
+    },
+    {
+      "text": "%spark\n// Collect and print results\nval results = sortedMovies.collect()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:35:38+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mresults\u001b[0m: \u001b[1m\u001b[32mArray[(Int, Int)]\u001b[0m = Array((1,2909), (1,2235), (1,3722), (1,3164), (1,601), (1,3323), (1,3202), (1,3220), (1,3172), (1,396), (1,3151), (1,642), (1,3209), (1,1908), (1,1316), (1,1579), (1,2845), (1,1709), (1,763), (1,3458), (1,872), (1,3312), (1,3881), (1,1832), (1,3460), (1,641), (1,3277), (1,3297), (1,655), (1,684), (1,3647), (1,1118), (1,3656), (1,2619), (1,133), (1,3229), (1,226), (1,758), (1,1386), (1,1714), (1,127), (1,651), (1,1843), (1,1470), (1,843), (1,311), (1,3842), (1,3530), (1,2484), (1,865), (1,142), (1,1764), (1,2277), (1,576), (1,3382), (1,2254), (1,774), (1,579), (1,2563), (1,402), (1,1115), (1,3065), (1,624), (1,644), (1,717), (1,2592), (1,1820), (1,3607), (1,868), (1,792), (1,989), (1,1830), (1,1630), (1,139), (1,658), (1,3321), (1,39..."
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=49",
+              "$$hashKey": "object:4081"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472663052_-1108126209",
+      "id": "paragraph_1594472663052_-1108126209",
+      "dateCreated": "2020-07-11T18:34:23+0530",
+      "dateStarted": "2020-07-11T18:35:38+0530",
+      "dateFinished": "2020-07-11T18:35:44+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2425"
+    },
+    {
+      "text": "%spark\n results.foreach(println)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:36:15+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(1,2909)\n(1,2235)\n(1,3722)\n(1,3164)\n(1,601)\n(1,3323)\n(1,3202)\n(1,3220)\n(1,3172)\n(1,396)\n(1,3151)\n(1,642)\n(1,3209)\n(1,1908)\n(1,1316)\n(1,1579)\n(1,2845)\n(1,1709)\n(1,763)\n(1,3458)\n(1,872)\n(1,3312)\n(1,3881)\n(1,1832)\n(1,3460)\n(1,641)\n(1,3277)\n(1,3297)\n(1,655)\n(1,684)\n(1,3647)\n(1,1118)\n(1,3656)\n(1,2619)\n(1,133)\n(1,3229)\n(1,226)\n(1,758)\n(1,1386)\n(1,1714)\n(1,127)\n(1,651)\n(1,1843)\n(1,1470)\n(1,843)\n(1,311)\n(1,3842)\n(1,3530)\n(1,2484)\n(1,865)\n(1,142)\n(1,1764)\n(1,2277)\n(1,576)\n(1,3382)\n(1,2254)\n(1,774)\n(1,579)\n(1,2563)\n(1,402)\n(1,1115)\n(1,3065)\n(1,624)\n(1,644)\n(1,717)\n(1,2592)\n(1,1820)\n(1,3607)\n(1,868)\n(1,792)\n(1,989)\n(1,1830)\n(1,1630)\n(1,139)\n(1,658)\n(1,3321)\n(1,3904)\n(1,2438)\n(1,1915)\n(1,398)\n(1,1815)\n(1,3779)\n(1,3315)\n(1,2584)\n(1,701)\n(1,814)\n(1,1852)\n(1,2703)\n(1,3890)\n(1,826)\n(1,3291)\n(1,584)\n(1,1724)\n(1,1430)\n(1,1165)\n(1,878)\n(1,3280)\n(1,2213)\n(1,2308)\n(1,2742)\n(1,2217)\n(1,545)\n(1,3290)\n(1,2556)\n(1,2214)\n(1,730)\n(1,286)\n(1,2218)\n(1,2039)\n(1,859)\n(1,2226)\n(1,3376)\n(1,790)\n(1,3237)\n(2,3517)\n(2,2251)\n(2,2591)\n(2,1133)\n(2,1795)\n(2,3337)\n(2,679)\n(2,1139)\n(2,1070)\n(2,3228)\n(2,3651)\n(2,1062)\n(2,3413)\n(2,3888)\n(2,3057)\n(2,895)\n(2,1434)\n(2,130)\n(2,2895)\n(2,1773)\n(2,2309)\n(2,134)\n(2,3377)\n(2,1134)\n(2,1360)\n(2,3233)\n(2,827)\n(2,3294)\n(2,1142)\n(2,672)\n(2,3131)\n(2,557)\n(2,3687)\n(2,607)\n(2,1868)\n(2,712)\n(2,884)\n(2,3212)\n(2,3828)\n(2,3601)\n(2,2258)\n(2,582)\n(2,889)\n(2,789)\n(2,3485)\n(2,3336)\n(2,2198)\n(2,791)\n(2,1555)\n(2,821)\n(2,3236)\n(2,977)\n(2,1842)\n(2,3542)\n(2,3493)\n(2,975)\n(2,401)\n(2,2343)\n(2,3353)\n(2,3305)\n(2,2480)\n(2,1787)\n(2,706)\n(2,192)\n(2,1851)\n(2,572)\n(2,1548)\n(2,1905)\n(2,138)\n(2,530)\n(2,1528)\n(2,1145)\n(2,591)\n(2,3381)\n(2,2811)\n(2,3748)\n(2,690)\n(2,439)\n(2,660)\n(2,3085)\n(2,1364)\n(2,1510)\n(2,1558)\n(2,887)\n(2,657)\n(2,578)\n(2,3295)\n(2,3084)\n(2,2543)\n(3,734)\n(3,120)\n(3,3380)\n(3,3575)\n(3,3762)\n(3,853)\n(3,1861)\n(3,634)\n(3,3187)\n(3,3899)\n(3,3621)\n(3,2869)\n(3,3123)\n(3,729)\n(3,1315)\n(3,3407)\n(3,3800)\n(3,2510)\n(3,3603)\n(3,3216)\n(3,3522)\n(3,2821)\n(3,796)\n(3,744)\n(3,3631)\n(3,787)\n(3,643)\n(3,3482)\n(3,3119)\n(3,666)\n(3,1039)\n(3,687)\n(3,1107)\n(3,3373)\n(3,3242)\n(3,623)\n(3,3772)\n(3,3126)\n(3,3136)\n(3,3352)\n(3,2223)\n(3,2576)\n(4,981)\n(4,3378)\n(4,3887)\n(4,3472)\n(4,757)\n(4,756)\n(4,682)\n(4,1149)\n(4,33)\n(4,3595)\n(4,2127)\n(4,3314)\n(4,3205)\n(4,2299)\n(4,3609)\n(4,2358)\n(4,2172)\n(4,776)\n(4,2685)\n(4,2999)\n(4,749)\n(4,2823)\n(4,823)\n(4,834)\n(4,2578)\n(4,1871)\n(4,820)\n(4,3322)\n(4,1877)\n(4,2825)\n(4,2887)\n(4,696)\n(4,1102)\n(4,1561)\n(4,985)\n(4,2960)\n(4,1553)\n(4,404)\n(4,2623)\n(4,1652)\n(4,2955)\n(4,3876)\n(4,3288)\n(4,1886)\n(4,67)\n(5,1369)\n(5,2930)\n(5,1930)\n(5,1622)\n(5,2679)\n(5,2538)\n(5,3346)\n(5,3184)\n(5,698)\n(5,167)\n(5,980)\n(5,3232)\n(5,3875)\n(5,1901)\n(5,1433)\n(5,1174)\n(5,3652)\n(5,1741)\n(5,2934)\n(5,1040)\n(5,1098)\n(5,3293)\n(5,559)\n(5,3207)\n(5,2557)\n(5,1796)\n(5,2444)\n(5,2777)\n(5,1471)\n(5,2233)\n(5,2608)\n(5,2631)\n(5,1636)\n(5,1664)\n(5,3245)\n(5,3443)\n(5,1071)\n(5,1164)\n(5,264)\n(6,2602)\n(6,966)\n(6,2242)\n(6,1534)\n(6,1685)\n(6,3657)\n(6,3292)\n(6,3166)\n(6,3303)\n(6,815)\n(6,1538)\n(6,90)\n(6,1384)\n(6,3866)\n(6,3056)\n(6,1903)\n(6,732)\n(6,1519)\n(6,1160)\n(6,1532)\n(6,98)\n(6,3666)\n(6,3778)\n(6,972)\n(6,3001)\n(6,310)\n(6,2833)\n(7,2192)\n(7,3533)\n(7,2304)\n(7,3891)\n(7,847)\n(7,1420)\n(7,2760)\n(7,1543)\n(7,2487)\n(7,1659)\n(7,630)\n(7,1138)\n(7,2765)\n(7,2061)\n(7,2911)\n(7,844)\n(7,1514)\n(7,1522)\n(7,2673)\n(7,1718)\n(7,3818)\n(7,1890)\n(7,2244)\n(7,1486)\n(7,2850)\n(7,1849)\n(7,1720)\n(7,2705)\n(7,108)\n(7,3027)\n(7,1311)\n(8,1780)\n(8,406)\n(8,874)\n(8,2200)\n(8,2332)\n(8,560)\n(8,2234)\n(8,3523)\n(8,1026)\n(8,3641)\n(8,59)\n(8,3003)\n(8,136)\n(8,37)\n(8,2063)\n(8,3905)\n(8,3026)\n(8,664)\n(8,2207)\n(8,2814)\n(8,1782)\n(8,854)\n(8,53)\n(8,2831)\n(8,2464)\n(8,1002)\n(8,3154)\n(8,3592)\n(8,526)\n(8,2129)\n(8,2317)\n(8,598)\n(8,1444)\n(9,755)\n(9,1567)\n(9,3140)\n(9,614)\n(9,775)\n(9,3636)\n(9,652)\n(9,726)\n(9,3648)\n(9,3944)\n(9,2156)\n(9,3803)\n(9,2984)\n(9,2562)\n(9,618)\n(9,993)\n(9,2486)\n(9,3149)\n(9,2933)\n(9,1891)\n(9,2503)\n(9,56)\n(9,1436)\n(9,3410)\n(9,2569)\n(9,811)\n(10,3012)\n(10,1899)\n(10,860)\n(10,2209)\n(10,244)\n(10,2191)\n(10,3282)\n(10,2855)\n(10,2962)\n(10,703)\n(10,2931)\n(10,385)\n(10,793)\n(10,1749)\n(10,1181)\n(10,2839)\n(10,3463)\n(10,3892)\n(10,863)\n(10,2994)\n(10,2219)\n(10,2675)\n(10,243)\n(10,3570)\n(10,1872)\n(10,3486)\n(10,2783)\n(11,2281)\n(11,245)\n(11,2658)\n(11,2632)\n(11,1058)\n(11,2197)\n(11,1539)\n(11,1383)\n(11,1743)\n(11,2914)\n(11,1038)\n(11,962)\n(11,3777)\n(11,2221)\n(11,1864)\n(11,1675)\n(11,1878)\n(11,3116)\n(11,939)\n(11,3215)\n(11,2342)\n(11,2830)\n(11,1531)\n(11,114)\n(11,2854)\n(11,2695)\n(12,1117)\n(12,106)\n(12,128)\n(12,2754)\n(12,2892)\n(12,3867)\n(12,1817)\n(12,200)\n(12,3335)\n(12,2545)\n(12,2326)\n(12,3058)\n(12,925)\n(12,3495)\n(12,2964)\n(12,397)\n(12,769)\n(12,3437)\n(12,2215)\n(12,864)\n(12,75)\n(12,3640)\n(12,3878)\n(13,3853)\n(13,958)\n(13,3796)\n(13,1715)\n(13,96)\n(13,3563)\n(13,1811)\n(13,3419)\n(13,228)\n(13,754)\n(13,2768)\n(13,1793)\n(13,411)\n(13,2636)\n(13,561)\n(13,2466)\n(13,632)\n(13,3850)\n(13,1313)\n(13,1850)\n(13,129)\n(13,119)\n(13,1121)\n(13,3642)\n(13,137)\n(13,1502)\n(13,566)\n(13,2998)\n(13,2776)\n(13,503)\n(14,1656)\n(14,2824)\n(14,2079)\n(14,1153)\n(14,124)\n(14,3492)\n(14,2773)\n(14,1349)\n(14,2246)\n(14,1898)\n(14,1450)\n(14,1575)\n(14,2627)\n(14,807)\n(14,1423)\n(14,3025)\n(14,567)\n(14,212)\n(14,3581)\n(14,2775)\n(15,3351)\n(15,3374)\n(15,2008)\n(15,3283)\n(15,681)\n(15,2981)\n(15,2101)\n(15,751)\n(15,3883)\n(15,1574)\n(15,1520)\n(15,3611)\n(15,2415)\n(15,1989)\n(15,2298)\n(15,3940)\n(15,2388)\n(15,1154)\n(15,189)\n(16,1144)\n(16,3137)\n(16,3474)\n(16,3933)\n(16,3625)\n(16,1504)\n(16,1990)\n(16,974)\n(16,131)\n(16,3050)\n(16,3333)\n(16,3860)\n(16,3817)\n(16,649)\n(17,2904)\n(17,3490)\n(17,1651)\n(17,2257)\n(17,2963)\n(17,3574)\n(17,1493)\n(17,617)\n(17,3139)\n(17,1565)\n(17,197)\n(17,3644)\n(17,2185)\n(17,2923)\n(17,2534)\n(17,375)\n(17,1853)\n(17,1170)\n(17,1116)\n(17,2740)\n(17,1807)\n(17,563)\n(17,2913)\n(17,3757)\n(18,2175)\n(18,3121)\n(18,2509)\n(18,3645)\n(18,2056)\n(18,251)\n(18,2544)\n(18,3465)\n(18,146)\n(18,2834)\n(18,1168)\n(18,3880)\n(18,1501)\n(18,283)\n(18,771)\n(18,1087)\n(18,394)\n(18,3047)\n(19,359)\n(19,2452)\n(19,638)\n(19,3585)\n(19,178)\n(19,1494)\n(19,336)\n(19,3161)\n(19,1163)\n(19,1549)\n(19,1055)\n(19,2350)\n(19,626)\n(19,1770)\n(19,2512)\n(19,2211)\n(20,633)\n(20,2809)\n(20,960)\n(20,3092)\n(20,3775)\n(20,1692)\n(20,3637)\n(20,2201)\n(20,3344)\n(20,992)\n(20,2164)\n(20,1662)\n(20,3862)\n(20,389)\n(20,1657)\n(20,1412)\n(20,3313)\n(20,2157)\n(20,1632)\n(20,3848)\n(20,831)\n(20,2691)\n(20,645)\n(20,1666)\n(20,2158)\n(20,3854)\n(20,2897)\n(20,2865)\n(20,2292)\n(20,1000)\n(20,1846)\n(20,3464)\n(21,2837)\n(21,1933)\n(21,3832)\n(21,3162)\n(21,1822)\n(21,1509)\n(21,1437)\n(21,287)\n(21,3532)\n(21,573)\n(21,876)\n(21,331)\n(21,84)\n(21,1893)\n(21,3670)\n(21,2074)\n(21,3894)\n(21,1335)\n(21,2227)\n(21,2189)\n(21,525)\n(22,3488)\n(22,219)\n(22,1671)\n(22,3749)\n(22,1728)\n(22,1879)\n(22,2715)\n(22,1421)\n(22,3941)\n(22,2047)\n(22,2800)\n(22,1324)\n(22,1455)\n(22,2873)\n(23,1325)\n(23,961)\n(23,3345)\n(23,148)\n(23,3415)\n(23,1426)\n(23,669)\n(23,967)\n(23,1570)\n(23,3935)\n(23,3402)\n(23,1067)\n(23,570)\n(23,1076)\n(23,298)\n(23,2397)\n(23,2737)\n(23,2843)\n(23,1725)\n(24,274)\n(24,767)\n(24,2256)\n(24,3756)\n(24,877)\n(24,3306)\n(24,3309)\n(24,478)\n(24,867)\n(24,3874)\n(24,3902)\n(24,1511)\n(24,1406)\n(24,430)\n(24,3473)\n(24,1679)\n(24,1458)\n(24,2743)\n(24,3192)\n(24,1533)\n(24,1857)\n(24,3721)\n(24,3776)\n(25,2586)\n(25,2785)\n(25,3171)\n(25,2128)\n(25,841)\n(25,1814)\n(25,392)\n(25,2293)\n(25,1496)\n(25,3847)\n(25,659)\n(25,2767)\n(25,2483)\n(25,1328)\n(25,2305)\n(25,2678)\n(25,3106)\n(25,3830)\n(25,3349)\n(26,3568)\n(26,3885)\n(26,3665)\n(26,2441)\n(26,3924)\n(26,1767)\n(26,184)\n(26,1572)\n(26,2187)\n(26,3573)\n(26,2674)\n(26,1880)\n(26,1063)\n(26,3562)\n(26,554)\n(26,3939)\n(26,1490)\n(27,3938)\n(27,3338)\n(27,3931)\n(27,2196)\n(27,1477)\n(27,1874)\n(27,3329)\n(27,702)\n(27,2426)\n(27,3531)\n(27,1583)\n(27,2559)\n(27,2494)\n(27,722)\n(27,2339)\n(27,49)\n(28,3586)\n(28,2493)\n(28,263)\n(28,1585)\n(28,38)\n(28,997)\n(28,3845)\n(28,3761)\n(28,2853)\n(28,214)\n(28,2864)\n(28,2666)\n(28,583)\n(28,3319)\n(28,2945)\n(28,3934)\n(28,297)\n(28,2896)\n(28,3942)\n(28,3540)\n(28,824)\n(28,2577)\n(28,220)\n(28,716)\n(28,1696)\n(28,462)\n(29,3400)\n(29,418)\n(29,3797)\n(29,3223)\n(29,484)\n(29,3122)\n(29,1844)\n(29,3221)\n(29,2813)\n(29,2778)\n(29,241)\n(29,3781)\n(29,1928)\n(29,295)\n(29,2579)\n(29,1312)\n(29,3580)\n(29,2086)\n(29,1152)\n(29,183)\n(30,685)\n(30,1755)\n(30,600)\n(30,202)\n(30,3222)\n(30,250)\n(30,386)\n(30,3587)\n(30,2849)\n(30,1902)\n(30,850)\n(30,2482)\n(30,40)\n(30,2131)\n(30,1613)\n(30,3559)\n(30,3612)\n(30,3843)\n(31,2938)\n(31,862)\n(31,341)\n(31,2635)\n(31,2992)\n(31,1151)\n(31,1529)\n(31,1114)\n(31,746)\n(31,2755)\n(31,2758)\n(31,447)\n(31,3673)\n(31,443)\n(32,1596)\n(32,1906)\n(32,238)\n(32,2449)\n(32,1322)\n(32,3906)\n(32,2756)\n(32,2727)\n(32,1695)\n(32,3403)\n(32,3520)\n(32,3218)\n(32,753)\n(32,1926)\n(32,2894)\n(32,3913)\n(32,1859)\n(32,320)\n(32,2711)\n(32,619)\n(33,83)\n(33,2205)\n(33,1123)\n(33,984)\n(33,2637)\n(33,718)\n(33,3240)\n(33,3311)\n(33,760)\n(33,201)\n(33,3711)\n(33,3110)\n(33,2886)\n(33,3073)\n(33,3900)\n(33,2650)\n(33,1825)\n(33,103)\n(33,3143)\n(33,2766)\n(33,324)\n(33,2847)\n(33,3390)\n(34,3449)\n(34,77)\n(34,571)\n(34,1463)\n(34,3610)\n(34,2537)\n(34,3537)\n(34,3805)\n(34,3124)\n(34,211)\n(34,2878)\n(34,1119)\n(35,1053)\n(35,1044)\n(35,3010)\n(35,1351)\n(35,3567)\n(35,476)\n(35,665)\n(35,3759)\n(35,568)\n(35,304)\n(35,2481)\n(35,1112)\n(35,1068)\n(35,2593)\n(35,3667)\n(35,3002)\n(35,2323)\n(35,2626)\n(35,3331)\n(36,1809)\n(36,1551)\n(36,3021)\n(36,1415)\n(36,1508)\n(36,1329)\n(36,2638)\n(36,2620)\n(36,1932)\n(36,1564)\n(36,705)\n(36,1169)\n(37,3569)\n(37,1547)\n(37,970)\n(37,3049)\n(37,121)\n(37,1829)\n(37,496)\n(37,2103)\n(37,2979)\n(37,1669)\n(37,3597)\n(37,3820)\n(37,2536)\n(37,1489)\n(37,3239)\n(37,1677)\n(37,2031)\n(37,957)\n(37,2552)\n(37,2049)\n(38,2744)\n(38,3132)\n(38,470)\n(38,3434)\n(38,3389)\n(38,460)\n(38,846)\n(38,452)\n(38,3659)\n(38,1867)\n(38,254)\n(38,3816)\n(38,2307)\n(38,2982)\n(39,3539)\n(39,3855)\n(39,2179)\n(39,3442)\n(39,3446)\n(39,3922)\n(39,2646)\n(39,488)\n(39,656)\n(39,1668)\n(39,3736)\n(40,956)\n(40,1473)\n(40,391)\n(40,1563)\n(40,3886)\n(40,278)\n(40,3951)\n(40,1826)\n(40,3632)\n(40,1317)\n(40,2566)\n(40,987)\n(40,3912)\n(40,2032)\n(40,3884)\n(40,3043)\n(40,3739)\n(40,3343)\n(40,3851)\n(40,384)\n(41,2689)\n(41,210)\n(41,116)\n(41,2630)\n(41,2848)\n(41,1910)\n(41,3780)\n(41,2704)\n(41,335)\n(41,2610)\n(41,602)\n(41,54)\n(41,2810)\n(42,2653)\n(42,2893)\n(42,294)\n(42,1507)\n(42,495)\n(42,2465)\n(42,869)\n(42,2523)\n(42,2477)\n(42,3691)\n(42,2884)\n(42,3133)\n(42,2055)\n(42,2842)\n(42,704)\n(42,510)\n(42,1105)\n(42,343)\n(42,3838)\n(42,621)\n(42,1798)\n(43,1310)\n(43,1417)\n(43,885)\n(43,2286)\n(43,1323)\n(43,2284)\n(43,2681)\n(43,1602)\n(43,2345)\n(43,301)\n(43,2400)\n(43,3339)\n(43,3804)\n(43,808)\n(43,3945)\n(43,2876)\n(43,3731)\n(43,3367)\n(43,3454)\n(43,3849)\n(44,1495)\n(44,937)\n(44,2479)\n(44,1812)\n(44,1860)\n(44,2237)\n(44,2614)\n(44,97)\n(44,3782)\n(44,2341)\n(44,3808)\n(44,3158)\n(44,875)\n(44,1525)\n(44,472)\n(45,3183)\n(45,3719)\n(45,3677)\n(45,1925)\n(45,3284)\n(45,2516)\n(45,564)\n(45,3898)\n(45,240)\n(45,2977)\n(45,1571)\n(45,3320)\n(45,55)\n(46,347)\n(46,2618)\n(46,279)\n(46,3765)\n(46,3276)\n(46,2659)\n(46,1439)\n(46,2812)\n(47,667)\n(47,3921)\n(47,1771)\n(47,3839)\n(47,731)\n(47,2708)\n(47,1896)\n(47,813)\n(47,668)\n(47,498)\n(47,3674)\n(47,3680)\n(47,149)\n(47,2655)\n(47,1739)\n(47,463)\n(47,2440)\n(48,291)\n(48,888)\n(48,3371)\n(48,2590)\n(48,2573)\n(48,1854)\n(48,2585)\n(48,1497)\n(48,3433)\n(48,2697)\n(48,3318)\n(48,179)\n(48,1472)\n(48,433)\n(48,3588)\n(48,309)\n(49,3602)\n(49,1889)\n(49,409)\n(49,3626)\n(49,499)\n(49,1447)\n(49,1546)\n(49,3144)\n(49,3870)\n(49,182)\n(49,325)\n(49,3281)\n(49,3014)\n(49,870)\n(49,2260)\n(49,1631)\n(50,3737)\n(50,3655)\n(50,1624)\n(50,1056)\n(50,1331)\n(50,78)\n(50,3620)\n(50,1413)\n(50,3414)\n(50,2733)\n(50,1180)\n(50,99)\n(50,840)\n(50,1650)\n(50,1113)\n(51,3128)\n(51,3416)\n(51,1988)\n(51,3790)\n(51,1759)\n(51,3008)\n(51,964)\n(51,3605)\n(51,896)\n(51,710)\n(51,1756)\n(51,3393)\n(51,1427)\n(51,1869)\n(51,2652)\n(52,3903)\n(52,209)\n(52,2939)\n(52,2190)\n(52,1516)\n(52,2499)\n(52,80)\n(52,3289)\n(52,1428)\n(52,1922)\n(52,2515)\n(52,1232)\n(52,715)\n(52,779)\n(52,2647)\n(52,2044)\n(53,2362)\n(53,3695)\n(53,3031)\n(53,1341)\n(53,2663)\n(53,113)\n(53,2104)\n(53,2820)\n(53,1791)\n(53,3302)\n(54,2507)\n(54,1865)\n(54,3664)\n(54,268)\n(54,990)\n(54,2751)\n(54,3518)\n(54,2210)\n(54,963)\n(54,313)\n(54,3950)\n(54,3188)\n(54,2462)\n(54,828)\n(54,2037)\n(54,1255)\n(54,467)\n(54,2285)\n(55,747)\n(55,3947)\n(55,1612)\n(55,1746)\n(55,536)\n(55,269)\n(55,1336)\n(55,577)\n(55,1609)\n(55,3395)\n(55,2045)\n(55,3069)\n(56,3304)\n(56,2835)\n(56,3127)\n(56,3833)\n(56,1326)\n(56,670)\n(56,976)\n(56,3372)\n(57,3241)\n(57,2925)\n(57,422)\n(57,803)\n(57,2753)\n(57,2035)\n(57,1523)\n(57,3734)\n(58,2180)\n(58,959)\n(58,2425)\n(58,1365)\n(58,2818)\n(58,369)\n(58,1684)\n(58,3663)\n(58,2667)\n(58,3806)\n(58,603)\n(58,2368)\n(58,3692)\n(59,759)\n(59,1581)\n(59,3496)\n(59,2386)\n(59,882)\n(59,390)\n(59,3428)\n(60,3577)\n(60,2434)\n(60,3150)\n(60,3857)\n(60,806)\n(60,1887)\n(60,3064)\n(60,102)\n(60,3596)\n(60,68)\n(60,1582)\n(61,3165)\n(61,2790)\n(61,27)\n(61,3718)\n(61,2741)\n(61,326)\n(61,166)\n(61,2885)\n(61,565)\n(61,2283)\n(61,1900)\n(61,321)\n(61,1943)\n(62,580)\n(62,2250)\n(62,3694)\n(62,3679)\n(62,3514)\n(62,2656)\n(62,2594)\n(62,487)\n(62,363)\n(62,711)\n(62,3310)\n(62,3459)\n(62,1703)\n(62,2461)\n(62,3141)\n(63,1750)\n(63,2446)\n(63,1397)\n(63,271)\n(63,1937)\n(63,3368)\n(63,2868)\n(63,2781)\n(63,3787)\n(63,1398)\n(63,1482)\n(63,2784)\n(64,1731)\n(64,1456)\n(64,2597)\n(64,437)\n(64,2589)\n(64,3109)\n(64,217)\n(64,486)\n(64,1337)\n(64,1837)\n(64,3774)\n(64,680)\n(65,2972)\n(65,3013)\n(65,2649)\n(65,3375)\n(65,2007)\n(65,3456)\n(65,3696)\n(65,1604)\n(65,1595)\n(65,3042)\n(66,3118)\n(66,3511)\n(66,2073)\n(66,2582)\n(66,3491)\n(66,3211)\n(66,255)\n(66,2625)\n(66,3920)\n(66,156)\n(66,3823)\n(66,3714)\n(66,3795)\n(66,3138)\n(67,453)\n(67,2974)\n(67,2874)\n(67,609)\n(67,61)\n(67,1599)\n(67,354)\n(67,513)\n(67,2609)\n(67,3716)\n(67,615)\n(68,528)\n(68,118)\n(68,3579)\n(68,8)\n(68,2774)\n(68,3487)\n(68,3103)\n(68,2607)\n(68,1881)\n(69,988)\n(69,152)\n(69,3909)\n(69,2905)\n(69,2419)\n(69,1839)\n(69,3075)\n(69,3858)\n(69,3658)\n(69,893)\n(69,3746)\n(69,469)\n(69,2621)\n(69,505)\n(69,2152)\n(70,2062)\n(70,35)\n(70,3822)\n(70,1241)\n(70,3180)\n(70,3914)\n(70,2276)\n(70,3112)\n(71,1550)\n(71,3340)\n(71,640)\n(71,2275)\n(71,1442)\n(71,935)\n(71,449)\n(71,3732)\n(71,3235)\n(71,2665)\n(71,365)\n(71,3669)\n(71,3048)\n(72,1202)\n(72,1870)\n(72,3447)\n(72,1856)\n(72,3432)\n(72,2965)\n(72,3792)\n(72,3199)\n(72,2880)\n(72,408)\n(72,2786)\n(73,1545)\n(73,3117)\n(73,3417)\n(73,3041)\n(74,483)\n(74,1642)\n(74,2295)\n(74,3038)\n(74,3427)\n(74,3423)\n(74,764)\n(74,2445)\n(74,2417)\n(74,30)\n(74,2267)\n(75,424)\n(75,1601)\n(75,191)\n(75,631)\n(76,2271)\n(76,87)\n(76,2098)\n(76,1404)\n(76,2029)\n(77,635)\n(77,3547)\n(77,881)\n(77,1655)\n(77,1934)\n(77,3224)\n(77,1355)\n(77,2238)\n(77,917)\n(77,2928)\n(77,3743)\n(77,1744)\n(77,3572)\n(77,2769)\n(77,3738)\n(78,3230)\n(78,1006)\n(78,639)\n(78,833)\n(79,117)\n(79,2113)\n(79,2522)\n(79,64)\n(79,2168)\n(79,270)\n(79,2738)\n(79,612)\n(79,3425)\n(79,2255)\n(80,242)\n(80,275)\n(81,2696)\n(81,1475)\n(81,3768)\n(81,174)\n(81,1440)\n(81,2075)\n(81,3086)\n(81,444)\n(81,1054)\n(81,1626)\n(81,982)\n(81,2983)\n(82,2511)\n(82,1670)\n(82,2780)\n(82,613)\n(82,3553)\n(82,2651)\n(82,973)\n(82,1936)\n(82,3859)\n(82,206)\n(82,3661)\n(82,1454)\n(82,1733)\n(82,3055)\n(83,3810)\n(83,2844)\n(83,3813)\n(83,2265)\n(83,2177)\n(83,2264)\n(83,522)\n(84,2521)\n(84,927)\n(84,1600)\n(84,3622)\n(84,1640)\n(84,340)\n(84,1929)\n(85,3713)\n(85,3046)\n(85,1621)\n(85,205)\n(85,2721)\n(85,3590)\n(85,697)\n(85,2488)\n(85,2437)\n(85,3431)\n(86,3370)\n(86,461)\n(86,302)\n(87,3919)\n(87,2749)\n(87,1216)\n(87,1654)\n(87,2714)\n(87,3399)\n(87,458)\n(87,155)\n(87,3720)\n(88,1605)\n(88,3502)\n(88,1646)\n(88,3077)\n(88,92)\n(88,3715)\n(88,1661)\n(88,2682)\n(88,1526)\n(89,3837)\n(89,2204)\n(89,650)\n(89,416)\n(89,93)\n(89,2862)\n(89,3453)\n(89,82)\n(90,2856)\n(90,2306)\n(90,1236)\n(90,1647)\n(90,1410)\n(90,1046)\n(90,3678)\n(90,414)\n(91,1184)\n(91,1980)\n(91,3217)\n(91,2969)\n(91,1940)\n(91,1987)\n(91,2801)\n(91,1788)\n(91,2057)\n(91,2807)\n(91,132)\n(91,725)\n(92,3509)\n(92,2330)\n(92,3662)\n(92,3619)\n(92,3470)\n(92,3275)\n(92,3908)\n(93,171)\n(93,72)\n(93,181)\n(93,606)\n(93,2634)\n(93,998)\n(93,2084)\n(93,3076)\n(93,929)\n(93,3096)\n(93,456)\n(93,2472)\n(94,1167)\n(94,1111)\n(94,1161)\n(94,1460)\n(94,2661)\n(94,501)\n(94,421)\n(94,1352)\n(94,3613)\n(94,3895)\n(95,1841)\n(95,2725)\n(95,2178)\n(95,2347)\n(95,3379)\n(96,2036)\n(96,71)\n(96,2356)\n(96,3943)\n(96,1162)\n(96,3497)\n(96,2519)\n(96,3391)\n(97,2239)\n(97,3544)\n(97,944)\n(97,3214)\n(97,388)\n(97,489)\n(97,66)\n(97,1008)\n(97,1993)\n(98,897)\n(98,1051)\n(98,3726)\n(98,2182)\n(98,2970)\n(98,2903)\n(98,2495)\n(99,1981)\n(99,2435)\n(99,126)\n(99,57)\n(99,2799)\n(99,2927)\n(99,13)\n(100,3946)\n(100,3799)\n(100,978)\n(100,190)\n(100,26)\n(100,569)\n(100,1758)\n(100,445)\n(100,1362)\n(100,2920)\n(100,2327)\n(100,766)\n(100,1432)\n(101,735)\n(101,2051)\n(101,3094)\n(101,1816)\n(101,1004)\n(101,3643)\n(101,3628)\n(102,259)\n(102,387)\n(102,9)\n(102,2645)\n(102,2624)\n(102,2898)\n(102,1827)\n(102,3872)\n(102,1332)\n(102,2587)\n(102,2570)\n(103,3357)\n(103,2149)\n(103,1535)\n(103,781)\n(103,3599)\n(103,835)\n(103,2978)\n(104,2050)\n(104,1399)\n(104,3017)\n(104,3767)\n(104,3923)\n(104,2314)\n(104,886)\n(104,2937)\n(104,1824)\n(105,2548)\n(105,1192)\n(105,187)\n(105,393)\n(105,1984)\n(105,907)\n(105,3406)\n(105,425)\n(105,809)\n(105,941)\n(105,465)\n(106,3807)\n(106,451)\n(106,3901)\n(106,692)\n(106,2066)\n(107,1935)\n(107,575)\n(107,3627)\n(107,2940)\n(107,2782)\n(107,2669)\n(107,743)\n(108,229)\n(108,2988)\n(108,1366)\n(108,3330)\n(108,1855)\n(108,1043)\n(109,1629)\n(109,1686)\n(109,1606)\n(109,2165)\n(109,2016)\n(110,3115)\n(110,2173)\n(110,2418)\n(110,1069)\n(111,2351)\n(111,2975)\n(111,1598)\n(111,63)\n(112,1363)\n(112,1592)\n(112,1979)\n(112,312)\n(112,3840)\n(112,2272)\n(112,3725)\n(112,1996)\n(112,3936)\n(113,1904)\n(113,2095)\n(113,1941)\n(113,1667)\n(113,2451)\n(113,3401)\n(113,1998)\n(113,3709)\n(113,169)\n(114,334)\n(114,257)\n(114,79)\n(114,506)\n(114,1978)\n(115,123)\n(115,2491)\n(116,1919)\n(116,3557)\n(116,2514)\n(116,159)\n(116,1330)\n(116,1658)\n(116,2460)\n(117,3824)\n(117,521)\n(117,2360)\n(117,199)\n(117,523)\n(117,2899)\n(118,3045)\n(118,2882)\n(118,3130)\n(118,2181)\n(118,2932)\n(119,2325)\n(119,2500)\n(119,1942)\n(119,352)\n(119,2535)\n(119,3554)\n(119,1804)\n(119,2888)\n(120,3758)\n(120,810)\n(120,74)\n(120,346)\n(121,627)\n(121,2290)\n(121,2364)\n(121,3794)\n(121,691)\n(121,2828)\n(121,801)\n(121,1390)\n(121,1003)\n(121,3600)\n(121,1305)\n(122,3690)\n(122,2436)\n(122,1938)\n(122,3604)\n(122,3225)\n(122,3286)\n(123,2170)\n(123,213)\n(123,2498)\n(123,761)\n(123,1018)\n(124,3182)\n(124,1484)\n(124,547)\n(124,3925)\n(125,2280)\n(125,2817)\n(126,23)\n(126,2337)\n(126,1024)\n(126,1465)\n(126,2443)\n(127,360)\n(127,305)\n(127,3915)\n(127,1986)\n(127,2967)\n(127,3571)\n(127,851)\n(127,1999)\n(127,1382)\n(128,1623)\n(128,2151)\n(128,2860)\n(128,2212)\n(128,662)\n(128,3564)\n(128,3436)\n(128,2040)\n(128,2068)\n(128,100)\n(129,2241)\n(129,227)\n(129,3584)\n(129,544)\n(129,1176)\n(129,2027)\n(129,1985)\n(129,3287)\n(130,2458)\n(130,2169)\n(130,948)\n(130,3142)\n(130,2726)\n(130,3120)\n(131,2561)\n(131,1498)\n(131,2526)\n(131,2048)\n(131,829)\n(131,1085)\n(132,936)\n(132,556)\n(132,1190)\n(133,1897)\n(133,2996)\n(133,1992)\n(133,3206)\n(133,2924)\n(133,2851)\n(133,479)\n(133,135)\n(134,1681)\n(134,2654)\n(134,3327)\n(134,2310)\n(134,3475)\n(135,2757)\n(135,558)\n(135,695)\n(135,1011)\n(135,2195)\n(135,3889)\n(135,839)\n(135,1836)\n(135,3937)\n(135,2660)\n(136,2365)\n(136,1419)\n(136,1014)\n(136,1306)\n(136,2612)\n(136,3054)\n(136,2554)\n(137,548)\n(137,2748)\n(137,1726)\n(138,3846)\n(138,248)\n(138,3616)\n(138,1554)\n(139,140)\n(139,177)\n(139,3063)\n(139,3028)\n(139,2596)\n(139,2492)\n(139,3445)\n(140,378)\n(140,637)\n(140,2475)\n(140,2154)\n(140,267)\n(140,2069)\n(141,436)\n(141,694)\n(141,1483)\n(141,2575)\n(141,358)\n(141,3385)\n(141,2354)\n(141,2956)\n(141,31)\n(141,3689)\n(141,3457)\n(141,581)\n(141,3091)\n(142,1005)\n(142,2370)\n(142,1863)\n(143,299)\n(143,459)\n(143,65)\n(143,3350)\n(143,3864)\n(143,3503)\n(144,1468)\n(144,2629)\n(144,3405)\n(144,3015)\n(144,2296)\n(144,258)\n(144,2430)\n(144,328)\n(144,3879)\n(144,709)\n(144,2166)\n(145,1503)\n(145,2935)\n(145,700)\n(145,2041)\n(145,3079)\n(145,1464)\n(145,782)\n(146,2611)\n(146,2432)\n(146,1050)\n(146,2385)\n(146,15)\n(146,1474)\n(146,1273)\n(147,1187)\n(147,1177)\n(147,2119)\n(147,234)\n(147,2315)\n(147,3929)\n(147,2184)\n(147,3865)\n(148,3747)\n(148,2024)\n(148,2816)\n(148,3727)\n(148,2732)\n(148,3728)\n(148,1453)\n(149,3653)\n(149,3011)\n(149,2383)\n(149,518)\n(149,330)\n(150,2382)\n(151,3364)\n(151,3771)\n(151,1794)\n(151,842)\n(151,473)\n(152,438)\n(152,892)\n(152,511)\n(153,14)\n(153,714)\n(153,2525)\n(153,315)\n(154,1082)\n(154,3266)\n(154,1707)\n(154,2077)\n(155,1699)\n(155,3078)\n(155,3480)\n(155,3529)\n(155,502)\n(156,2540)\n(156,3789)\n(156,419)\n(156,1445)\n(156,848)\n(156,3672)\n(156,1016)\n(157,2829)\n(157,18)\n(157,3660)\n(157,549)\n(157,3392)\n(158,2361)\n(158,1150)\n(158,2043)\n(158,289)\n(159,1361)\n(160,20)\n(160,1840)\n(160,3325)\n(160,2798)\n(160,215)\n(160,2943)\n(160,3550)\n(160,12)\n(160,2442)\n(161,332)\n(161,2026)\n(161,2936)\n(161,2900)\n(161,3051)\n(161,3024)\n(161,3190)\n(161,946)\n(161,2261)\n(162,2787)\n(162,2017)\n(162,2633)\n(162,1401)\n(162,1487)\n(162,1593)\n(163,2506)\n(163,2836)\n(163,3181)\n(163,3262)\n(163,2092)\n(163,2639)\n(164,2555)\n(164,2879)\n(164,1875)\n(164,195)\n(164,1083)\n(164,2852)\n(164,2902)\n(165,3784)\n(165,3634)\n(165,2789)\n(165,3134)\n(166,81)\n(166,427)\n(166,2846)\n(166,46)\n(166,3167)\n(166,2148)\n(166,43)\n(167,3918)\n(167,1913)\n(167,2206)\n(167,2349)\n(167,1797)\n(167,3506)\n(168,3483)\n(168,1806)\n(168,1425)\n(168,154)\n(168,1414)\n(168,3177)\n(168,290)\n(168,239)\n(169,1977)\n(169,2546)\n(169,2730)\n(169,1034)\n(169,3606)\n(169,540)\n(170,4)\n(170,2497)\n(170,1128)\n(170,277)\n(170,991)\n(171,943)\n(171,1975)\n(171,765)\n(171,2071)\n(171,2771)\n(171,3272)\n(171,2560)\n(171,3773)\n(172,3200)\n(172,1858)\n(172,262)\n(173,1209)\n(173,2328)\n(173,3387)\n(174,1346)\n(174,901)\n(174,742)\n(174,3036)\n(174,2381)\n(175,1066)\n(175,3412)\n(175,2263)\n(175,574)\n(175,2549)\n(176,1730)\n(176,2453)\n(176,3834)\n(176,482)\n(176,3538)\n(176,3299)\n(177,3090)\n(177,3500)\n(177,1848)\n(177,3341)\n(177,2162)\n(178,504)\n(178,76)\n(178,550)\n(178,3835)\n(179,28)\n(179,2331)\n(179,512)\n(179,3896)\n(179,3268)\n(179,2183)\n(179,1660)\n(179,2520)\n(179,415)\n(179,3598)\n(180,3646)\n(180,2429)\n(180,2014)\n(180,1785)\n(180,3926)\n(180,3326)\n(181,147)\n(181,1515)\n(181,2504)\n(182,3877)\n(182,3693)\n(182,1289)\n(182,94)\n(182,1995)\n(182,3594)\n(183,891)\n(183,374)\n(183,2052)\n(183,2550)\n(183,2060)\n(183,2377)\n(184,3786)\n(185,2106)\n(185,490)\n(185,2891)\n(185,2752)\n(185,3710)\n(186,3831)\n(186,2091)\n(186,2952)\n(186,2252)\n(187,938)\n(187,157)\n(187,906)\n(187,429)\n(187,2731)\n(187,2320)\n(188,3440)\n(188,1353)\n(188,3521)\n(188,947)\n(189,2551)\n(189,918)\n(189,932)\n(189,1446)\n(189,2615)\n(189,1649)\n(189,818)\n(189,1866)\n(189,2373)\n(189,2448)\n(190,3029)\n(190,188)\n(190,3769)\n(190,3324)\n(190,1760)\n(191,3766)\n(191,2176)\n(192,88)\n(192,3515)\n(193,2870)\n(193,407)\n(193,2473)\n(193,2042)\n(194,1279)\n(194,1648)\n(194,3066)\n(194,122)\n(194,1099)\n(194,85)\n(195,477)\n(195,3135)\n(195,1983)\n(195,3724)\n(195,218)\n(195,2266)\n(196,2380)\n(196,2171)\n(197,2102)\n(198,2439)\n(198,1948)\n(198,1173)\n(198,1753)\n(198,1862)\n(198,1966)\n(198,2038)\n(199,2107)\n(199,1976)\n(199,3420)\n(199,2208)\n(199,3676)\n(199,3519)\n(199,2806)\n(199,3801)\n(199,2866)\n(199,2574)\n(200,3270)\n(200,3910)\n(200,1972)\n(200,3125)\n(200,2033)\n(200,1665)\n(201,1734)\n(201,2729)\n(201,2142)\n(201,2259)\n(201,2344)\n(201,3825)\n(202,2236)\n(202,519)\n(202,308)\n(202,3248)\n(203,204)\n(203,3296)\n(203,203)\n(203,533)\n(203,405)\n(204,798)\n(204,3204)\n(205,2392)\n(205,176)\n(205,1946)\n(206,3022)\n(206,2163)\n(206,3928)\n(206,3754)\n(206,931)\n(206,1752)\n(206,542)\n(206,3097)\n(207,2606)\n(207,537)\n(208,417)\n(208,3852)\n(208,3093)\n(209,1064)\n(209,322)\n(209,1191)\n(210,1727)\n(210,3682)\n(210,3394)\n(210,1389)\n(210,3422)\n(211,2877)\n(211,1821)\n(211,381)\n(211,186)\n(212,491)\n(212,280)\n(212,3347)\n(212,1194)\n(212,371)\n(213,2907)\n(213,2097)\n(213,3111)\n(213,1951)\n(213,1799)\n(213,2202)\n(213,688)\n(213,194)\n(214,2568)\n(215,282)\n(215,3426)\n(215,1973)\n(215,2357)\n(215,2123)\n(215,949)\n(215,2929)\n(215,3030)\n(216,1340)\n(216,464)\n(216,1281)\n(216,1461)\n(216,1131)\n(216,611)\n(217,2387)\n(217,193)\n(217,2269)\n(217,728)\n(218,837)\n(218,256)\n(218,1683)\n(219,3466)\n(219,3404)\n(219,1392)\n(219,2159)\n(219,2553)\n(219,3814)\n(219,207)\n(219,1949)\n(220,1132)\n(220,175)\n(220,3194)\n(220,3430)\n(220,1783)\n(220,2670)\n(221,1023)\n(221,2099)\n(221,338)\n(221,423)\n(221,42)\n(221,2025)\n(222,1359)\n(222,2136)\n(222,3729)\n(222,3074)\n(222,3444)\n(223,3930)\n(223,3342)\n(223,3546)\n(223,2399)\n(224,73)\n(224,3032)\n(224,2693)\n(225,2379)\n(225,1931)\n(225,3179)\n(225,2736)\n(226,2279)\n(226,1226)\n(226,605)\n(227,1762)\n(227,1615)\n(227,3516)\n(228,450)\n(228,448)\n(228,276)\n(228,1251)\n(229,89)\n(229,2745)\n(230,1290)\n(230,1178)\n(230,1772)\n(230,2677)\n(231,1205)\n(231,2147)\n(231,1713)\n(231,1130)\n(232,3932)\n(232,1431)\n(232,1007)\n(232,986)\n(232,2709)\n(232,3213)\n(233,281)\n(233,2203)\n(233,804)\n(233,2122)\n(233,2232)\n(234,3742)\n(234,3882)\n(234,1015)\n(235,2558)\n(235,3783)\n(235,233)\n(235,2583)\n(236,86)\n(236,2316)\n(236,1611)\n(236,1939)\n(237,836)\n(237,3707)\n(237,879)\n(238,2644)\n(238,1542)\n(238,2372)\n(238,2135)\n(238,1348)\n(238,2240)\n(239,362)\n(239,2859)\n(239,719)\n(239,1991)\n(239,2089)\n(239,2249)\n(240,1541)\n(240,2796)\n(241,3741)\n(241,1227)\n(241,2922)\n(241,3861)\n(242,1971)\n(242,41)\n(242,1010)\n(242,1211)\n(242,2120)\n(243,307)\n(244,2374)\n(244,273)\n(244,1218)\n(244,3102)\n(245,3365)\n(245,2121)\n(245,3819)\n(245,3764)\n(245,413)\n(246,3700)\n(246,3788)\n(246,2772)\n(247,2459)\n(247,1021)\n(248,3821)\n(248,516)\n(248,3018)\n(249,1924)\n(249,2090)\n(250,2906)\n(250,1627)\n(251,366)\n(251,3197)\n(251,945)\n(251,3439)\n(252,1689)\n(252,1963)\n(252,3089)\n(252,3004)\n(253,3169)\n(253,101)\n(253,965)\n(254,446)\n(254,2022)\n(254,225)\n(256,996)\n(256,2114)\n(256,107)\n(257,1264)\n(257,237)\n(257,351)\n(258,1013)\n(258,373)\n(258,3153)\n(259,1873)\n(259,2408)\n(259,158)\n(259,2188)\n(259,3145)\n(259,2457)\n(260,3549)\n(261,249)\n(262,1342)\n(262,2083)\n(263,2822)\n(263,1735)\n(263,428)\n(264,2070)\n(264,599)\n(264,663)\n(264,2389)\n(264,3208)\n(264,1833)\n(265,3366)\n(265,1643)\n(265,1480)\n(265,2793)\n(266,2447)\n(266,1457)\n(266,1295)\n(266,1633)\n(266,2524)\n(266,3478)\n(266,2676)\n(267,355)\n(267,2155)\n(267,3708)\n(267,3238)\n(267,1354)\n(268,2059)\n(268,361)\n(268,1970)\n(268,1927)\n(268,3469)\n(269,426)\n(269,3723)\n(269,952)\n(269,3501)\n(269,1189)\n(270,383)\n(271,3675)\n(271,3307)\n(271,971)\n(271,3477)\n(271,2815)\n(272,2505)\n(272,382)\n(273,319)\n(273,3099)\n(273,861)\n(273,2517)\n(273,2668)\n(274,2412)\n(274,1969)\n(274,1057)\n(274,3548)\n(274,3429)\n(275,3061)\n(275,3629)\n(275,707)\n(276,3251)\n(276,2093)\n(276,3384)\n(276,1017)\n(277,2883)\n(277,3565)\n(277,1280)\n(277,1147)\n(278,2117)\n(278,616)\n(279,3917)\n(279,3467)\n(280,3873)\n(280,2961)\n(280,2941)\n(280,2764)\n(280,2287)\n(281,2613)\n(281,1422)\n(282,1416)\n(284,3576)\n(284,1701)\n(284,2456)\n(285,455)\n(285,3812)\n(285,2750)\n(285,1286)\n(285,261)\n(286,2422)\n(286,534)\n(286,999)\n(287,2889)\n(287,1033)\n(288,3129)\n(288,2153)\n(288,1488)\n(289,3733)\n(289,1588)\n(289,3316)\n(290,2322)\n(291,2875)\n(291,2946)\n(291,1009)\n(292,942)\n(292,950)\n(293,1025)\n(293,3243)\n(294,2518)\n(294,481)\n(294,3308)\n(295,3007)\n(295,1395)\n(295,3498)\n(295,830)\n(295,412)\n(295,2034)\n(295,2338)\n(295,3649)\n(296,5)\n(297,2132)\n(297,1429)\n(298,762)\n(298,1884)\n(298,3388)\n(298,493)\n(298,3355)\n(299,1237)\n(300,2346)\n(300,3189)\n(300,737)\n(300,314)\n(300,2476)\n(301,2404)\n(301,2363)\n(301,1012)\n(301,535)\n(301,1845)\n(302,921)\n(302,3484)\n(302,1964)\n(302,1702)\n(302,2567)\n(303,1381)\n(303,2072)\n(304,1688)\n(304,3163)\n(304,934)\n(304,3949)\n(304,2130)\n(304,3802)\n(304,3566)\n(304,2348)\n(305,3871)\n(305,3462)\n(305,2513)\n(305,3760)\n(305,2138)\n(306,2867)\n(306,3841)\n(306,678)\n(306,911)\n(306,1895)\n(306,2802)\n(307,1594)\n(308,507)\n(308,1260)\n(308,3146)\n(309,2367)\n(310,1303)\n(311,44)\n(312,2531)\n(312,2111)\n(312,475)\n(312,2401)\n(314,3328)\n(314,741)\n(315,3040)\n(315,538)\n(316,2282)\n(317,1268)\n(317,1974)\n(317,2921)\n(317,1126)\n(317,2971)\n(318,125)\n(319,1031)\n(319,2819)\n(319,1769)\n(319,69)\n(320,2318)\n(320,3494)\n(321,170)\n(321,3528)\n(321,1438)\n(321,1672)\n(322,3244)\n(323,1030)\n(324,2467)\n(324,880)\n(325,3198)\n(325,1243)\n(325,2303)\n(325,3681)\n(325,2376)\n(326,236)\n(326,2262)\n(327,3265)\n(327,3071)\n(328,3556)\n(328,3271)\n(328,2827)\n(329,222)\n(330,1300)\n(330,2901)\n(330,2390)\n(331,2312)\n(331,3452)\n(332,2643)\n(333,3155)\n(334,306)\n(335,492)\n(337,1687)\n(338,3770)\n(338,799)\n(338,1334)\n(338,531)\n(339,3688)\n(339,3258)\n(340,3249)\n(341,3053)\n(341,2953)\n(341,3398)\n(341,2995)\n(342,3593)\n(343,2474)\n(343,900)\n(343,3034)\n(344,805)\n(344,1027)\n(344,2340)\n(344,1096)\n(345,2779)\n(345,2231)\n(345,3000)\n(345,3615)\n(346,232)\n(346,2950)\n(346,2112)\n(346,514)\n(346,2803)\n(348,3927)\n(348,1950)\n(348,1603)\n(349,230)\n(350,376)\n(350,3451)\n(350,1537)\n(350,468)\n(350,546)\n(351,1693)\n(351,1238)\n(352,3062)\n(352,2146)\n(352,420)\n(353,3067)\n(353,3461)\n(353,3633)\n(353,1810)\n(354,1518)\n(354,3152)\n(354,2861)\n(354,1916)\n(354,2416)\n(355,2297)\n(355,3505)\n(355,1327)\n(355,2143)\n(355,216)\n(356,3668)\n(356,2747)\n(356,3088)\n(357,60)\n(357,1217)\n(358,1245)\n(358,2532)\n(358,3684)\n(358,3397)\n(358,327)\n(359,3201)\n(360,2496)\n(360,3525)\n(360,3811)\n(361,1344)\n(361,2082)\n(362,2942)\n(362,168)\n(362,145)\n(362,1619)\n(363,2118)\n(363,1277)\n(364,1367)\n(364,1944)\n(364,1920)\n(365,2530)\n(365,3508)\n(365,2247)\n(365,3712)\n(365,915)\n(366,3250)\n(366,1835)\n(367,252)\n(367,1556)\n(367,2110)\n(368,1175)\n(369,3618)\n(369,2139)\n(369,431)\n(369,1379)\n(370,1388)\n(371,2301)\n(372,1914)\n(372,1078)\n(372,2565)\n(372,2004)\n(373,1301)\n(373,1091)\n(373,2720)\n(374,2468)\n(374,1061)\n(374,905)\n(374,520)\n(375,2411)\n(375,2808)\n(375,3836)\n(378,940)\n(378,22)\n(379,164)\n(379,3068)\n(379,1086)\n(379,2414)\n(380,2398)\n(380,1459)\n(380,3705)\n(380,2015)\n(381,2053)\n(381,1719)\n(382,1411)\n(382,48)\n(382,517)\n(383,2718)\n(383,3156)\n(383,272)\n(383,954)\n(385,784)\n(385,1125)\n(385,2990)\n(385,2794)\n(386,2334)\n(386,674)\n(386,928)\n(386,224)\n(387,1298)\n(387,1888)\n(387,105)\n(388,2010)\n(388,1754)\n(388,3952)\n(389,532)\n(389,3507)\n(389,19)\n(390,783)\n(390,2690)\n(391,2672)\n(391,1801)\n(391,2919)\n(392,1020)\n(392,432)\n(392,1409)\n(394,3196)\n(394,3083)\n(395,1616)\n(395,2702)\n(395,1620)\n(397,951)\n(397,2403)\n(398,3185)\n(399,2857)\n(399,1499)\n(400,3551)\n(401,1892)\n(401,2410)\n(401,2402)\n(402,1103)\n(403,29)\n(403,3259)\n(403,926)\n(403,1283)\n(404,2141)\n(404,2993)\n(405,1124)\n(405,3826)\n(406,2648)\n(407,1135)\n(408,3844)\n(409,1350)\n(410,333)\n(410,2600)\n(410,2485)\n(412,370)\n(413,2378)\n(413,3686)\n(413,955)\n(414,2471)\n(415,1171)\n(415,2622)\n(416,494)\n(416,2125)\n(416,724)\n(416,3019)\n(417,748)\n(417,909)\n(418,2375)\n(418,303)\n(418,585)\n(419,3617)\n(419,2840)\n(420,2335)\n(420,1100)\n(420,3513)\n(421,3035)\n(421,3744)\n(421,2713)\n(422,2009)\n(422,2991)\n(423,3285)\n(425,2989)\n(425,916)\n(426,1224)\n(426,2728)\n(427,802)\n(428,372)\n(428,1614)\n(429,3261)\n(429,2966)\n(430,2759)\n(431,52)\n(431,3186)\n(431,3869)\n(433,3254)\n(433,144)\n(434,1047)\n(434,2450)\n(434,1081)\n(435,3791)\n(436,379)\n(437,3916)\n(438,720)\n(438,3274)\n(438,2116)\n(440,2253)\n(441,647)\n(442,2687)\n(442,1297)\n(443,933)\n(443,3545)\n(443,2413)\n(445,930)\n(445,2926)\n(445,2409)\n(446,3358)\n(447,3219)\n(447,3016)\n(448,3706)\n(448,2805)\n(448,1792)\n(450,3468)\n(450,515)\n(450,994)\n(450,2739)\n(451,2788)\n(451,1049)\n(451,180)\n(451,1347)\n(452,1274)\n(452,1955)\n(453,3730)\n(453,1185)\n(453,1254)\n(453,3159)\n(454,3512)\n(455,348)\n(455,1717)\n(456,671)\n(456,1120)\n(457,2313)\n(458,7)\n(458,172)\n(459,3409)\n(459,2735)\n(460,2973)\n(460,786)\n(461,3639)\n(461,1385)\n(461,3334)\n(462,1449)\n(463,3798)\n(463,2533)\n(463,410)\n(464,1680)\n(466,2734)\n(469,345)\n(469,1566)\n(470,922)\n(470,2311)\n(471,1894)\n(471,2088)\n(471,1694)\n(472,1257)\n(473,1223)\n(474,2912)\n(474,1678)\n(474,2431)\n(474,1041)\n(475,1591)\n(475,1644)\n(475,3246)\n(475,1405)\n(475,3441)\n(475,2463)\n(476,524)\n(476,2719)\n(477,2421)\n(477,247)\n(477,3269)\n(478,3)\n(478,562)\n(478,3827)\n(479,1059)\n(479,2065)\n(480,2454)\n(480,3260)\n(480,1212)\n(481,1441)\n(482,2186)\n(483,3173)\n(483,1104)\n(483,3267)\n(485,3168)\n(485,628)\n(487,3635)\n(487,2841)\n(489,3536)\n(490,1907)\n(491,162)\n(492,1589)\n(493,2420)\n(493,1834)\n(493,2986)\n(495,3735)\n(495,2126)\n(496,3317)\n(497,2137)\n(497,3203)\n(498,596)\n(498,1590)\n(499,1882)\n(499,1476)\n(500,485)\n(501,838)\n(501,58)\n(502,3654)\n(504,2917)\n(504,3701)\n(505,3534)\n(506,1982)\n(506,2469)\n(507,1956)\n(507,1635)\n(509,3178)\n(510,2134)\n(511,849)\n(511,2642)\n(511,2096)\n(512,3264)\n(513,2428)\n(514,2245)\n(514,1248)\n(515,2423)\n(515,350)\n(516,3087)\n(518,2863)\n(518,342)\n(519,1945)\n(520,3157)\n(520,3359)\n(521,3095)\n(522,2951)\n(523,2384)\n(524,3020)\n(525,661)\n(525,1032)\n(527,1911)\n(528,1042)\n(529,552)\n(530,1958)\n(533,435)\n(533,2598)\n(534,3438)\n(534,3524)\n(535,3745)\n(536,2046)\n(540,163)\n(541,1779)\n(541,2133)\n(541,62)\n(541,1284)\n(542,3479)\n(542,3300)\n(542,3614)\n(544,45)\n(545,3685)\n(548,1261)\n(548,3098)\n(548,1357)\n(549,2795)\n(549,1321)\n(550,196)\n(551,3435)\n(553,553)\n(554,1967)\n(554,151)\n(555,3252)\n(557,2976)\n(557,1586)\n(558,2792)\n(558,3060)\n(559,2541)\n(559,1253)\n(559,3893)\n(560,3752)\n(560,1296)\n(561,508)\n(562,1378)\n(562,1186)\n(563,673)\n(563,1479)\n(564,2067)\n(564,832)\n(564,173)\n(564,3113)\n(565,160)\n(565,2662)\n(565,2085)\n(565,2717)\n(567,1345)\n(568,1029)\n(569,2478)\n(569,185)\n(570,112)\n(571,1095)\n(572,1587)\n(572,866)\n(573,466)\n(573,2109)\n(575,1019)\n(577,3273)\n(577,1022)\n(578,2333)\n(579,2394)\n(582,898)\n(583,3044)\n(583,2686)\n(584,3717)\n(584,3740)\n(588,2501)\n(589,2018)\n(590,3298)\n(590,3360)\n(591,3037)\n(591,1292)\n(593,1271)\n(594,1256)\n(594,2087)\n(598,2722)\n(599,471)\n(599,2371)\n(602,3301)\n(605,198)\n(606,1562)\n(608,509)\n(608,1885)\n(611,3070)\n(612,2433)\n(612,653)\n(613,3785)\n(613,1921)\n(613,1373)\n(615,852)\n(615,1037)\n(615,1172)\n(616,2539)\n(616,1203)\n(618,610)\n(622,2013)\n(623,3100)\n(624,2581)\n(624,2616)\n(624,24)\n(625,2542)\n(626,1959)\n(626,3257)\n(626,1805)\n(626,2528)\n(627,2273)\n(628,3683)\n(628,2019)\n(628,2664)\n(628,1711)\n(628,3591)\n(630,800)\n(630,3535)\n(634,1957)\n(634,2707)\n(636,2527)\n(636,1960)\n(636,914)\n(638,95)\n(640,442)\n(640,2329)\n(640,3005)\n(641,317)\n(643,441)\n(643,3697)\n(645,2294)\n(645,1272)\n(646,2949)\n(650,2724)\n(651,208)\n(652,1962)\n(652,3638)\n(654,2076)\n(657,3911)\n(657,745)\n(658,2300)\n(658,3863)\n(658,555)\n(660,231)\n(663,1952)\n(664,1883)\n(664,2078)\n(666,3247)\n(666,1485)\n(667,497)\n(667,3263)\n(667,3476)\n(667,1831)\n(669,1918)\n(671,1293)\n(672,1269)\n(672,1339)\n(673,2405)\n(673,339)\n(674,2761)\n(675,586)\n(676,902)\n(676,1188)\n(677,1228)\n(679,708)\n(680,3105)\n(680,1093)\n(682,543)\n(682,16)\n(682,104)\n(682,141)\n(686,1084)\n(686,434)\n(687,1343)\n(687,1088)\n(688,3504)\n(691,2688)\n(692,3868)\n(693,2145)\n(693,337)\n(695,2150)\n(696,1262)\n(697,1235)\n(699,2161)\n(700,288)\n(700,1263)\n(700,2572)\n(701,2)\n(701,3763)\n(703,2359)\n(704,1287)\n(705,266)\n(705,300)\n(707,2944)\n(710,2140)\n(711,3148)\n(712,2160)\n(714,2124)\n(715,968)\n(716,2005)\n(716,246)\n(718,1244)\n(719,2144)\n(719,1466)\n(720,529)\n(722,3489)\n(722,3704)\n(723,2580)\n(724,1729)\n(729,953)\n(729,2871)\n(730,3698)\n(732,1299)\n(733,1333)\n(733,292)\n(733,1249)\n(734,353)\n(736,2094)\n(738,253)\n(740,1663)\n(741,1275)\n(741,2288)\n(742,2872)\n(744,1077)\n(744,3396)\n(745,2391)\n(750,2826)\n(750,1231)\n(751,1092)\n(751,778)\n(751,899)\n(751,1965)\n(755,1513)\n(756,2366)\n(756,3386)\n(760,161)\n(761,1947)\n(763,594)\n(765,3104)\n(765,1267)\n(765,3362)\n(765,785)\n(766,344)\n(768,1302)\n(771,2948)\n(772,265)\n(773,2490)\n(773,2020)\n(774,2023)\n(776,2003)\n(777,2605)\n(777,153)\n(779,1690)\n(780,2671)\n(781,3424)\n(786,2881)\n(786,1060)\n(789,2021)\n(789,2243)\n(791,3624)\n(791,2694)\n(792,1371)\n(793,3354)\n(795,1994)\n(798,2064)\n(799,2058)\n(802,2002)\n(802,3101)\n(802,368)\n(802,2193)\n(803,1285)\n(803,2427)\n(806,2278)\n(807,2393)\n(809,3450)\n(809,2167)\n(811,3526)\n(811,1597)\n(817,3809)\n(817,1380)\n(820,1569)\n(821,3510)\n(822,1201)\n(824,454)\n(825,2108)\n(825,165)\n(826,1645)\n(831,1204)\n(832,910)\n(835,17)\n(838,2352)\n(838,500)\n(838,2424)\n(839,3039)\n(839,3543)\n(840,2369)\n(846,2641)\n(850,2908)\n(852,2915)\n(853,2723)\n(855,1246)\n(861,1953)\n(861,3608)\n(862,1722)\n(862,3948)\n(862,3082)\n(864,2080)\n(865,3699)\n(869,3107)\n(872,2502)\n(874,3174)\n(874,1748)\n(882,1035)\n(882,1625)\n(882,1148)\n(884,3499)\n(884,1129)\n(884,3006)\n(885,1997)\n(885,1179)\n(886,1407)\n(886,3210)\n(888,10)\n(895,1876)\n(897,2947)\n(899,3033)\n(902,2701)\n(905,903)\n(907,1747)\n(908,3555)\n(908,1912)\n(909,1777)\n(912,2470)\n(913,1199)\n(914,70)\n(914,2248)\n(923,293)\n(925,1320)\n(926,1080)\n(927,1375)\n(927,235)\n(928,1207)\n(928,36)\n(930,1276)\n(935,2770)\n(936,2746)\n(938,2336)\n(938,1250)\n(940,6)\n(943,1282)\n(945,1215)\n(945,3108)\n(945,2712)\n(948,440)\n(948,788)\n(954,1552)\n(966,1639)\n(967,3552)\n(970,2105)\n(972,474)\n(975,1408)\n(978,2289)\n(980,25)\n(982,3072)\n(983,2006)\n(986,539)\n(988,2353)\n(989,1183)\n(989,3052)\n(990,3363)\n(990,329)\n(994,3897)\n(996,551)\n(996,1909)\n(997,1266)\n(1001,1233)\n(1001,1372)\n(1005,1682)\n(1006,2407)\n(1007,2617)\n(1010,1101)\n(1010,2968)\n(1011,2001)\n(1011,1028)\n(1013,3755)\n(1021,2890)\n(1031,1377)\n(1033,11)\n(1034,3703)\n(1035,2081)\n(1043,913)\n(1045,2054)\n(1046,1674)\n(1046,597)\n(1049,1234)\n(1050,904)\n(1052,3256)\n(1057,969)\n(1059,349)\n(1060,595)\n(1061,2268)\n(1066,3702)\n(1066,3081)\n(1071,2455)\n(1072,2692)\n(1074,1391)\n(1076,1608)\n(1077,1653)\n(1082,3448)\n(1086,2302)\n(1087,1258)\n(1089,2763)\n(1091,1396)\n(1095,3361)\n(1097,1732)\n(1099,1294)\n(1099,3255)\n(1110,736)\n(1110,1917)\n(1112,1242)\n(1113,3160)\n(1116,316)\n(1116,923)\n(1118,1288)\n(1119,3671)\n(1120,3253)\n(1121,364)\n(1124,587)\n(1126,1376)\n(1127,2194)\n(1127,2115)\n(1128,1673)\n(1129,1954)\n(1135,1370)\n(1136,1500)\n(1137,47)\n(1143,1090)\n(1148,2012)\n(1152,2324)\n(1156,920)\n(1158,2321)\n(1158,2011)\n(1162,2529)\n(1163,2100)\n(1163,1676)\n(1176,1208)\n(1177,1358)\n(1179,367)\n(1185,1252)\n(1193,1278)\n(1199,1641)\n(1205,1517)\n(1207,3421)\n(1220,2395)\n(1222,2640)\n(1222,3147)\n(1229,1206)\n(1229,1094)\n(1229,2985)\n(1233,2657)\n(1233,357)\n(1237,2710)\n(1240,3753)\n(1240,111)\n(1251,150)\n(1254,1222)\n(1255,1544)\n(1259,1089)\n(1261,1247)\n(1263,1219)\n(1269,2700)\n(1297,3527)\n(1310,1356)\n(1313,1073)\n(1313,3623)\n(1315,3408)\n(1315,908)\n(1326,1079)\n(1329,3751)\n(1330,1961)\n(1331,3176)\n(1334,1230)\n(1340,733)\n(1341,1220)\n(1345,2406)\n(1351,588)\n(1352,2804)\n(1353,1393)\n(1356,21)\n(1362,39)\n(1367,750)\n(1367,2699)\n(1371,1923)\n(1373,3481)\n(1377,1527)\n(1382,1225)\n(1382,1584)\n(1389,2706)\n(1400,380)\n(1412,223)\n(1417,3418)\n(1419,1304)\n(1421,1573)\n(1424,1784)\n(1431,592)\n(1434,2683)\n(1434,1394)\n(1448,1374)\n(1451,2959)\n(1451,590)\n(1451,3471)\n(1473,2918)\n(1473,2291)\n(1491,2797)\n(1495,2174)\n(1511,3793)\n(1511,32)\n(1522,2599)\n(1527,648)\n(1539,1968)\n(1546,1721)\n(1548,1704)\n(1568,1307)\n(1585,3114)\n(1599,1136)\n(1627,2000)\n(1628,1291)\n(1650,377)\n(1652,1610)\n(1657,1213)\n(1666,1036)\n(1669,912)\n(1692,1221)\n(1697,1387)\n(1703,2355)\n(1715,1127)\n(1716,924)\n(1718,919)\n(1725,1193)\n(1728,3175)\n(1730,780)\n(1731,2791)\n(1751,34)\n(1783,50)\n(1785,1259)\n(1799,2987)\n(1800,541)\n(1820,1200)\n(1924,3578)\n(1995,457)\n(1996,2916)\n(2024,1214)\n(2077,1)\n(2098,1240)\n(2171,296)\n(2181,2716)\n(2194,356)\n(2223,858)\n(2227,318)\n(2241,2997)\n(2250,2628)\n(2269,1097)\n(2278,1265)\n(2288,1617)\n(2304,527)\n(2318,1197)\n(2369,2396)\n(2443,110)\n(2459,2762)\n(2513,608)\n(2514,1198)\n(2538,1580)\n(2578,593)\n(2583,1270)\n(2590,2571)\n(2649,589)\n(2653,2028)\n(2672,480)\n(2883,1210)\n(2990,1196)\n(2991,260)\n(3428,2858)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472738291_1739555671",
+      "id": "paragraph_1594472738291_1739555671",
+      "dateCreated": "2020-07-11T18:35:38+0530",
+      "dateStarted": "2020-07-11T18:36:15+0530",
+      "dateFinished": "2020-07-11T18:36:17+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2426"
+    },
+    {
+      "text": "%md\n*Lets Load in another fake social network dataset.*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:41:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><em>Lets Load in another fake social network dataset.</em></p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594472775384_-627807756",
+      "id": "paragraph_1594472775384_-627807756",
+      "dateCreated": "2020-07-11T18:36:15+0530",
+      "dateStarted": "2020-07-11T18:41:35+0530",
+      "dateFinished": "2020-07-11T18:41:35+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2427"
+    },
+    {
+      "text": "%spark\nval friends = sc.textFile(\"data/fakefriends.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:41:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mfriends\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = data/fakefriends.csv MapPartitionsRDD[92] at textFile at <console>:34\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594473095825_-166773108",
+      "id": "paragraph_1594473095825_-166773108",
+      "dateCreated": "2020-07-11T18:41:35+0530",
+      "dateStarted": "2020-07-11T18:41:57+0530",
+      "dateFinished": "2020-07-11T18:41:58+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2428"
+    },
+    {
+      "text": "%spark\nfriends.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:58:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres31\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(0,Will,33,385, 1,Jean-Luc,26,2, 2,Hugh,55,221, 3,Deanna,40,465, 4,Quark,68,21)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=50",
+              "$$hashKey": "object:4247"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474077532_1660167763",
+      "id": "paragraph_1594474077532_1660167763",
+      "dateCreated": "2020-07-11T18:57:57+0530",
+      "dateStarted": "2020-07-11T18:58:07+0530",
+      "dateFinished": "2020-07-11T18:58:09+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2429"
+    },
+    {
+      "text": "%spark\n/** A function that splits a line of input into (age, numFriends) tuples. */\n  def parseLine(line: String) = {\n      // Split by commas\n      val fields = line.split(\",\")\n      // Extract the age and numFriends fields, and convert to integers\n      val age = fields(2).toInt\n      val numFriends = fields(3).toInt\n      // Create a tuple that is our result.\n      (age, numFriends)\n  }",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:57:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mparseLine\u001b[0m: \u001b[1m\u001b[32m(line: String)(Int, Int)\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594473117660_350747052",
+      "id": "paragraph_1594473117660_350747052",
+      "dateCreated": "2020-07-11T18:41:57+0530",
+      "dateStarted": "2020-07-11T18:57:34+0530",
+      "dateFinished": "2020-07-11T18:57:36+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2430"
+    },
+    {
+      "text": "%spark\n// Use our parseLines function to convert to (age, numFriends) tuples\nval rdd = friends.map(parseLine)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:00:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = MapPartitionsRDD[93] at map at <console>:36\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474054873_-2143735429",
+      "id": "paragraph_1594474054873_-2143735429",
+      "dateCreated": "2020-07-11T18:57:34+0530",
+      "dateStarted": "2020-07-11T18:58:33+0530",
+      "dateFinished": "2020-07-11T18:58:34+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2431"
+    },
+    {
+      "text": "%spark\nrdd.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T18:58:43+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres32\u001b[0m: \u001b[1m\u001b[32mArray[(Int, Int)]\u001b[0m = Array((33,385), (26,2), (55,221), (40,465), (68,21))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=51",
+              "$$hashKey": "object:4373"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474113798_-512068050",
+      "id": "paragraph_1594474113798_-512068050",
+      "dateCreated": "2020-07-11T18:58:33+0530",
+      "dateStarted": "2020-07-11T18:58:43+0530",
+      "dateFinished": "2020-07-11T18:58:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2432"
+    },
+    {
+      "text": "%spark\n// We are starting with an RDD of form (age, numFriends) where age is the KEY and numFriends is the VALUE\n// We use mapValues to convert each numFriends value to a tuple of (numFriends, 1)\n// Then we use reduceByKey to sum up the total numFriends and total instances for each age, by\n// adding together all the numFriends values and 1's respectively.\nval totalsByAge = rdd.mapValues(x => (x, 1)).reduceByKey( (x,y) => (x._1 + y._1, x._2 + y._2))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:00:23+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtotalsByAge\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, (Int, Int))]\u001b[0m = ShuffledRDD[95] at reduceByKey at <console>:37\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474123311_-67967376",
+      "id": "paragraph_1594474123311_-67967376",
+      "dateCreated": "2020-07-11T18:58:43+0530",
+      "dateStarted": "2020-07-11T18:59:08+0530",
+      "dateFinished": "2020-07-11T18:59:09+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2433"
+    },
+    {
+      "text": "%spark\n// So now we have tuples of (age, (totalFriends, totalInstances))\n// To compute the average we divide totalFriends / totalInstances for each age.\nval averagesByAge = totalsByAge.mapValues(x => x._1 / x._2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:00:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34maveragesByAge\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, Int)]\u001b[0m = MapPartitionsRDD[96] at mapValues at <console>:36\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474148113_-1504369608",
+      "id": "paragraph_1594474148113_-1504369608",
+      "dateCreated": "2020-07-11T18:59:08+0530",
+      "dateStarted": "2020-07-11T18:59:29+0530",
+      "dateFinished": "2020-07-11T18:59:30+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2434"
+    },
+    {
+      "text": "%spark\n// Collect the results from the RDD (This kicks off computing the DAG and actually executes the job)\nval results = averagesByAge.collect()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:06:08+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=52",
+              "$$hashKey": "object:5083"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474169736_-545231781",
+      "id": "paragraph_1594474169736_-545231781",
+      "dateCreated": "2020-07-11T18:59:29+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:2435",
+      "dateFinished": "2020-07-11T19:06:09+0530",
+      "dateStarted": "2020-07-11T19:06:08+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mresults\u001b[0m: \u001b[1m\u001b[32mArray[(Int, Int)]\u001b[0m = Array((19,213), (39,169), (34,245), (52,340), (55,295), (66,276), (28,209), (29,215), (54,278), (65,298), (30,235), (35,211), (50,254), (36,246), (24,233), (64,281), (57,258), (51,302), (37,249), (45,309), (63,384), (18,343), (20,165), (38,193), (49,184), (43,230), (41,268), (61,256), (56,306), (21,350), (47,233), (53,222), (22,206), (25,197), (46,223), (48,281), (59,220), (32,207), (27,228), (62,220), (33,325), (42,303), (23,246), (40,250), (67,214), (69,235), (58,116), (44,282), (60,202), (31,267), (26,242), (68,269))\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nresults.sorted.foreach(println)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:06:23+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474568086_1492356759",
+      "id": "paragraph_1594474568086_1492356759",
+      "dateCreated": "2020-07-11T19:06:08+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4982",
+      "dateFinished": "2020-07-11T19:06:24+0530",
+      "dateStarted": "2020-07-11T19:06:23+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(18,343)\n(19,213)\n(20,165)\n(21,350)\n(22,206)\n(23,246)\n(24,233)\n(25,197)\n(26,242)\n(27,228)\n(28,209)\n(29,215)\n(30,235)\n(31,267)\n(32,207)\n(33,325)\n(34,245)\n(35,211)\n(36,246)\n(37,249)\n(38,193)\n(39,169)\n(40,250)\n(41,268)\n(42,303)\n(43,230)\n(44,282)\n(45,309)\n(46,223)\n(47,233)\n(48,281)\n(49,184)\n(50,254)\n(51,302)\n(52,340)\n(53,222)\n(54,278)\n(55,295)\n(56,306)\n(57,258)\n(58,116)\n(59,220)\n(60,202)\n(61,256)\n(62,220)\n(63,384)\n(64,281)\n(65,298)\n(66,276)\n(67,214)\n(68,269)\n(69,235)\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n*Lets load up another dataset*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:11:45+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474597294_-1857650563",
+      "id": "paragraph_1594474597294_-1857650563",
+      "dateCreated": "2020-07-11T19:06:37+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5182",
+      "dateFinished": "2020-07-11T19:10:47+0530",
+      "dateStarted": "2020-07-11T19:10:47+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><em>Lets load up another dataset</em></p>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nval temp = sc.textFile(\"data/1800.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:11:59+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474847805_-2050358303",
+      "id": "paragraph_1594474847805_-2050358303",
+      "dateCreated": "2020-07-11T19:10:47+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5267",
+      "dateFinished": "2020-07-11T19:11:59+0530",
+      "dateStarted": "2020-07-11T19:11:59+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtemp\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = data/1800.csv MapPartitionsRDD[98] at textFile at <console>:34\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ntemp.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:12:15+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=53",
+              "$$hashKey": "object:5562"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474909419_314399330",
+      "id": "paragraph_1594474909419_314399330",
+      "dateCreated": "2020-07-11T19:11:49+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5352",
+      "dateFinished": "2020-07-11T19:12:16+0530",
+      "dateStarted": "2020-07-11T19:12:15+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres34\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(ITE00100554,18000101,TMAX,-75,,,E,, ITE00100554,18000101,TMIN,-148,,,E,, GM000010962,18000101,PRCP,0,,,E,, EZE00100082,18000101,TMAX,-86,,,E,, EZE00100082,18000101,TMIN,-135,,,E,)\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n/** Find the minimum temperature by weather station */\n  def parseLine(line:String)= {\n    val fields = line.split(\",\")\n    val stationID = fields(0)\n    val entryType = fields(2)\n    val temperature = fields(3).toFloat * 0.1f * (9.0f / 5.0f) + 32.0f\n    (stationID, entryType, temperature)\n  }",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:13:53+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474968499_1520322072",
+      "id": "paragraph_1594474968499_1520322072",
+      "dateCreated": "2020-07-11T19:12:48+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5567",
+      "dateFinished": "2020-07-11T19:13:54+0530",
+      "dateStarted": "2020-07-11T19:13:53+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mparseLine\u001b[0m: \u001b[1m\u001b[32m(line: String)(String, String, Float)\u001b[0m\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Convert to (stationID, entryType, temperature) tuples\nval parsedLines = temp.map(parseLine)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:14:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594474935639_835719188",
+      "id": "paragraph_1594474935639_835719188",
+      "dateCreated": "2020-07-11T19:12:15+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5462",
+      "dateFinished": "2020-07-11T19:14:00+0530",
+      "dateStarted": "2020-07-11T19:13:59+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mparsedLines\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, String, Float)]\u001b[0m = MapPartitionsRDD[99] at map at <console>:36\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nparsedLines.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:14:08+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=54",
+              "$$hashKey": "object:5879"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475039495_254318050",
+      "id": "paragraph_1594475039495_254318050",
+      "dateCreated": "2020-07-11T19:13:59+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5685",
+      "dateFinished": "2020-07-11T19:14:09+0530",
+      "dateStarted": "2020-07-11T19:14:08+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres35\u001b[0m: \u001b[1m\u001b[32mArray[(String, String, Float)]\u001b[0m = Array((ITE00100554,TMAX,18.5), (ITE00100554,TMIN,5.3600006), (GM000010962,PRCP,32.0), (EZE00100082,TMAX,16.52), (EZE00100082,TMIN,7.700001))\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Filter out all but TMIN entries\nval minTemps = parsedLines.filter(x => x._2 == \"TMIN\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:14:51+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475048826_2121295102",
+      "id": "paragraph_1594475048826_2121295102",
+      "dateCreated": "2020-07-11T19:14:08+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5779",
+      "dateFinished": "2020-07-11T19:14:51+0530",
+      "dateStarted": "2020-07-11T19:14:51+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mminTemps\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, String, Float)]\u001b[0m = MapPartitionsRDD[100] at filter at <console>:37\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Convert to (stationID, temperature)\nval stationTemps = minTemps.map(x => (x._1, x._3.toFloat))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:15:05+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475091153_-1576139400",
+      "id": "paragraph_1594475091153_-1576139400",
+      "dateCreated": "2020-07-11T19:14:51+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5884",
+      "dateFinished": "2020-07-11T19:15:06+0530",
+      "dateStarted": "2020-07-11T19:15:05+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mstationTemps\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Float)]\u001b[0m = MapPartitionsRDD[101] at map at <console>:37\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Reduce by stationID retaining the minimum temperature found\nimport scala.math.min\nval minTempsByStation = stationTemps.reduceByKey( (x,y) => min(x,y))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:16:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475105491_804651488",
+      "id": "paragraph_1594475105491_804651488",
+      "dateCreated": "2020-07-11T19:15:05+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5978",
+      "dateFinished": "2020-07-11T19:16:41+0530",
+      "dateStarted": "2020-07-11T19:16:40+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import scala.math.min\n\u001b[1m\u001b[34mminTempsByStation\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Float)]\u001b[0m = ShuffledRDD[102] at reduceByKey at <console>:39\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Collect, format, and print the results\nval results = minTempsByStation.collect()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:17:08+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=55",
+              "$$hashKey": "object:6290"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475123596_91482515",
+      "id": "paragraph_1594475123596_91482515",
+      "dateCreated": "2020-07-11T19:15:23+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6072",
+      "dateFinished": "2020-07-11T19:17:09+0530",
+      "dateStarted": "2020-07-11T19:17:08+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mresults\u001b[0m: \u001b[1m\u001b[32mArray[(String, Float)]\u001b[0m = Array((EZE00100082,7.700001), (ITE00100554,5.3600006))\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nfor (result <- results.sorted) {\n       val station = result._1\n       val temp = result._2\n       val formattedTemp = f\"$temp%.2f F\"\n       println(s\"$station minimum temperature: $formattedTemp\") \n    }",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:17:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475228651_-1175188867",
+      "id": "paragraph_1594475228651_-1175188867",
+      "dateCreated": "2020-07-11T19:17:08+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6190",
+      "dateFinished": "2020-07-11T19:17:26+0530",
+      "dateStarted": "2020-07-11T19:17:25+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "EZE00100082 minimum temperature: 7.70 F\nITE00100554 minimum temperature: 5.36 F\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n*Lets do another word count on a text file*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:18:00+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475245272_421379553",
+      "id": "paragraph_1594475245272_421379553",
+      "dateCreated": "2020-07-11T19:17:25+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6295",
+      "dateFinished": "2020-07-11T19:18:00+0530",
+      "dateStarted": "2020-07-11T19:18:00+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><em>Lets do another word count on a text file</em></p>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nval book = sc.textFile(\"data/Book.txt\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:19:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475280336_977208014",
+      "id": "paragraph_1594475280336_977208014",
+      "dateCreated": "2020-07-11T19:18:00+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6389",
+      "dateFinished": "2020-07-11T19:19:32+0530",
+      "dateStarted": "2020-07-11T19:19:32+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mbook\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = data/Book.txt MapPartitionsRDD[104] at textFile at <console>:35\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nbook.take(2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:19:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=56",
+              "$$hashKey": "object:6664"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475372294_1562982944",
+      "id": "paragraph_1594475372294_1562982944",
+      "dateCreated": "2020-07-11T19:19:32+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6470",
+      "dateFinished": "2020-07-11T19:19:43+0530",
+      "dateStarted": "2020-07-11T19:19:42+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres37\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(Self-Employment: Building an Internet Business of One, Achieving Financial and Personal Freedom through a Lifestyle Technology Business)\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Split using a regular expression that extracts words\nval words = book.flatMap(x => x.split(\"\\\\W+\"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:20:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475382237_-1580591532",
+      "id": "paragraph_1594475382237_-1580591532",
+      "dateCreated": "2020-07-11T19:19:42+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6564",
+      "dateFinished": "2020-07-11T19:20:20+0530",
+      "dateStarted": "2020-07-11T19:20:19+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mwords\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = MapPartitionsRDD[105] at flatMap at <console>:37\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Normalize everything to lowercase\nval lowercaseWords = words.map(x => x.toLowerCase())",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:20:59+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475419598_2082549381",
+      "id": "paragraph_1594475419598_2082549381",
+      "dateCreated": "2020-07-11T19:20:19+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6669",
+      "dateFinished": "2020-07-11T19:21:00+0530",
+      "dateStarted": "2020-07-11T19:20:59+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlowercaseWords\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m = MapPartitionsRDD[106] at map at <console>:38\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Count of the occurrences of each word\nval wordCounts = lowercaseWords.map(x => (x, 1)).reduceByKey( (x,y) => x + y )",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:21:29+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475459996_547914826",
+      "id": "paragraph_1594475459996_547914826",
+      "dateCreated": "2020-07-11T19:20:59+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6763",
+      "dateFinished": "2020-07-11T19:21:30+0530",
+      "dateStarted": "2020-07-11T19:21:29+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mwordCounts\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m = ShuffledRDD[108] at reduceByKey at <console>:39\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Flip (word, count) tuples to (count, word) and then sort by key (the counts)\nval wordCountsSorted = wordCounts.map( x => (x._2, x._1) ).sortByKey(ascending= false)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:25:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475489510_-913689791",
+      "id": "paragraph_1594475489510_-913689791",
+      "dateCreated": "2020-07-11T19:21:29+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6857",
+      "dateFinished": "2020-07-11T19:25:36+0530",
+      "dateStarted": "2020-07-11T19:25:36+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mwordCountsSorted\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Int, String)]\u001b[0m = ShuffledRDD[114] at sortByKey at <console>:38\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nwordCountsSorted.take(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:25:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=60",
+              "$$hashKey": "object:7373"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475583710_-747078907",
+      "id": "paragraph_1594475583710_-747078907",
+      "dateCreated": "2020-07-11T19:23:03+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7175",
+      "dateFinished": "2020-07-11T19:25:40+0530",
+      "dateStarted": "2020-07-11T19:25:39+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres41\u001b[0m: \u001b[1m\u001b[32mArray[(Int, String)]\u001b[0m = Array((1878,you), (1828,to), (1420,your), (1292,the), (1191,a))\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nfor (result <- wordCountsSorted) {\n      val count = result._1\n      val word = result._2\n      println(s\"$word: $count\")\n    }",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:26:09+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=61",
+              "$$hashKey": "object:7451"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475510616_1510933206",
+      "id": "paragraph_1594475510616_1510933206",
+      "dateCreated": "2020-07-11T19:21:50+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6951",
+      "dateFinished": "2020-07-11T19:25:53+0530",
+      "dateStarted": "2020-07-11T19:25:52+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      }
+    },
+    {
+      "text": "%md\n---\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-11T19:28:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594475907947_-164362650",
+      "id": "paragraph_1594475907947_-164362650",
+      "dateCreated": "2020-07-11T19:28:27+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7538",
+      "dateFinished": "2020-07-11T19:28:57+0530",
+      "dateStarted": "2020-07-11T19:28:57+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<hr />\n\n</div>"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "Data Wrangling using RDDs",
+  "id": "2FFC2BEXU",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/Data Wrangling using RDDs"
+}
