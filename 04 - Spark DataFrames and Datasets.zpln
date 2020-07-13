@@ -1,0 +1,4289 @@
+﻿{
+  "paragraphs": [
+    {
+      "user": "anonymous",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594666731857_-1257403164",
+      "id": "paragraph_1594666731857_-1257403164",
+      "dateCreated": "2020-07-14T00:28:51+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:524",
+      "text": "%md\n\n![Spark Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png)",
+      "dateUpdated": "2020-07-14T00:30:52+0530",
+      "dateFinished": "2020-07-14T00:30:47+0530",
+      "dateStarted": "2020-07-14T00:30:43+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png\" alt=\"Spark Image\" /></p>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n\n# Structured APIs",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:31:12+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594666843875_-348089064",
+      "id": "paragraph_1594666843875_-348089064",
+      "dateCreated": "2020-07-14T00:30:43+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:644",
+      "dateFinished": "2020-07-14T00:31:10+0530",
+      "dateStarted": "2020-07-14T00:31:10+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Structured APIs</h1>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n## RDDs vs DataFrames and Datasets\n\n![](https://databricks.com/wp-content/uploads/2018/05/rdd-1024x595.png)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:31:27+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594666870879_-1792328248",
+      "id": "paragraph_1594666870879_-1792328248",
+      "dateCreated": "2020-07-14T00:31:10+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:747",
+      "dateFinished": "2020-07-14T00:31:24+0530",
+      "dateStarted": "2020-07-14T00:31:24+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>RDDs vs DataFrames and Datasets</h2>\n<p><img src=\"https://databricks.com/wp-content/uploads/2018/05/rdd-1024x595.png\" alt=\"\" /></p>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### Resilient Distributed Dataset (RDD)\nRDD was the primary user-facing API in Spark since its inception. At the core, an RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions.\n\n### When to use RDDs?\nConsider these scenarios or common use cases for using RDDs when:\n- you want low-level transformation and actions and control on your dataset;\n- your data is unstructured, such as media streams or streams of text;\n- you want to manipulate your data with functional programming constructs than domain specific expressions;\n- you don’t care about imposing a schema, such as columnar format, while processing or accessing data attributes by name or column; and\n- you can forgo some optimization and performance benefits available with DataFrames and Datasets for structured and semi-structured data.\n\n### What happens to RDDs in Apache Spark 2.0?\nYou may ask: Are RDDs being relegated as second class citizens? Are they being deprecated?\n\n**The answer is a resounding NO!**\n\nWhat’s more, as you will note below, you can seamlessly move between DataFrame or Dataset and RDDs at will—by simple API method calls—and DataFrames and Datasets are built on top of RDDs.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:31:56+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594666884023_983599171",
+      "id": "paragraph_1594666884023_983599171",
+      "dateCreated": "2020-07-14T00:31:24+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:838",
+      "dateFinished": "2020-07-14T00:31:52+0530",
+      "dateStarted": "2020-07-14T00:31:52+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Resilient Distributed Dataset (RDD)</h3>\n<p>RDD was the primary user-facing API in Spark since its inception. At the core, an RDD is an immutable distributed collection of elements of your data, partitioned across nodes in your cluster that can be operated in parallel with a low-level API that offers transformations and actions.</p>\n<h3>When to use RDDs?</h3>\n<p>Consider these scenarios or common use cases for using RDDs when:</p>\n<ul>\n<li>you want low-level transformation and actions and control on your dataset;</li>\n<li>your data is unstructured, such as media streams or streams of text;</li>\n<li>you want to manipulate your data with functional programming constructs than domain specific expressions;</li>\n<li>you don’t care about imposing a schema, such as columnar format, while processing or accessing data attributes by name or column; and</li>\n<li>you can forgo some optimization and performance benefits available with DataFrames and Datasets for structured and semi-structured data.</li>\n</ul>\n<h3>What happens to RDDs in Apache Spark 2.0?</h3>\n<p>You may ask: Are RDDs being relegated as second class citizens? Are they being deprecated?</p>\n<p><strong>The answer is a resounding NO!</strong></p>\n<p>What’s more, as you will note below, you can seamlessly move between DataFrame or Dataset and RDDs at will—by simple API method calls—and DataFrames and Datasets are built on top of RDDs.</p>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n\n\n### Datasets\nStarting in Spark 2.0, Dataset takes on two distinct APIs characteristics: a strongly-typed API and an untyped API, as shown in the table below. Conceptually, consider DataFrame as an alias for a collection of generic objects Dataset[Row], where a Row is a generic untyped JVM object. Dataset, by contrast, is a collection of strongly-typed JVM objects, dictated by a case class you define in Scala or a class in Java.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:32:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594666912331_721392990",
+      "id": "paragraph_1594666912331_721392990",
+      "dateCreated": "2020-07-14T00:31:52+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:923",
+      "dateFinished": "2020-07-14T00:32:49+0530",
+      "dateStarted": "2020-07-14T00:32:49+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Datasets</h3>\n<p>Starting in Spark 2.0, Dataset takes on two distinct APIs characteristics: a strongly-typed API and an untyped API, as shown in the table below. Conceptually, consider DataFrame as an alias for a collection of generic objects Dataset[Row], where a Row is a generic untyped JVM object. Dataset, by contrast, is a collection of strongly-typed JVM objects, dictated by a case class you define in Scala or a class in Java.</p>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### Typed and Un-typed APIs\n\n<table class=\"table\">\n<thead>\n<tr>\n<th>Language</th>\n<th>Main Abstraction</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Scala</td>\n<td>Dataset[T] &amp; DataFrame (alias for Dataset[Row])</td>\n</tr>\n<tr>\n<td>Java</td>\n<td>Dataset[T]</td>\n</tr>\n<tr>\n<td>Python*</td>\n<td>DataFrame</td>\n</tr>\n<tr>\n<td>R*</td>\n<td>DataFrame</td>\n</tr>\n</tbody>\n</table>\n\n> **Note:** *Since Python and R have no compile-time type-safety, we only have untyped APIs, namely DataFrames.*",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:33:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594666969779_517265866",
+      "id": "paragraph_1594666969779_517265866",
+      "dateCreated": "2020-07-14T00:32:49+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1017",
+      "dateFinished": "2020-07-14T00:33:12+0530",
+      "dateStarted": "2020-07-14T00:33:12+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Typed and Un-typed APIs</h3>\n<table class=\"table\">\n<thead>\n<tr>\n<th>Language</th>\n<th>Main Abstraction</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Scala</td>\n<td>Dataset[T] &amp; DataFrame (alias for Dataset[Row])</td>\n</tr>\n<tr>\n<td>Java</td>\n<td>Dataset[T]</td>\n</tr>\n<tr>\n<td>Python*</td>\n<td>DataFrame</td>\n</tr>\n<tr>\n<td>R*</td>\n<td>DataFrame</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p><strong>Note:</strong> <em>Since Python and R have no compile-time type-safety, we only have untyped APIs, namely DataFrames.</em></p>\n</blockquote>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### Benefits of Dataset APIs\n\n### 1. Static-typing and runtime type-safety\n\nConsider static-typing and runtime safety as a spectrum, with SQL least restrictive to Dataset most restrictive. For instance, in your Spark SQL string queries, you won’t know a syntax error until runtime (which could be costly), whereas in DataFrames and Datasets you can catch errors at compile time (which saves developer-time and costs). That is, if you invoke a function in DataFrame that is not part of the API, the compiler will catch it. However, it won’t detect a non-existing column name until runtime.\n\nAt the far end of the spectrum is Dataset, most restrictive. Since Dataset APIs are all expressed as lambda functions and JVM typed objects, any mismatch of typed-parameters will be detected at compile time. Also, your analysis error can be detected at compile time too, when using Datasets, hence saving developer-time and costs.\n\nAll this translates to is a spectrum of type-safety along syntax and analysis error in your Spark code, with Datasets as most restrictive yet productive for a developer.\n\n![](https://databricks.com/wp-content/uploads/2016/07/sql-vs-dataframes-vs-datasets-type-safety-spectrum.png)\n\n### 2. High-level abstraction and custom view into structured and semi-structured data\nDataFrames as a collection of Datasets[Row] render a structured custom view into your semi-structured data.\n\n### 3. Ease-of-use of APIs with structure\n\nAlthough structure may limit control in what your Spark program can do with data, it introduces rich semantics and an easy set of domain specific operations that can be expressed as high-level constructs. Most computations, however, can be accomplished with Dataset’s high-level APIs. For example, it’s much simpler to perform `agg`, `select`, `sum`, `avg`, `map`, `filter`, or `groupBy` operations. \n\n### 4. Performance and Optimization\nAlong with all the above benefits, you cannot overlook the space efficiency and performance gains in using DataFrames and Dataset APIs for two reasons.\n\nFirst, because DataFrame and Dataset APIs are built on top of the Spark SQL engine, it uses Catalyst to generate an optimized logical and physical query plan. Across R, Java, Scala, or Python DataFrame/Dataset APIs, all relation type queries undergo the same code optimizer, providing the space and speed efficiency. Whereas the Dataset[T] typed API is optimized for data engineering tasks, the untyped Dataset[Row] (an alias of DataFrame) is even faster and suitable for interactive analysis.\n\n![](https://databricks.com/wp-content/uploads/2016/07/memory-usage-when-caching-datasets-vs-rdds.png)\n\nSecond, since Spark as a compiler understands your Dataset type JVM object, it maps your type-specific JVM object to Tungsten’s internal memory representation using Encoders. As a result, Tungsten Encoders can efficiently serialize/deserialize JVM objects as well as generate compact bytecode that can execute at superior speeds.\n\n### When should I use DataFrames or Datasets?\n- If you want rich semantics, high-level abstractions, and domain specific APIs, use DataFrame or Dataset.\n- If your processing demands high-level expressions, filters, maps, aggregation, averages, sum, SQL queries, columnar access and use of lambda functions on semi-structured data, use DataFrame or Dataset.\n- If you want higher degree of type-safety at compile time, want typed JVM objects, take advantage of Catalyst optimization, and benefit from Tungsten’s efficient code generation, use Dataset.\n- If you want unification and simplification of APIs across Spark Libraries, use DataFrame or Dataset.\n- If you are a R user, use DataFrames.\n- If you are a Python user, use DataFrames and resort back to RDDs if you need more control.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:33:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594666992728_-1148395216",
+      "id": "paragraph_1594666992728_-1148395216",
+      "dateCreated": "2020-07-14T00:33:12+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1114",
+      "dateFinished": "2020-07-14T00:33:41+0530",
+      "dateStarted": "2020-07-14T00:33:41+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Benefits of Dataset APIs</h3>\n<h3>1. Static-typing and runtime type-safety</h3>\n<p>Consider static-typing and runtime safety as a spectrum, with SQL least restrictive to Dataset most restrictive. For instance, in your Spark SQL string queries, you won’t know a syntax error until runtime (which could be costly), whereas in DataFrames and Datasets you can catch errors at compile time (which saves developer-time and costs). That is, if you invoke a function in DataFrame that is not part of the API, the compiler will catch it. However, it won’t detect a non-existing column name until runtime.</p>\n<p>At the far end of the spectrum is Dataset, most restrictive. Since Dataset APIs are all expressed as lambda functions and JVM typed objects, any mismatch of typed-parameters will be detected at compile time. Also, your analysis error can be detected at compile time too, when using Datasets, hence saving developer-time and costs.</p>\n<p>All this translates to is a spectrum of type-safety along syntax and analysis error in your Spark code, with Datasets as most restrictive yet productive for a developer.</p>\n<p><img src=\"https://databricks.com/wp-content/uploads/2016/07/sql-vs-dataframes-vs-datasets-type-safety-spectrum.png\" alt=\"\" /></p>\n<h3>2. High-level abstraction and custom view into structured and semi-structured data</h3>\n<p>DataFrames as a collection of Datasets[Row] render a structured custom view into your semi-structured data.</p>\n<h3>3. Ease-of-use of APIs with structure</h3>\n<p>Although structure may limit control in what your Spark program can do with data, it introduces rich semantics and an easy set of domain specific operations that can be expressed as high-level constructs. Most computations, however, can be accomplished with Dataset’s high-level APIs. For example, it’s much simpler to perform <code>agg</code>, <code>select</code>, <code>sum</code>, <code>avg</code>, <code>map</code>, <code>filter</code>, or <code>groupBy</code> operations.</p>\n<h3>4. Performance and Optimization</h3>\n<p>Along with all the above benefits, you cannot overlook the space efficiency and performance gains in using DataFrames and Dataset APIs for two reasons.</p>\n<p>First, because DataFrame and Dataset APIs are built on top of the Spark SQL engine, it uses Catalyst to generate an optimized logical and physical query plan. Across R, Java, Scala, or Python DataFrame/Dataset APIs, all relation type queries undergo the same code optimizer, providing the space and speed efficiency. Whereas the Dataset[T] typed API is optimized for data engineering tasks, the untyped Dataset[Row] (an alias of DataFrame) is even faster and suitable for interactive analysis.</p>\n<p><img src=\"https://databricks.com/wp-content/uploads/2016/07/memory-usage-when-caching-datasets-vs-rdds.png\" alt=\"\" /></p>\n<p>Second, since Spark as a compiler understands your Dataset type JVM object, it maps your type-specific JVM object to Tungsten’s internal memory representation using Encoders. As a result, Tungsten Encoders can efficiently serialize/deserialize JVM objects as well as generate compact bytecode that can execute at superior speeds.</p>\n<h3>When should I use DataFrames or Datasets?</h3>\n<ul>\n<li>If you want rich semantics, high-level abstractions, and domain specific APIs, use DataFrame or Dataset.</li>\n<li>If your processing demands high-level expressions, filters, maps, aggregation, averages, sum, SQL queries, columnar access and use of lambda functions on semi-structured data, use DataFrame or Dataset.</li>\n<li>If you want higher degree of type-safety at compile time, want typed JVM objects, take advantage of Catalyst optimization, and benefit from Tungsten’s efficient code generation, use Dataset.</li>\n<li>If you want unification and simplification of APIs across Spark Libraries, use DataFrame or Dataset.</li>\n<li>If you are a R user, use DataFrames.</li>\n<li>If you are a Python user, use DataFrames and resort back to RDDs if you need more control.</li>\n</ul>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nsc\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:34:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667021798_-634745436",
+      "id": "paragraph_1594667021798_-634745436",
+      "dateCreated": "2020-07-14T00:33:41+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1205",
+      "dateFinished": "2020-07-14T00:35:21+0530",
+      "dateStarted": "2020-07-14T00:34:18+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.SparkContext\u001b[0m = org.apache.spark.SparkContext@563c279f\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Create a DataFrame from Spark Session read csv\n// Technically known as class Dataset\nval df = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").csv(\"CitiGroup2006_2008\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:43:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=0",
+              "$$hashKey": "object:1642"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=1",
+              "$$hashKey": "object:1643"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667058625_-634957197",
+      "id": "paragraph_1594667058625_-634957197",
+      "dateCreated": "2020-07-14T00:34:18+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1293",
+      "dateFinished": "2020-07-14T00:44:08+0530",
+      "dateStarted": "2020-07-14T00:43:32+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 4 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Get first 5 rows\ndf.head(5) // returns an Array\nprintln(\"\\n\")\nfor(line <- df.head(10)){\n  println(line)\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:43:46+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=2",
+              "$$hashKey": "object:1693"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=3",
+              "$$hashKey": "object:1694"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667612185_-1411024027",
+      "id": "paragraph_1594667612185_-1411024027",
+      "dateCreated": "2020-07-14T00:43:32+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1463",
+      "dateFinished": "2020-07-14T00:44:17+0530",
+      "dateStarted": "2020-07-14T00:43:46+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\n[2006-01-03 00:00:00.0,490.0,493.8,481.1,492.9,1537660]\n[2006-01-04 00:00:00.0,488.6,491.0,483.5,483.8,1871020]\n[2006-01-05 00:00:00.0,484.4,487.8,484.0,486.2,1143160]\n[2006-01-06 00:00:00.0,488.8,489.0,482.0,486.2,1370250]\n[2006-01-09 00:00:00.0,486.0,487.4,483.0,483.9,1680740]\n[2006-01-10 00:00:00.0,483.0,485.5,480.8,485.4,1365960]\n[2006-01-11 00:00:00.0,495.8,495.8,485.8,489.8,1684440]\n[2006-01-12 00:00:00.0,491.0,491.0,488.8,490.3,1230060]\n[2006-01-13 00:00:00.0,491.0,491.9,487.3,489.2,940930]\n[2006-01-17 00:00:00.0,485.1,487.0,482.7,484.3,1237830]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:44:23+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=4",
+              "$$hashKey": "object:1803"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667626244_72547970",
+      "id": "paragraph_1594667626244_72547970",
+      "dateCreated": "2020-07-14T00:43:46+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1541",
+      "dateFinished": "2020-07-14T00:44:26+0530",
+      "dateStarted": "2020-07-14T00:44:23+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----+-----+-----+-----+-------+\n|               Date| Open| High|  Low|Close| Volume|\n+-------------------+-----+-----+-----+-----+-------+\n|2006-01-03 00:00:00|490.0|493.8|481.1|492.9|1537660|\n|2006-01-04 00:00:00|488.6|491.0|483.5|483.8|1871020|\n|2006-01-05 00:00:00|484.4|487.8|484.0|486.2|1143160|\n|2006-01-06 00:00:00|488.8|489.0|482.0|486.2|1370250|\n|2006-01-09 00:00:00|486.0|487.4|483.0|483.9|1680740|\n|2006-01-10 00:00:00|483.0|485.5|480.8|485.4|1365960|\n|2006-01-11 00:00:00|495.8|495.8|485.8|489.8|1684440|\n|2006-01-12 00:00:00|491.0|491.0|488.8|490.3|1230060|\n|2006-01-13 00:00:00|491.0|491.9|487.3|489.2| 940930|\n|2006-01-17 00:00:00|485.1|487.0|482.7|484.3|1237830|\n|2006-01-18 00:00:00|484.3|486.7|481.1|483.8|1218910|\n|2006-01-19 00:00:00|485.6|485.8|477.0|479.4|1696500|\n|2006-01-20 00:00:00|472.1|474.0|456.3|456.9|4781930|\n|2006-01-23 00:00:00|460.0|463.8|457.0|460.0|2025500|\n|2006-01-24 00:00:00|462.9|463.6|459.9|460.1|2083740|\n|2006-01-25 00:00:00|461.4|463.7|460.1|462.3|1591940|\n|2006-01-26 00:00:00|465.5|475.5|464.5|470.1|1988600|\n|2006-01-27 00:00:00|470.1|473.7|466.0|468.7|1412760|\n|2006-01-30 00:00:00|468.7|469.9|466.6|468.2|1057630|\n|2006-01-31 00:00:00|468.3|470.5|465.5|465.8|1887280|\n+-------------------+-----+-----+-----+-----+-------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Get column names\ndf.columns",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:44:37+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667663903_169248437",
+      "id": "paragraph_1594667663903_169248437",
+      "dateCreated": "2020-07-14T00:44:23+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1703",
+      "dateFinished": "2020-07-14T00:44:38+0530",
+      "dateStarted": "2020-07-14T00:44:37+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres4\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(Date, Open, High, Low, Close, Volume)\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Find out DataTypes\n// Print Schema\ndf.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:44:43+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667677386_-502484203",
+      "id": "paragraph_1594667677386_-502484203",
+      "dateCreated": "2020-07-14T00:44:37+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1808",
+      "dateFinished": "2020-07-14T00:44:44+0530",
+      "dateStarted": "2020-07-14T00:44:43+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Date: timestamp (nullable = true)\n |-- Open: double (nullable = true)\n |-- High: double (nullable = true)\n |-- Low: double (nullable = true)\n |-- Close: double (nullable = true)\n |-- Volume: integer (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Describe DataFrame Numerical Columns\ndf.describe().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:45:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=7",
+              "$$hashKey": "object:2249"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667683378_1227716100",
+      "id": "paragraph_1594667683378_1227716100",
+      "dateCreated": "2020-07-14T00:44:43+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1902",
+      "dateFinished": "2020-07-14T00:45:28+0530",
+      "dateStarted": "2020-07-14T00:45:25+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+-----------------+------------------+------------------+-----------------+\n|summary|              Open|             High|               Low|             Close|           Volume|\n+-------+------------------+-----------------+------------------+------------------+-----------------+\n|  count|               755|              755|               755|               755|              755|\n|   mean| 386.0923178807949|390.6590596026489|380.80170860927143| 385.3421456953643|6308596.382781457|\n| stddev|149.32301134820133|148.5151130063523|150.53136890891344|149.83310074439177| 8099892.56297633|\n|    min|              54.4|             55.3|              30.5|              37.7|           632860|\n|    max|             566.0|            570.0|             555.5|             564.1|        102869289|\n+-------+------------------+-----------------+------------------+------------------+-----------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Select columns .transform().action()\ndf.select(\"Volume\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:45:06+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=6",
+              "$$hashKey": "object:2203"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667691434_1741298926",
+      "id": "paragraph_1594667691434_1741298926",
+      "dateCreated": "2020-07-14T00:44:51+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1996",
+      "dateFinished": "2020-07-14T00:45:09+0530",
+      "dateStarted": "2020-07-14T00:45:06+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+\n| Volume|\n+-------+\n|1537660|\n|1871020|\n|1143160|\n|1370250|\n|1680740|\n|1365960|\n|1684440|\n|1230060|\n| 940930|\n|1237830|\n|1218910|\n|1696500|\n|4781930|\n|2025500|\n|2083740|\n|1591940|\n|1988600|\n|1412760|\n|1057630|\n|1887280|\n+-------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Multiple Columns\ndf.select($\"Date\",$\"Close\").show(2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:45:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=8",
+              "$$hashKey": "object:2354"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667706526_-341735632",
+      "id": "paragraph_1594667706526_-341735632",
+      "dateCreated": "2020-07-14T00:45:06+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2103",
+      "dateFinished": "2020-07-14T00:45:45+0530",
+      "dateStarted": "2020-07-14T00:45:42+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----+\n|               Date|Close|\n+-------------------+-----+\n|2006-01-03 00:00:00|492.9|\n|2006-01-04 00:00:00|483.8|\n+-------------------+-----+\nonly showing top 2 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Creating New Columns\nval df2 = df.withColumn(\"HighPlusLow\",df(\"High\")-df(\"Low\"))\n// Show result\n//df2.columns\ndf2.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:47:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667742956_-1131831223",
+      "id": "paragraph_1594667742956_-1131831223",
+      "dateCreated": "2020-07-14T00:45:42+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2254",
+      "dateFinished": "2020-07-14T00:47:08+0530",
+      "dateStarted": "2020-07-14T00:47:07+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Date: timestamp (nullable = true)\n |-- Open: double (nullable = true)\n |-- High: double (nullable = true)\n |-- Low: double (nullable = true)\n |-- Close: double (nullable = true)\n |-- Volume: integer (nullable = true)\n |-- HighPlusLow: double (nullable = true)\n\n\u001b[1m\u001b[34mdf2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 5 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Recheck Head\ndf2.head(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:47:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=9",
+              "$$hashKey": "object:2649"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667762309_-1106250990",
+      "id": "paragraph_1594667762309_-1106250990",
+      "dateCreated": "2020-07-14T00:46:02+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2359",
+      "dateFinished": "2020-07-14T00:47:18+0530",
+      "dateStarted": "2020-07-14T00:47:17+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres15\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.Row]\u001b[0m = Array([2006-01-03 00:00:00.0,490.0,493.8,481.1,492.9,1537660,12.699999999999989], [2006-01-04 00:00:00.0,488.6,491.0,483.5,483.8,1871020,7.5], [2006-01-05 00:00:00.0,484.4,487.8,484.0,486.2,1143160,3.8000000000000114], [2006-01-06 00:00:00.0,488.8,489.0,482.0,486.2,1370250,7.0], [2006-01-09 00:00:00.0,486.0,487.4,483.0,483.9,1680740,4.399999999999977])\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Renaming Columns (and selecting some more)\ndf2.select(df2(\"HighPlusLow\").as(\"HPL\"),df2(\"Close\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:47:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=10",
+              "$$hashKey": "object:2754"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667837928_6009632",
+      "id": "paragraph_1594667837928_6009632",
+      "dateCreated": "2020-07-14T00:47:17+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2549",
+      "dateFinished": "2020-07-14T00:47:30+0530",
+      "dateStarted": "2020-07-14T00:47:28+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------------------+-----+\n|               HPL|Close|\n+------------------+-----+\n|12.699999999999989|492.9|\n|               7.5|483.8|\n|3.8000000000000114|486.2|\n|               7.0|486.2|\n| 4.399999999999977|483.9|\n| 4.699999999999989|485.4|\n|              10.0|489.8|\n|2.1999999999999886|490.3|\n| 4.599999999999966|489.2|\n| 4.300000000000011|484.3|\n| 5.599999999999966|483.8|\n| 8.800000000000011|479.4|\n| 17.69999999999999|456.9|\n| 6.800000000000011|460.0|\n|3.7000000000000455|460.1|\n| 3.599999999999966|462.3|\n|              11.0|470.1|\n| 7.699999999999989|468.7|\n|3.2999999999999545|468.2|\n|               5.0|465.8|\n+------------------+-----+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// This import is needed to use the $-notation\nimport spark.implicits._",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:48:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667848397_-1704379570",
+      "id": "paragraph_1594667848397_-1704379570",
+      "dateCreated": "2020-07-14T00:47:28+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2654",
+      "dateFinished": "2020-07-14T00:48:27+0530",
+      "dateStarted": "2020-07-14T00:48:25+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import spark.implicits._\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Grabbing all rows where a column meets a condition\ndf.filter($\"Close\" > 480).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:48:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=11",
+              "$$hashKey": "object:2953"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667905410_-1557365434",
+      "id": "paragraph_1594667905410_-1557365434",
+      "dateCreated": "2020-07-14T00:48:25+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2759",
+      "dateFinished": "2020-07-14T00:48:37+0530",
+      "dateStarted": "2020-07-14T00:48:35+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----+-----+-----+-----+-------+\n|               Date| Open| High|  Low|Close| Volume|\n+-------------------+-----+-----+-----+-----+-------+\n|2006-01-03 00:00:00|490.0|493.8|481.1|492.9|1537660|\n|2006-01-04 00:00:00|488.6|491.0|483.5|483.8|1871020|\n|2006-01-05 00:00:00|484.4|487.8|484.0|486.2|1143160|\n|2006-01-06 00:00:00|488.8|489.0|482.0|486.2|1370250|\n|2006-01-09 00:00:00|486.0|487.4|483.0|483.9|1680740|\n|2006-01-10 00:00:00|483.0|485.5|480.8|485.4|1365960|\n|2006-01-11 00:00:00|495.8|495.8|485.8|489.8|1684440|\n|2006-01-12 00:00:00|491.0|491.0|488.8|490.3|1230060|\n|2006-01-13 00:00:00|491.0|491.9|487.3|489.2| 940930|\n|2006-01-17 00:00:00|485.1|487.0|482.7|484.3|1237830|\n|2006-01-18 00:00:00|484.3|486.7|481.1|483.8|1218910|\n|2006-04-04 00:00:00|474.3|483.8|474.1|482.1|1612390|\n|2006-04-05 00:00:00|483.0|484.7|481.3|482.6|1276340|\n|2006-04-13 00:00:00|474.1|481.8|474.1|480.5|1197840|\n|2006-04-17 00:00:00|484.1|485.6|482.0|483.5|1678120|\n|2006-04-18 00:00:00|484.4|486.0|479.0|484.8|1803670|\n|2006-04-19 00:00:00|484.8|487.1|480.5|482.3|1445480|\n|2006-04-20 00:00:00|483.0|487.2|482.6|483.0|1866460|\n|2006-04-21 00:00:00|484.9|484.9|477.9|480.1|1579130|\n|2006-04-27 00:00:00|472.0|484.4|471.5|481.5|2464800|\n+-------------------+-----+-----+-----+-----+-------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Can also use SQL notation\ndf.filter(\"Close > 480\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:49:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=12",
+              "$$hashKey": "object:3058"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667915641_-1827047584",
+      "id": "paragraph_1594667915641_-1827047584",
+      "dateCreated": "2020-07-14T00:48:35+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2853",
+      "dateFinished": "2020-07-14T00:49:03+0530",
+      "dateStarted": "2020-07-14T00:49:01+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----+-----+-----+-----+-------+\n|               Date| Open| High|  Low|Close| Volume|\n+-------------------+-----+-----+-----+-----+-------+\n|2006-01-03 00:00:00|490.0|493.8|481.1|492.9|1537660|\n|2006-01-04 00:00:00|488.6|491.0|483.5|483.8|1871020|\n|2006-01-05 00:00:00|484.4|487.8|484.0|486.2|1143160|\n|2006-01-06 00:00:00|488.8|489.0|482.0|486.2|1370250|\n|2006-01-09 00:00:00|486.0|487.4|483.0|483.9|1680740|\n|2006-01-10 00:00:00|483.0|485.5|480.8|485.4|1365960|\n|2006-01-11 00:00:00|495.8|495.8|485.8|489.8|1684440|\n|2006-01-12 00:00:00|491.0|491.0|488.8|490.3|1230060|\n|2006-01-13 00:00:00|491.0|491.9|487.3|489.2| 940930|\n|2006-01-17 00:00:00|485.1|487.0|482.7|484.3|1237830|\n|2006-01-18 00:00:00|484.3|486.7|481.1|483.8|1218910|\n|2006-04-04 00:00:00|474.3|483.8|474.1|482.1|1612390|\n|2006-04-05 00:00:00|483.0|484.7|481.3|482.6|1276340|\n|2006-04-13 00:00:00|474.1|481.8|474.1|480.5|1197840|\n|2006-04-17 00:00:00|484.1|485.6|482.0|483.5|1678120|\n|2006-04-18 00:00:00|484.4|486.0|479.0|484.8|1803670|\n|2006-04-19 00:00:00|484.8|487.1|480.5|482.3|1445480|\n|2006-04-20 00:00:00|483.0|487.2|482.6|483.0|1866460|\n|2006-04-21 00:00:00|484.9|484.9|477.9|480.1|1579130|\n|2006-04-27 00:00:00|472.0|484.4|471.5|481.5|2464800|\n+-------------------+-----+-----+-----+-----+-------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Count how many results\ndf.filter($\"Close\">480).count()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:49:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=13",
+              "$$hashKey": "object:3163"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667941303_562858752",
+      "id": "paragraph_1594667941303_562858752",
+      "dateCreated": "2020-07-14T00:49:01+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2958",
+      "dateFinished": "2020-07-14T00:49:15+0530",
+      "dateStarted": "2020-07-14T00:49:14+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres19\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m = 325\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Can also use SQL notation\ndf.filter(\"Close > 480\").count()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:49:27+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=14",
+              "$$hashKey": "object:3270"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667954166_1852982822",
+      "id": "paragraph_1594667954166_1852982822",
+      "dateCreated": "2020-07-14T00:49:14+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3063",
+      "dateFinished": "2020-07-14T00:49:28+0530",
+      "dateStarted": "2020-07-14T00:49:27+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres20\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m = 325\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Multiple Filters\n// Note the use of triple === , this may change in the future!\ndf.filter($\"High\"===484.40).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:49:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=15",
+              "$$hashKey": "object:3375"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667967749_-1909000071",
+      "id": "paragraph_1594667967749_-1909000071",
+      "dateCreated": "2020-07-14T00:49:27+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3168",
+      "dateFinished": "2020-07-14T00:49:43+0530",
+      "dateStarted": "2020-07-14T00:49:41+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----+-----+-----+-----+-------+\n|               Date| Open| High|  Low|Close| Volume|\n+-------------------+-----+-----+-----+-----+-------+\n|2006-04-27 00:00:00|472.0|484.4|471.5|481.5|2464800|\n+-------------------+-----+-----+-----+-----+-------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Can also use SQL notation\ndf.filter(\"High = 484.40\").count()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:49:53+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=16",
+              "$$hashKey": "object:3480"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667981939_729577216",
+      "id": "paragraph_1594667981939_729577216",
+      "dateCreated": "2020-07-14T00:49:41+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3275",
+      "dateFinished": "2020-07-14T00:49:54+0530",
+      "dateStarted": "2020-07-14T00:49:53+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres22\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m = 1\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.filter($\"Close\"<480 && $\"High\"<480).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:50:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=17",
+              "$$hashKey": "object:3585"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594667993618_825795544",
+      "id": "paragraph_1594667993618_825795544",
+      "dateCreated": "2020-07-14T00:49:53+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3380",
+      "dateFinished": "2020-07-14T00:50:15+0530",
+      "dateStarted": "2020-07-14T00:50:13+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----+-----+-----+-----+-------+\n|               Date| Open| High|  Low|Close| Volume|\n+-------------------+-----+-----+-----+-----+-------+\n|2006-01-20 00:00:00|472.1|474.0|456.3|456.9|4781930|\n|2006-01-23 00:00:00|460.0|463.8|457.0|460.0|2025500|\n|2006-01-24 00:00:00|462.9|463.6|459.9|460.1|2083740|\n|2006-01-25 00:00:00|461.4|463.7|460.1|462.3|1591940|\n|2006-01-26 00:00:00|465.5|475.5|464.5|470.1|1988600|\n|2006-01-27 00:00:00|470.1|473.7|466.0|468.7|1412760|\n|2006-01-30 00:00:00|468.7|469.9|466.6|468.2|1057630|\n|2006-01-31 00:00:00|468.3|470.5|465.5|465.8|1887280|\n|2006-02-01 00:00:00|465.9|467.2|461.1|463.3|1844970|\n|2006-02-02 00:00:00|459.0|461.0|451.0|451.8|2325470|\n|2006-02-03 00:00:00|450.7|456.1|448.1|450.6|1666510|\n|2006-02-06 00:00:00|452.6|456.1|450.9|451.7|1147430|\n|2006-02-07 00:00:00|452.0|453.8|450.0|450.5|1207780|\n|2006-02-08 00:00:00|453.3|455.3|450.7|453.6|1051370|\n|2006-02-09 00:00:00|455.0|461.0|454.3|457.9|1357740|\n|2006-02-10 00:00:00|457.0|460.7|452.5|459.6|1272030|\n|2006-02-13 00:00:00|460.6|462.3|454.1|456.8|1158300|\n|2006-02-14 00:00:00|457.8|462.5|457.1|461.2|1518040|\n|2006-02-15 00:00:00|460.4|464.7|457.6|462.5|1700050|\n|2006-02-16 00:00:00|463.0|464.4|460.4|464.4|1326000|\n+-------------------+-----+-----+-----+-----+-------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Can also use SQL notation\ndf.filter(\"Close<480 AND High < 484.40\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:50:22+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=18",
+              "$$hashKey": "object:3690"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668009060_-961388135",
+      "id": "paragraph_1594668009060_-961388135",
+      "dateCreated": "2020-07-14T00:50:09+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3485",
+      "dateFinished": "2020-07-14T00:50:23+0530",
+      "dateStarted": "2020-07-14T00:50:22+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----+-----+-----+-----+-------+\n|               Date| Open| High|  Low|Close| Volume|\n+-------------------+-----+-----+-----+-----+-------+\n|2006-01-20 00:00:00|472.1|474.0|456.3|456.9|4781930|\n|2006-01-23 00:00:00|460.0|463.8|457.0|460.0|2025500|\n|2006-01-24 00:00:00|462.9|463.6|459.9|460.1|2083740|\n|2006-01-25 00:00:00|461.4|463.7|460.1|462.3|1591940|\n|2006-01-26 00:00:00|465.5|475.5|464.5|470.1|1988600|\n|2006-01-27 00:00:00|470.1|473.7|466.0|468.7|1412760|\n|2006-01-30 00:00:00|468.7|469.9|466.6|468.2|1057630|\n|2006-01-31 00:00:00|468.3|470.5|465.5|465.8|1887280|\n|2006-02-01 00:00:00|465.9|467.2|461.1|463.3|1844970|\n|2006-02-02 00:00:00|459.0|461.0|451.0|451.8|2325470|\n|2006-02-03 00:00:00|450.7|456.1|448.1|450.6|1666510|\n|2006-02-06 00:00:00|452.6|456.1|450.9|451.7|1147430|\n|2006-02-07 00:00:00|452.0|453.8|450.0|450.5|1207780|\n|2006-02-08 00:00:00|453.3|455.3|450.7|453.6|1051370|\n|2006-02-09 00:00:00|455.0|461.0|454.3|457.9|1357740|\n|2006-02-10 00:00:00|457.0|460.7|452.5|459.6|1272030|\n|2006-02-13 00:00:00|460.6|462.3|454.1|456.8|1158300|\n|2006-02-14 00:00:00|457.8|462.5|457.1|461.2|1518040|\n|2006-02-15 00:00:00|460.4|464.7|457.6|462.5|1700050|\n|2006-02-16 00:00:00|463.0|464.4|460.4|464.4|1326000|\n+-------------------+-----+-----+-----+-----+-------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Collect results into a scala object (Array)\nval High484 = df.filter($\"High\"===484.40).collect()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:50:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=19",
+              "$$hashKey": "object:3795"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668022665_-2028098466",
+      "id": "paragraph_1594668022665_-2028098466",
+      "dateCreated": "2020-07-14T00:50:22+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3590",
+      "dateFinished": "2020-07-14T00:50:36+0530",
+      "dateStarted": "2020-07-14T00:50:34+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mHigh484\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.Row]\u001b[0m = Array([2006-04-27 00:00:00.0,472.0,484.4,471.5,481.5,2464800])\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Examples of Operations\ndf.select(corr(\"High\",\"Low\")).show() // Pearson Correlation",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:50:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=20",
+              "$$hashKey": "object:3900"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668034871_1317974349",
+      "id": "paragraph_1594668034871_1317974349",
+      "dateCreated": "2020-07-14T00:50:34+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3695",
+      "dateFinished": "2020-07-14T00:50:59+0530",
+      "dateStarted": "2020-07-14T00:50:57+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------------------+\n|   corr(High, Low)|\n+------------------+\n|0.9992999172726325|\n+------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Grab small dataset with some missing data\nval df = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").csv(\"ContainsNull.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:52:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=21",
+              "$$hashKey": "object:4015"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=22",
+              "$$hashKey": "object:4016"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668057470_503363368",
+      "id": "paragraph_1594668057470_503363368",
+      "dateCreated": "2020-07-14T00:50:57+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3800",
+      "dateFinished": "2020-07-14T00:52:02+0530",
+      "dateStarted": "2020-07-14T00:52:01+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Id: string, Name: string ... 1 more field]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Show schema\ndf.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:52:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668121825_293532812",
+      "id": "paragraph_1594668121825_293532812",
+      "dateCreated": "2020-07-14T00:52:01+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3905",
+      "dateFinished": "2020-07-14T00:52:11+0530",
+      "dateStarted": "2020-07-14T00:52:11+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Id: string (nullable = true)\n |-- Name: string (nullable = true)\n |-- Sales: double (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Notice the missing values!\ndf.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:52:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=23",
+              "$$hashKey": "object:4219"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668131264_346831467",
+      "id": "paragraph_1594668131264_346831467",
+      "dateCreated": "2020-07-14T00:52:11+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4025",
+      "dateFinished": "2020-07-14T00:52:18+0530",
+      "dateStarted": "2020-07-14T00:52:18+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+-----+-----+\n|  Id| Name|Sales|\n+----+-----+-----+\n|emp1| John| null|\n|emp2| null| null|\n|emp3| null|345.0|\n|emp4|Cindy|456.0|\n+----+-----+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n**You basically have 3 options with Null values**\n1. Just keep them, maybe only let a certain percentage through\n2. Drop them\n3. Fill them in with some other value\n\n\nNo \"correct\" answer, you'll have to adjust to the data!\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:53:26+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668138003_1777698996",
+      "id": "paragraph_1594668138003_1777698996",
+      "dateCreated": "2020-07-14T00:52:18+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4119",
+      "dateFinished": "2020-07-14T00:53:18+0530",
+      "dateStarted": "2020-07-14T00:53:18+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><strong>You basically have 3 options with Null values</strong></p>\n<ol>\n<li>Just keep them, maybe only let a certain percentage through</li>\n<li>Drop them</li>\n<li>Fill them in with some other value</li>\n</ol>\n<p>No &ldquo;correct&rdquo; answer, you&rsquo;ll have to adjust to the data!</p>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Drop any rows with any amount of na values\ndf.na.drop().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:53:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=24",
+              "$$hashKey": "object:4427"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668187495_1799698673",
+      "id": "paragraph_1594668187495_1799698673",
+      "dateCreated": "2020-07-14T00:53:07+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4224",
+      "dateFinished": "2020-07-14T00:53:42+0530",
+      "dateStarted": "2020-07-14T00:53:41+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+-----+-----+\n|  Id| Name|Sales|\n+----+-----+-----+\n|emp4|Cindy|456.0|\n+----+-----+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Drop any rows that have less than a minimum Number\n// of NON-null values ( < Int)\ndf.na.drop(2).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:53:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=25",
+              "$$hashKey": "object:4532"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668221038_697758731",
+      "id": "paragraph_1594668221038_697758731",
+      "dateCreated": "2020-07-14T00:53:41+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4327",
+      "dateFinished": "2020-07-14T00:53:51+0530",
+      "dateStarted": "2020-07-14T00:53:50+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+-----+-----+\n|  Id| Name|Sales|\n+----+-----+-----+\n|emp1| John| null|\n|emp3| null|345.0|\n|emp4|Cindy|456.0|\n+----+-----+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Fill in the Na values with Int\ndf.na.fill(100).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:54:03+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=26",
+              "$$hashKey": "object:4637"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668230287_-878488616",
+      "id": "paragraph_1594668230287_-878488616",
+      "dateCreated": "2020-07-14T00:53:50+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4432",
+      "dateFinished": "2020-07-14T00:54:04+0530",
+      "dateStarted": "2020-07-14T00:54:03+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+-----+-----+\n|  Id| Name|Sales|\n+----+-----+-----+\n|emp1| John|100.0|\n|emp2| null|100.0|\n|emp3| null|345.0|\n|emp4|Cindy|456.0|\n+----+-----+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Fill in String will only go to all string columns\ndf.na.fill(\"Emp Name Missing\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:54:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=27",
+              "$$hashKey": "object:4742"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668243062_-482593874",
+      "id": "paragraph_1594668243062_-482593874",
+      "dateCreated": "2020-07-14T00:54:03+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4537",
+      "dateFinished": "2020-07-14T00:54:12+0530",
+      "dateStarted": "2020-07-14T00:54:11+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+----------------+-----+\n|  Id|            Name|Sales|\n+----+----------------+-----+\n|emp1|            John| null|\n|emp2|Emp Name Missing| null|\n|emp3|Emp Name Missing|345.0|\n|emp4|           Cindy|456.0|\n+----+----------------+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Be more specific, pass an array of string column names\ndf.na.fill(\"Specific\",Array(\"Name\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:54:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=28",
+              "$$hashKey": "object:4847"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668251596_-888247451",
+      "id": "paragraph_1594668251596_-888247451",
+      "dateCreated": "2020-07-14T00:54:11+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4642",
+      "dateFinished": "2020-07-14T00:54:21+0530",
+      "dateStarted": "2020-07-14T00:54:17+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+--------+-----+\n|  Id|    Name|Sales|\n+----+--------+-----+\n|emp1|    John| null|\n|emp2|Specific| null|\n|emp3|Specific|345.0|\n|emp4|   Cindy|456.0|\n+----+--------+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// How to get averages? For now, a simple way is to use describe!\ndf.describe().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:54:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=29",
+              "$$hashKey": "object:4954"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668257765_-871878137",
+      "id": "paragraph_1594668257765_-871878137",
+      "dateCreated": "2020-07-14T00:54:17+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4747",
+      "dateFinished": "2020-07-14T00:54:35+0530",
+      "dateStarted": "2020-07-14T00:54:32+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+----+-----+-----------------+\n|summary|  Id| Name|            Sales|\n+-------+----+-----+-----------------+\n|  count|   4|    2|                2|\n|   mean|null| null|            400.5|\n| stddev|null| null|78.48885271170677|\n|    min|emp1|Cindy|            345.0|\n|    max|emp4| John|            456.0|\n+-------+----+-----+-----------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Now fill in with the values\ndf.na.fill(400.5).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:54:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=30",
+              "$$hashKey": "object:5059"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668272052_-1423210374",
+      "id": "paragraph_1594668272052_-1423210374",
+      "dateCreated": "2020-07-14T00:54:32+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4852",
+      "dateFinished": "2020-07-14T00:54:41+0530",
+      "dateStarted": "2020-07-14T00:54:40+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+-----+-----+\n|  Id| Name|Sales|\n+----+-----+-----+\n|emp1| John|400.5|\n|emp2| null|400.5|\n|emp3| null|345.0|\n|emp4|Cindy|456.0|\n+----+-----+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Technically known as class Dataset\nval df = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").csv(\"Sales.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:55:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=31",
+              "$$hashKey": "object:5174"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=32",
+              "$$hashKey": "object:5175"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668280331_-868208932",
+      "id": "paragraph_1594668280331_-868208932",
+      "dateCreated": "2020-07-14T00:54:40+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4959",
+      "dateFinished": "2020-07-14T00:55:20+0530",
+      "dateStarted": "2020-07-14T00:55:18+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Company: string, Person: string ... 1 more field]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Show Schema\ndf.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:55:27+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668318967_694353634",
+      "id": "paragraph_1594668318967_694353634",
+      "dateCreated": "2020-07-14T00:55:18+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5064",
+      "dateFinished": "2020-07-14T00:55:28+0530",
+      "dateStarted": "2020-07-14T00:55:27+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Company: string (nullable = true)\n |-- Person: string (nullable = true)\n |-- Sales: integer (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Show\ndf.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:55:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=33",
+              "$$hashKey": "object:5378"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668327564_-998216843",
+      "id": "paragraph_1594668327564_-998216843",
+      "dateCreated": "2020-07-14T00:55:27+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5184",
+      "dateFinished": "2020-07-14T00:55:35+0530",
+      "dateStarted": "2020-07-14T00:55:34+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-------+-----+\n|Company| Person|Sales|\n+-------+-------+-----+\n|   GOOG|    Sam|  200|\n|   GOOG|Charlie|  120|\n|   GOOG|  Frank|  340|\n|   MSFT|   Tina|  600|\n|   MSFT|    Amy|  124|\n|   MSFT|Vanessa|  243|\n|     FB|   Carl|  870|\n|     FB|  Sarah|  350|\n+-------+-------+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Groupby Categorical Columns\n// Optional, usually won't save to another object\ndf.groupBy(\"Company\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:55:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668334438_-890106741",
+      "id": "paragraph_1594668334438_-890106741",
+      "dateCreated": "2020-07-14T00:55:34+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5278",
+      "dateFinished": "2020-07-14T00:55:42+0530",
+      "dateStarted": "2020-07-14T00:55:41+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres37\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.RelationalGroupedDataset\u001b[0m = RelationalGroupedDataset: [grouping expressions: [Company: string], value: [Company: string, Person: string ... 1 more field], type: GroupBy]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Mean\ndf.groupBy(\"Company\").mean().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:55:47+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=34",
+              "$$hashKey": "object:5653"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=35",
+              "$$hashKey": "object:5654"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=36",
+              "$$hashKey": "object:5655"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=37",
+              "$$hashKey": "object:5656"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=38",
+              "$$hashKey": "object:5657"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668341174_-1529424768",
+      "id": "paragraph_1594668341174_-1529424768",
+      "dateCreated": "2020-07-14T00:55:41+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5383",
+      "dateFinished": "2020-07-14T00:55:56+0530",
+      "dateStarted": "2020-07-14T00:55:47+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-----------------+\n|Company|       avg(Sales)|\n+-------+-----------------+\n|   GOOG|            220.0|\n|     FB|            610.0|\n|   MSFT|322.3333333333333|\n+-------+-----------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Count\ndf.groupBy(\"Company\").count().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:56:03+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=39",
+              "$$hashKey": "object:5850"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=40",
+              "$$hashKey": "object:5851"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=41",
+              "$$hashKey": "object:5852"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=42",
+              "$$hashKey": "object:5853"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=43",
+              "$$hashKey": "object:5854"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668347660_417229500",
+      "id": "paragraph_1594668347660_417229500",
+      "dateCreated": "2020-07-14T00:55:47+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5477",
+      "dateFinished": "2020-07-14T00:56:09+0530",
+      "dateStarted": "2020-07-14T00:56:03+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-----+\n|Company|count|\n+-------+-----+\n|   GOOG|    3|\n|     FB|    2|\n|   MSFT|    3|\n+-------+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Max\ndf.groupBy(\"Company\").max().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:56:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=44",
+              "$$hashKey": "object:6047"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=45",
+              "$$hashKey": "object:6048"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=46",
+              "$$hashKey": "object:6049"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=47",
+              "$$hashKey": "object:6050"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=48",
+              "$$hashKey": "object:6051"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668363802_-1228504350",
+      "id": "paragraph_1594668363802_-1228504350",
+      "dateCreated": "2020-07-14T00:56:03+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5678",
+      "dateFinished": "2020-07-14T00:56:19+0530",
+      "dateStarted": "2020-07-14T00:56:13+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+----------+\n|Company|max(Sales)|\n+-------+----------+\n|   GOOG|       340|\n|     FB|       870|\n|   MSFT|       600|\n+-------+----------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Min\ndf.groupBy(\"Company\").min().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:56:24+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=49",
+              "$$hashKey": "object:6244"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=50",
+              "$$hashKey": "object:6245"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=51",
+              "$$hashKey": "object:6246"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=52",
+              "$$hashKey": "object:6247"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=53",
+              "$$hashKey": "object:6248"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668373819_555288491",
+      "id": "paragraph_1594668373819_555288491",
+      "dateCreated": "2020-07-14T00:56:13+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5875",
+      "dateFinished": "2020-07-14T00:56:28+0530",
+      "dateStarted": "2020-07-14T00:56:24+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+----------+\n|Company|min(Sales)|\n+-------+----------+\n|   GOOG|       120|\n|     FB|       350|\n|   MSFT|       124|\n+-------+----------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Sum\ndf.groupBy(\"Company\").sum().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:56:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=54",
+              "$$hashKey": "object:6441"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=55",
+              "$$hashKey": "object:6442"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=56",
+              "$$hashKey": "object:6443"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=57",
+              "$$hashKey": "object:6444"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=58",
+              "$$hashKey": "object:6445"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668384009_1331905446",
+      "id": "paragraph_1594668384009_1331905446",
+      "dateCreated": "2020-07-14T00:56:24+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6072",
+      "dateFinished": "2020-07-14T00:56:37+0530",
+      "dateStarted": "2020-07-14T00:56:33+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+----------+\n|Company|sum(Sales)|\n+-------+----------+\n|   GOOG|       660|\n|     FB|      1220|\n|   MSFT|       967|\n+-------+----------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.select(countDistinct(\"Sales\")).show() //approxCountDistinct",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:56:45+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=59",
+              "$$hashKey": "object:6568"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668393192_-1262702767",
+      "id": "paragraph_1594668393192_-1262702767",
+      "dateCreated": "2020-07-14T00:56:33+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6269",
+      "dateFinished": "2020-07-14T00:56:52+0530",
+      "dateStarted": "2020-07-14T00:56:45+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------------+\n|count(DISTINCT Sales)|\n+---------------------+\n|                    8|\n+---------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.select(sumDistinct(\"Sales\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:57:02+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=60",
+              "$$hashKey": "object:6675"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668405735_-1310814582",
+      "id": "paragraph_1594668405735_-1310814582",
+      "dateCreated": "2020-07-14T00:56:45+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6466",
+      "dateFinished": "2020-07-14T00:57:09+0530",
+      "dateStarted": "2020-07-14T00:57:02+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+\n|sum(DISTINCT Sales)|\n+-------------------+\n|               2847|\n+-------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.select(variance(\"Sales\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:57:10+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=61",
+              "$$hashKey": "object:6780"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668422741_-1910952967",
+      "id": "paragraph_1594668422741_-1910952967",
+      "dateCreated": "2020-07-14T00:57:02+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6573",
+      "dateFinished": "2020-07-14T00:57:11+0530",
+      "dateStarted": "2020-07-14T00:57:10+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----------------+\n|  var_samp(Sales)|\n+-----------------+\n|67235.55357142855|\n+-----------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.select(stddev(\"Sales\")).show() //avg,max,min,sum,stddev",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:57:19+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=62",
+              "$$hashKey": "object:6885"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668430613_-132922067",
+      "id": "paragraph_1594668430613_-132922067",
+      "dateCreated": "2020-07-14T00:57:10+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6680",
+      "dateFinished": "2020-07-14T00:57:20+0530",
+      "dateStarted": "2020-07-14T00:57:19+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------------------+\n|stddev_samp(Sales)|\n+------------------+\n|259.29819430807567|\n+------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.select(collect_set(\"Sales\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:57:29+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=63",
+              "$$hashKey": "object:6990"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668439404_730377562",
+      "id": "paragraph_1594668439404_730377562",
+      "dateCreated": "2020-07-14T00:57:19+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6785",
+      "dateFinished": "2020-07-14T00:57:31+0530",
+      "dateStarted": "2020-07-14T00:57:29+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+\n|  collect_set(Sales)|\n+--------------------+\n|[350, 340, 870, 1...|\n+--------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// OrderBy\n// Ascending\ndf.orderBy(\"Sales\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:57:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=64",
+              "$$hashKey": "object:7095"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668449837_-1767117490",
+      "id": "paragraph_1594668449837_-1767117490",
+      "dateCreated": "2020-07-14T00:57:29+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6890",
+      "dateFinished": "2020-07-14T00:57:45+0530",
+      "dateStarted": "2020-07-14T00:57:42+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-------+-----+\n|Company| Person|Sales|\n+-------+-------+-----+\n|   GOOG|Charlie|  120|\n|   MSFT|    Amy|  124|\n|   GOOG|    Sam|  200|\n|   MSFT|Vanessa|  243|\n|   GOOG|  Frank|  340|\n|     FB|  Sarah|  350|\n|   MSFT|   Tina|  600|\n|     FB|   Carl|  870|\n+-------+-------+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Descending\ndf.orderBy($\"Sales\".desc).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:57:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=65",
+              "$$hashKey": "object:7200"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668462913_1499682146",
+      "id": "paragraph_1594668462913_1499682146",
+      "dateCreated": "2020-07-14T00:57:42+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:6995",
+      "dateFinished": "2020-07-14T00:57:51+0530",
+      "dateStarted": "2020-07-14T00:57:50+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-------+-----+\n|Company| Person|Sales|\n+-------+-------+-----+\n|     FB|   Carl|  870|\n|   MSFT|   Tina|  600|\n|     FB|  Sarah|  350|\n|   GOOG|  Frank|  340|\n|   MSFT|Vanessa|  243|\n|   GOOG|    Sam|  200|\n|   MSFT|    Amy|  124|\n|   GOOG|Charlie|  120|\n+-------+-------+-----+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Technically known as class Dataset\nval df = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").csv(\"CitiGroup2006_2008\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:58:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=66",
+              "$$hashKey": "object:7315"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=67",
+              "$$hashKey": "object:7316"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668470572_-1956288782",
+      "id": "paragraph_1594668470572_-1956288782",
+      "dateCreated": "2020-07-14T00:57:50+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7100",
+      "dateFinished": "2020-07-14T00:58:14+0530",
+      "dateStarted": "2020-07-14T00:58:13+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 4 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Show Schema\ndf.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:58:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668493733_205363888",
+      "id": "paragraph_1594668493733_205363888",
+      "dateCreated": "2020-07-14T00:58:13+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7205",
+      "dateFinished": "2020-07-14T00:58:22+0530",
+      "dateStarted": "2020-07-14T00:58:21+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Date: timestamp (nullable = true)\n |-- Open: double (nullable = true)\n |-- High: double (nullable = true)\n |-- Low: double (nullable = true)\n |-- Close: double (nullable = true)\n |-- Volume: integer (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.select(month(df(\"Date\"))).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:58:29+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=68",
+              "$$hashKey": "object:7519"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668501849_-1693854850",
+      "id": "paragraph_1594668501849_-1693854850",
+      "dateCreated": "2020-07-14T00:58:21+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7325",
+      "dateFinished": "2020-07-14T00:58:30+0530",
+      "dateStarted": "2020-07-14T00:58:29+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----------+\n|month(Date)|\n+-----------+\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n|          1|\n+-----------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndf.select(year(df(\"Date\"))).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:58:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=69",
+              "$$hashKey": "object:7624"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668509862_-2092435075",
+      "id": "paragraph_1594668509862_-2092435075",
+      "dateCreated": "2020-07-14T00:58:29+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7419",
+      "dateFinished": "2020-07-14T00:58:39+0530",
+      "dateStarted": "2020-07-14T00:58:39+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----------+\n|year(Date)|\n+----------+\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n|      2006|\n+----------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Practical Example\nval df2 = df.withColumn(\"Year\",year(df(\"Date\")))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:58:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668519015_-805158520",
+      "id": "paragraph_1594668519015_-805158520",
+      "dateCreated": "2020-07-14T00:58:39+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7524",
+      "dateFinished": "2020-07-14T00:58:48+0530",
+      "dateStarted": "2020-07-14T00:58:48+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 5 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Mean per Year, notice large 2008 drop!\nval dfavgs = df2.groupBy(\"Year\").mean()\ndfavgs.select($\"Year\",$\"avg(Close)\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:58:56+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=70",
+              "$$hashKey": "object:7895"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=71",
+              "$$hashKey": "object:7896"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=72",
+              "$$hashKey": "object:7897"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=73",
+              "$$hashKey": "object:7898"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=74",
+              "$$hashKey": "object:7899"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668528262_-1890902364",
+      "id": "paragraph_1594668528262_-1890902364",
+      "dateCreated": "2020-07-14T00:58:48+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7629",
+      "dateFinished": "2020-07-14T00:59:00+0530",
+      "dateStarted": "2020-07-14T00:58:56+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------------------+\n|Year|        avg(Close)|\n+----+------------------+\n|2007| 477.8203984063745|\n|2006| 489.2697211155379|\n|2008|190.48893280632404|\n+----+------------------+\n\n\u001b[1m\u001b[34mdfavgs\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Year: int, avg(Open): double ... 5 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n### Case Study\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:59:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668557890_1672373554",
+      "id": "paragraph_1594668557890_1672373554",
+      "dateCreated": "2020-07-14T00:59:17+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7920",
+      "dateFinished": "2020-07-14T00:59:32+0530",
+      "dateStarted": "2020-07-14T00:59:32+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h3>Case Study</h3>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Load the Netflix Stock CSV File, have Spark infer the data types.\nval df = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").csv(\"Netflix_2011_2016.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:59:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=75",
+              "$$hashKey": "object:8111"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=76",
+              "$$hashKey": "object:8112"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668536101_1516354979",
+      "id": "paragraph_1594668536101_1516354979",
+      "dateCreated": "2020-07-14T00:58:56+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:7723",
+      "dateFinished": "2020-07-14T00:59:40+0530",
+      "dateStarted": "2020-07-14T00:59:39+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 5 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What are the column names?\ndf.columns",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:59:47+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668579450_-770149308",
+      "id": "paragraph_1594668579450_-770149308",
+      "dateCreated": "2020-07-14T00:59:39+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8001",
+      "dateFinished": "2020-07-14T00:59:48+0530",
+      "dateStarted": "2020-07-14T00:59:47+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres54\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(Date, Open, High, Low, Close, Volume, Adj Close)\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What does the Schema look like?\ndf.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T00:59:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668587626_-86560934",
+      "id": "paragraph_1594668587626_-86560934",
+      "dateCreated": "2020-07-14T00:59:47+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8121",
+      "dateFinished": "2020-07-14T00:59:58+0530",
+      "dateStarted": "2020-07-14T00:59:57+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Date: timestamp (nullable = true)\n |-- Open: double (nullable = true)\n |-- High: double (nullable = true)\n |-- Low: double (nullable = true)\n |-- Close: double (nullable = true)\n |-- Volume: integer (nullable = true)\n |-- Adj Close: double (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Print out the first 5 columns.\ndf.head(5)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:00:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=77",
+              "$$hashKey": "object:8409"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668597911_330312129",
+      "id": "paragraph_1594668597911_330312129",
+      "dateCreated": "2020-07-14T00:59:57+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8215",
+      "dateFinished": "2020-07-14T01:00:08+0530",
+      "dateStarted": "2020-07-14T01:00:07+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres56\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.Row]\u001b[0m = Array([2011-10-24 00:00:00.0,119.100002,120.28000300000001,115.100004,118.839996,120460200,16.977142], [2011-10-25 00:00:00.0,74.899999,79.390001,74.249997,77.370002,315541800,11.052857000000001], [2011-10-26 00:00:00.0,78.73,81.420001,75.399997,79.400002,148733900,11.342857], [2011-10-27 00:00:00.0,82.179998,82.71999699999999,79.249998,80.86000200000001,71190000,11.551428999999999], [2011-10-28 00:00:00.0,80.280002,84.660002,79.599999,84.14000300000001,57769600,12.02])\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use describe() to learn about the DataFrame.\ndf.describe().show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:00:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=78",
+              "$$hashKey": "object:8514"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668607332_1959137515",
+      "id": "paragraph_1594668607332_1959137515",
+      "dateCreated": "2020-07-14T01:00:07+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8309",
+      "dateFinished": "2020-07-14T01:00:16+0530",
+      "dateStarted": "2020-07-14T01:00:14+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------------------+------------------+------------------+--------------------+------------------+\n|summary|              Open|              High|               Low|             Close|              Volume|         Adj Close|\n+-------+------------------+------------------+------------------+------------------+--------------------+------------------+\n|  count|              1259|              1259|              1259|              1259|                1259|              1259|\n|   mean|230.39351086656092|233.97320872915006|226.80127876251044|  230.522453845909|2.5634836060365368E7|55.610540036536875|\n| stddev|164.37456353264244| 165.9705082667129| 162.6506358235739|164.40918905512854| 2.306312683388607E7|35.186669331525486|\n|    min|         53.990001|         55.480001|             52.81|              53.8|             3531300|          7.685714|\n|    max|        708.900017|        716.159996|        697.569984|        707.610001|           315541800|        130.929993|\n+-------+------------------+------------------+------------------+------------------+--------------------+------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Create a new dataframe with a column called HV Ratio that\n// is the ratio of the High Price versus volume of stock traded\n// for a day.\nval df2 = df.withColumn(\"HV Ratio\",df(\"High\")/df(\"Volume\"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:00:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668614656_-137955597",
+      "id": "paragraph_1594668614656_-137955597",
+      "dateCreated": "2020-07-14T01:00:14+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8414",
+      "dateFinished": "2020-07-14T01:00:28+0530",
+      "dateStarted": "2020-07-14T01:00:28+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 6 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What day had the Peak High in Price?\ndf.orderBy($\"High\".desc).show(1)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:00:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=79",
+              "$$hashKey": "object:8729"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668622747_1429229474",
+      "id": "paragraph_1594668622747_1429229474",
+      "dateCreated": "2020-07-14T01:00:22+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8519",
+      "dateFinished": "2020-07-14T01:00:35+0530",
+      "dateStarted": "2020-07-14T01:00:34+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+-----------------+----------+----------+----------+--------+------------------+\n|               Date|             Open|      High|       Low|     Close|  Volume|         Adj Close|\n+-------------------+-----------------+----------+----------+----------+--------+------------------+\n|2015-07-13 00:00:00|686.6900019999999|716.159996|686.550026|707.610001|33205200|101.08714300000001|\n+-------------------+-----------------+----------+----------+----------+--------+------------------+\nonly showing top 1 row\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What is the mean of the Close column?\ndf.select(mean(\"Close\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:00:44+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=80",
+              "$$hashKey": "object:8834"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668634616_-1073581727",
+      "id": "paragraph_1594668634616_-1073581727",
+      "dateCreated": "2020-07-14T01:00:34+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8629",
+      "dateFinished": "2020-07-14T01:00:44+0530",
+      "dateStarted": "2020-07-14T01:00:44+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----------------+\n|      avg(Close)|\n+----------------+\n|230.522453845909|\n+----------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What is the max and min of the Volume column?\ndf.select(max(\"Volume\")).show()\ndf.select(min(\"Volume\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:00:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=81",
+              "$$hashKey": "object:8951"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=82",
+              "$$hashKey": "object:8952"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668644114_-1613475418",
+      "id": "paragraph_1594668644114_-1613475418",
+      "dateCreated": "2020-07-14T01:00:44+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8734",
+      "dateFinished": "2020-07-14T01:00:55+0530",
+      "dateStarted": "2020-07-14T01:00:54+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----------+\n|max(Volume)|\n+-----------+\n|  315541800|\n+-----------+\n\n+-----------+\n|min(Volume)|\n+-----------+\n|    3531300|\n+-----------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// How many days was the Close lower than $ 600?\ndf.filter($\"Close\"<600).count()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:01:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=83",
+              "$$hashKey": "object:9061"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668654087_137939874",
+      "id": "paragraph_1594668654087_137939874",
+      "dateCreated": "2020-07-14T01:00:54+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8839",
+      "dateFinished": "2020-07-14T01:01:08+0530",
+      "dateStarted": "2020-07-14T01:01:07+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres61\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m = 1218\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What percentage of the time was the High greater than $500 ?\n(df.filter($\"High\">500).count()*1.0/df.count())*100",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:01:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=84",
+              "$$hashKey": "object:9202"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=85",
+              "$$hashKey": "object:9203"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668667419_-1400613451",
+      "id": "paragraph_1594668667419_-1400613451",
+      "dateCreated": "2020-07-14T01:01:07+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:8961",
+      "dateFinished": "2020-07-14T01:01:26+0530",
+      "dateStarted": "2020-07-14T01:01:25+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres63\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 4.924543288324067\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What is the Pearson correlation between High and Volume?\ndf.select(corr(\"High\",\"Volume\")).show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:01:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=86",
+              "$$hashKey": "object:9312"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668679394_600570481",
+      "id": "paragraph_1594668679394_600570481",
+      "dateCreated": "2020-07-14T01:01:19+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:9066",
+      "dateFinished": "2020-07-14T01:01:34+0530",
+      "dateStarted": "2020-07-14T01:01:33+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+\n|  corr(High, Volume)|\n+--------------------+\n|-0.20960233287942157|\n+--------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What is the max High per year?\nval yeardf = df.withColumn(\"Year\",year(df(\"Date\")))\nval yearmaxs = yeardf.select($\"Year\",$\"High\").groupBy(\"Year\").max()\nyearmaxs.select($\"Year\",$\"max(High)\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:02:15+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=87",
+              "$$hashKey": "object:9517"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=88",
+              "$$hashKey": "object:9518"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=89",
+              "$$hashKey": "object:9519"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=90",
+              "$$hashKey": "object:9520"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=91",
+              "$$hashKey": "object:9521"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668693538_1160547121",
+      "id": "paragraph_1594668693538_1160547121",
+      "dateCreated": "2020-07-14T01:01:33+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:9212",
+      "dateFinished": "2020-07-14T01:02:20+0530",
+      "dateStarted": "2020-07-14T01:02:15+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------------------+\n|Year|         max(High)|\n+----+------------------+\n|2015|        716.159996|\n|2013|        389.159988|\n|2014|        489.290024|\n|2012|        133.429996|\n|2016|129.28999299999998|\n|2011|120.28000300000001|\n+----+------------------+\n\n\u001b[1m\u001b[34myeardf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 6 more fields]\n\u001b[1m\u001b[34myearmaxs\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Year: int, max(Year): int ... 1 more field]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// What is the average Close for each Calender Month?\nval monthdf = df.withColumn(\"Month\",month(df(\"Date\")))\nval monthavgs = monthdf.select($\"Month\",$\"Close\").groupBy(\"Month\").mean()\nmonthavgs.select($\"Month\",$\"avg(Close)\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:02:27+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=92",
+              "$$hashKey": "object:9718"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=93",
+              "$$hashKey": "object:9719"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=94",
+              "$$hashKey": "object:9720"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=95",
+              "$$hashKey": "object:9721"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=96",
+              "$$hashKey": "object:9722"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668702376_207073345",
+      "id": "paragraph_1594668702376_207073345",
+      "dateCreated": "2020-07-14T01:01:42+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:9317",
+      "dateFinished": "2020-07-14T01:02:31+0530",
+      "dateStarted": "2020-07-14T01:02:27+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+------------------+\n|Month|        avg(Close)|\n+-----+------------------+\n|   12| 199.3700942358491|\n|    1|212.22613874257422|\n|    6| 295.1597153490566|\n|    3| 249.5825228971963|\n|    5|264.37037614150944|\n|    9|206.09598121568627|\n|    4|246.97514271428562|\n|    8|195.25599892727263|\n|    7|243.64747528037387|\n|   10|205.93297300900903|\n|   11| 194.3172275445545|\n|    2| 254.1954634020619|\n+-----+------------------+\n\n\u001b[1m\u001b[34mmonthdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Date: timestamp, Open: double ... 6 more fields]\n\u001b[1m\u001b[34mmonthavgs\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Month: int, avg(Month): double ... 1 more field]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n---",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T01:02:59+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594668747537_-1140808280",
+      "id": "paragraph_1594668747537_-1140808280",
+      "dateCreated": "2020-07-14T01:02:27+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:9542",
+      "dateFinished": "2020-07-14T01:02:42+0530",
+      "dateStarted": "2020-07-14T01:02:42+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<hr />\n\n</div>"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "Spark DataFrames and Datasets",
+  "id": "2FD87NHC6",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/Spark DataFrames and Datasets"
+}
