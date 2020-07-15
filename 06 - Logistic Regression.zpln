@@ -1,0 +1,2270 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# Logistic Regression using Scala",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:50:38+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Logistic Regression using Scala</h1>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768805223_-95739450",
+      "id": "paragraph_1594768805223_-95739450",
+      "dateCreated": "2020-07-15T04:50:05+0530",
+      "dateStarted": "2020-07-15T04:50:35+0530",
+      "dateFinished": "2020-07-15T04:50:35+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:23410"
+    },
+    {
+      "text": "%spark\nsc",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:51:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres23\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.SparkContext\u001b[0m = org.apache.spark.SparkContext@6c8c4410\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768835662_-314515314",
+      "id": "paragraph_1594768835662_-314515314",
+      "dateCreated": "2020-07-15T04:50:35+0530",
+      "dateStarted": "2020-07-15T04:51:42+0530",
+      "dateFinished": "2020-07-15T04:51:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23411"
+    },
+    {
+      "text": "%spark\n// Load training data\nval training = spark.read.format(\"libsvm\").load(\"data/sample_libsvm_data.txt\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:52:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtraining\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: double, features: vector]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=31",
+              "$$hashKey": "object:24817"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768902923_-2139757850",
+      "id": "paragraph_1594768902923_-2139757850",
+      "dateCreated": "2020-07-15T04:51:42+0530",
+      "dateStarted": "2020-07-15T04:52:18+0530",
+      "dateFinished": "2020-07-15T04:52:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23412"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.classification.LogisticRegression\nval lr = new LogisticRegression()\n      .setMaxIter(10)\n      .setRegParam(0.3)\n      .setElasticNetParam(0.8)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:52:51+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.classification.LogisticRegression\n\u001b[1m\u001b[34mlr\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.classification.LogisticRegression\u001b[0m = logreg_52eb1e8fb4d0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768931414_-432565357",
+      "id": "paragraph_1594768931414_-432565357",
+      "dateCreated": "2020-07-15T04:52:11+0530",
+      "dateStarted": "2020-07-15T04:52:51+0530",
+      "dateFinished": "2020-07-15T04:52:53+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23413"
+    },
+    {
+      "text": "%spark\n// Fit the model\nval lrModel = lr.fit(training)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:53:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlrModel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.classification.LogisticRegressionModel\u001b[0m = LogisticRegressionModel: uid = logreg_52eb1e8fb4d0, numClasses = 2, numFeatures = 692\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=32",
+              "$$hashKey": "object:24927"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=33",
+              "$$hashKey": "object:24928"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=34",
+              "$$hashKey": "object:24929"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=35",
+              "$$hashKey": "object:24930"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=36",
+              "$$hashKey": "object:24931"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=37",
+              "$$hashKey": "object:24932"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=38",
+              "$$hashKey": "object:24933"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=39",
+              "$$hashKey": "object:24934"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=40",
+              "$$hashKey": "object:24935"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=41",
+              "$$hashKey": "object:24936"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=42",
+              "$$hashKey": "object:24937"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=43",
+              "$$hashKey": "object:24938"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=44",
+              "$$hashKey": "object:24939"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=45",
+              "$$hashKey": "object:24940"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=46",
+              "$$hashKey": "object:24941"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768955152_1132791440",
+      "id": "paragraph_1594768955152_1132791440",
+      "dateCreated": "2020-07-15T04:52:35+0530",
+      "dateStarted": "2020-07-15T04:53:14+0530",
+      "dateFinished": "2020-07-15T04:53:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23414"
+    },
+    {
+      "text": "%spark\n// Print the coefficients and intercept for logistic regression\nprintln(s\"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:53:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Coefficients: (692,[244,263,272,300,301,328,350,351,378,379,405,406,407,428,433,434,455,456,461,462,483,484,489,490,496,511,512,517,539,540,568],[-7.353983524188197E-5,-9.102738505589466E-5,-1.9467430546904298E-4,-2.0300642473486668E-4,-3.1476183314863995E-5,-6.842977602660743E-5,1.5883626898239883E-5,1.4023497091372047E-5,3.5432047524968605E-4,1.1443272898171087E-4,1.0016712383666666E-4,6.014109303795481E-4,2.840248179122762E-4,-1.1541084736508837E-4,3.85996886312906E-4,6.35019557424107E-4,-1.1506412384575676E-4,-1.5271865864986808E-4,2.804933808994214E-4,6.070117471191634E-4,-2.008459663247437E-4,-1.421075579290126E-4,2.739010341160883E-4,2.7730456244968115E-4,-9.838027027269332E-5,-3.808522443517704E-4,-2.5315198008555033E-4,2.7747714770754307E-4,-2.443619763919199E-4,-0.0015394744687597765,-2.3073328411331293E-4]) Intercept: 0.22456315961250325\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768994573_808488756",
+      "id": "paragraph_1594768994573_808488756",
+      "dateCreated": "2020-07-15T04:53:14+0530",
+      "dateStarted": "2020-07-15T04:53:32+0530",
+      "dateFinished": "2020-07-15T04:53:32+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23415"
+    },
+    {
+      "text": "%md\n## Logistic Rgression Example\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:54:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Logistic Rgression Example</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769012058_1737854939",
+      "id": "paragraph_1594769012058_1737854939",
+      "dateCreated": "2020-07-15T04:53:32+0530",
+      "dateStarted": "2020-07-15T04:54:04+0530",
+      "dateFinished": "2020-07-15T04:54:04+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23416"
+    },
+    {
+      "text": "%spark\n// Use Spark to read in the Titanic csv file.\nval data = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").format(\"csv\").load(\"data/titanic.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:54:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [PassengerId: int, Survived: int ... 10 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=47",
+              "$$hashKey": "object:25153"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=48",
+              "$$hashKey": "object:25154"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769044030_1099208653",
+      "id": "paragraph_1594769044030_1099208653",
+      "dateCreated": "2020-07-15T04:54:04+0530",
+      "dateStarted": "2020-07-15T04:54:40+0530",
+      "dateFinished": "2020-07-15T04:54:41+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23417"
+    },
+    {
+      "text": "%spark\n// Print the Schema of the DataFrame\ndata.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:54:53+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- PassengerId: integer (nullable = true)\n |-- Survived: integer (nullable = true)\n |-- Pclass: integer (nullable = true)\n |-- Name: string (nullable = true)\n |-- Sex: string (nullable = true)\n |-- Age: double (nullable = true)\n |-- SibSp: integer (nullable = true)\n |-- Parch: integer (nullable = true)\n |-- Ticket: string (nullable = true)\n |-- Fare: double (nullable = true)\n |-- Cabin: string (nullable = true)\n |-- Embarked: string (nullable = true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769073500_18765954",
+      "id": "paragraph_1594769073500_18765954",
+      "dateCreated": "2020-07-15T04:54:33+0530",
+      "dateStarted": "2020-07-15T04:54:53+0530",
+      "dateFinished": "2020-07-15T04:54:54+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23418"
+    },
+    {
+      "text": "%spark\n///////////////////////\n/// Display Data /////\n/////////////////////\nval colnames = data.columns\nval firstrow = data.head(1)(0)\nprintln(\"\\n\")\nprintln(\"Example Data Row\")\nfor(ind <- Range(1,colnames.length)){\n  println(colnames(ind))\n  println(firstrow(ind))\n  println(\"\\n\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:55:03+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\nExample Data Row\nSurvived\n0\n\n\nPclass\n3\n\n\nName\nBraund, Mr. Owen Harris\n\n\nSex\nmale\n\n\nAge\n22.0\n\n\nSibSp\n1\n\n\nParch\n0\n\n\nTicket\nA/5 21171\n\n\nFare\n7.25\n\n\nCabin\nnull\n\n\nEmbarked\nS\n\n\n\u001b[1m\u001b[34mcolnames\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(PassengerId, Survived, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, Embarked)\n\u001b[1m\u001b[34mfirstrow\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Row\u001b[0m = [1,0,3,Braund, Mr. Owen Harris,male,22.0,1,0,A/5 21171,7.25,null,S]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=49",
+              "$$hashKey": "object:25268"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769093683_867325796",
+      "id": "paragraph_1594769093683_867325796",
+      "dateCreated": "2020-07-15T04:54:53+0530",
+      "dateStarted": "2020-07-15T04:55:03+0530",
+      "dateFinished": "2020-07-15T04:55:04+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23419"
+    },
+    {
+      "text": "%spark\n// Grab only the columns we want\nval logregdataall = data.select(data(\"Survived\").as(\"label\"), $\"Pclass\", $\"Sex\", $\"Age\", $\"SibSp\", $\"Parch\", $\"Fare\", $\"Embarked\")\nval logregdata = logregdataall.na.drop()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:55:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlogregdataall\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: int, Pclass: int ... 6 more fields]\n\u001b[1m\u001b[34mlogregdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: int, Pclass: int ... 6 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769103752_599742778",
+      "id": "paragraph_1594769103752_599742778",
+      "dateCreated": "2020-07-15T04:55:03+0530",
+      "dateStarted": "2020-07-15T04:55:13+0530",
+      "dateFinished": "2020-07-15T04:55:14+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23420"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.feature.{VectorAssembler,StringIndexer,VectorIndexer,OneHotEncoder}\nimport org.apache.spark.ml.linalg.Vectors",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:55:27+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.feature.{VectorAssembler, StringIndexer, VectorIndexer, OneHotEncoder}\nimport org.apache.spark.ml.linalg.Vectors\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769113802_2025239652",
+      "id": "paragraph_1594769113802_2025239652",
+      "dateCreated": "2020-07-15T04:55:13+0530",
+      "dateStarted": "2020-07-15T04:55:27+0530",
+      "dateFinished": "2020-07-15T04:55:27+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23421"
+    },
+    {
+      "text": "%spark\nval genderIndexer = new StringIndexer().setInputCol(\"Sex\").setOutputCol(\"SexIndex\")\nval embarkIndexer = new StringIndexer().setInputCol(\"Embarked\").setOutputCol(\"EmbarkIndex\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:55:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mgenderIndexer\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.StringIndexer\u001b[0m = strIdx_48034258550e\n\u001b[1m\u001b[34membarkIndexer\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.StringIndexer\u001b[0m = strIdx_666f884b733c\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769127038_-2002840518",
+      "id": "paragraph_1594769127038_-2002840518",
+      "dateCreated": "2020-07-15T04:55:27+0530",
+      "dateStarted": "2020-07-15T04:55:39+0530",
+      "dateFinished": "2020-07-15T04:55:40+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23422"
+    },
+    {
+      "text": "%spark\nval genderEncoder = new OneHotEncoder().setInputCol(\"SexIndex\").setOutputCol(\"SexVec\")\nval embarkEncoder = new OneHotEncoder().setInputCol(\"EmbarkIndex\").setOutputCol(\"EmbarkVec\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:55:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[33mwarning: \u001b[0mthere were two deprecation warnings; re-run with -deprecation for details\n\u001b[1m\u001b[34mgenderEncoder\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.OneHotEncoder\u001b[0m = oneHot_35b3eef3fcca\n\u001b[1m\u001b[34membarkEncoder\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.OneHotEncoder\u001b[0m = oneHot_fda9b35bdc72\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769139575_-1578537547",
+      "id": "paragraph_1594769139575_-1578537547",
+      "dateCreated": "2020-07-15T04:55:39+0530",
+      "dateStarted": "2020-07-15T04:55:50+0530",
+      "dateFinished": "2020-07-15T04:55:50+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23423"
+    },
+    {
+      "text": "%spark\nval assembler = (new VectorAssembler()\n                  .setInputCols(Array(\"Pclass\", \"SexVec\", \"Age\",\"SibSp\",\"Parch\",\"Fare\",\"EmbarkVec\"))\n                  .setOutputCol(\"features\") )",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:56:00+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34massembler\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.VectorAssembler\u001b[0m = vecAssembler_ec9775c2df12\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769150436_1082744564",
+      "id": "paragraph_1594769150436_1082744564",
+      "dateCreated": "2020-07-15T04:55:50+0530",
+      "dateStarted": "2020-07-15T04:56:00+0530",
+      "dateFinished": "2020-07-15T04:56:00+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23424"
+    },
+    {
+      "text": "%spark\nval Array(training, test) = logregdata.randomSplit(Array(0.7, 0.3), seed = 12345)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:56:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtraining\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [label: int, Pclass: int ... 6 more fields]\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [label: int, Pclass: int ... 6 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769160352_-377959675",
+      "id": "paragraph_1594769160352_-377959675",
+      "dateCreated": "2020-07-15T04:56:00+0530",
+      "dateStarted": "2020-07-15T04:56:11+0530",
+      "dateFinished": "2020-07-15T04:56:14+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23425"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.Pipeline\n\nval lr = new LogisticRegression()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:56:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.Pipeline\n\u001b[1m\u001b[34mlr\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.classification.LogisticRegression\u001b[0m = logreg_1b34f3e3c956\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769171282_-1018301126",
+      "id": "paragraph_1594769171282_-1018301126",
+      "dateCreated": "2020-07-15T04:56:11+0530",
+      "dateStarted": "2020-07-15T04:56:25+0530",
+      "dateFinished": "2020-07-15T04:56:26+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23426"
+    },
+    {
+      "text": "%spark\nval pipeline = new Pipeline().setStages(Array(genderIndexer,embarkIndexer,genderEncoder,embarkEncoder,assembler, lr))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:56:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mpipeline\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.Pipeline\u001b[0m = pipeline_6f75ce130290\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769185609_613639819",
+      "id": "paragraph_1594769185609_613639819",
+      "dateCreated": "2020-07-15T04:56:25+0530",
+      "dateStarted": "2020-07-15T04:56:42+0530",
+      "dateFinished": "2020-07-15T04:56:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23427"
+    },
+    {
+      "text": "%spark\n// Fit the pipeline to training documents.\nval model = pipeline.fit(training)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:56:51+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmodel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.PipelineModel\u001b[0m = pipeline_6f75ce130290\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=50",
+              "$$hashKey": "object:25742"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=51",
+              "$$hashKey": "object:25743"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=52",
+              "$$hashKey": "object:25744"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=53",
+              "$$hashKey": "object:25745"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=54",
+              "$$hashKey": "object:25746"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=55",
+              "$$hashKey": "object:25747"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=56",
+              "$$hashKey": "object:25748"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=57",
+              "$$hashKey": "object:25749"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=58",
+              "$$hashKey": "object:25750"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=59",
+              "$$hashKey": "object:25751"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=60",
+              "$$hashKey": "object:25752"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=61",
+              "$$hashKey": "object:25753"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=62",
+              "$$hashKey": "object:25754"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=63",
+              "$$hashKey": "object:25755"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=64",
+              "$$hashKey": "object:25756"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=65",
+              "$$hashKey": "object:25757"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=66",
+              "$$hashKey": "object:25758"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=67",
+              "$$hashKey": "object:25759"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=68",
+              "$$hashKey": "object:25760"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=69",
+              "$$hashKey": "object:25761"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=70",
+              "$$hashKey": "object:25762"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=71",
+              "$$hashKey": "object:25763"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=72",
+              "$$hashKey": "object:25764"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=73",
+              "$$hashKey": "object:25765"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=74",
+              "$$hashKey": "object:25766"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=75",
+              "$$hashKey": "object:25767"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=76",
+              "$$hashKey": "object:25768"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=77",
+              "$$hashKey": "object:25769"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=78",
+              "$$hashKey": "object:25770"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=79",
+              "$$hashKey": "object:25771"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=80",
+              "$$hashKey": "object:25772"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=81",
+              "$$hashKey": "object:25773"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=82",
+              "$$hashKey": "object:25774"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=83",
+              "$$hashKey": "object:25775"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=84",
+              "$$hashKey": "object:25776"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=85",
+              "$$hashKey": "object:25777"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=86",
+              "$$hashKey": "object:25778"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=87",
+              "$$hashKey": "object:25779"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=88",
+              "$$hashKey": "object:25780"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=89",
+              "$$hashKey": "object:25781"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=90",
+              "$$hashKey": "object:25782"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=91",
+              "$$hashKey": "object:25783"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=92",
+              "$$hashKey": "object:25784"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769202597_739690207",
+      "id": "paragraph_1594769202597_739690207",
+      "dateCreated": "2020-07-15T04:56:42+0530",
+      "dateStarted": "2020-07-15T04:56:51+0530",
+      "dateFinished": "2020-07-15T04:57:05+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23428"
+    },
+    {
+      "text": "%spark\n// Get Results on Test Set\nval results = model.transform(test)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:57:00+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mresults\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: int, Pclass: int ... 14 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769211796_748437962",
+      "id": "paragraph_1594769211796_748437962",
+      "dateCreated": "2020-07-15T04:56:51+0530",
+      "dateStarted": "2020-07-15T04:57:00+0530",
+      "dateFinished": "2020-07-15T04:57:05+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23429"
+    },
+    {
+      "text": "%spark\n// For Metrics and Evaluation\nimport org.apache.spark.mllib.evaluation.MulticlassMetrics\n\n// Need to convert to RDD to use this\nval predictionAndLabels = results.select($\"prediction\",$\"label\").as[(Double, Double)].rdd",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:57:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.mllib.evaluation.MulticlassMetrics\n\u001b[1m\u001b[34mpredictionAndLabels\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Double, Double)]\u001b[0m = MapPartitionsRDD[284] at rdd at <console>:40\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769220173_1662417805",
+      "id": "paragraph_1594769220173_1662417805",
+      "dateCreated": "2020-07-15T04:57:00+0530",
+      "dateStarted": "2020-07-15T04:57:21+0530",
+      "dateFinished": "2020-07-15T04:57:25+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23430"
+    },
+    {
+      "text": "%spark\n// Instantiate metrics object\nval metrics = new MulticlassMetrics(predictionAndLabels)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:57:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmetrics\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.mllib.evaluation.MulticlassMetrics\u001b[0m = org.apache.spark.mllib.evaluation.MulticlassMetrics@30291a6f\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769241655_-640636670",
+      "id": "paragraph_1594769241655_-640636670",
+      "dateCreated": "2020-07-15T04:57:21+0530",
+      "dateStarted": "2020-07-15T04:57:32+0530",
+      "dateFinished": "2020-07-15T04:57:33+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23431"
+    },
+    {
+      "text": "%spark\n// Confusion matrix\nprintln(\"Confusion matrix:\")\nprintln(metrics.confusionMatrix)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:57:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Confusion matrix:\n114.0  16.0  \n27.0   61.0  \n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=93",
+              "$$hashKey": "object:26166"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=94",
+              "$$hashKey": "object:26167"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769252965_1499137686",
+      "id": "paragraph_1594769252965_1499137686",
+      "dateCreated": "2020-07-15T04:57:32+0530",
+      "dateStarted": "2020-07-15T04:57:41+0530",
+      "dateFinished": "2020-07-15T04:57:49+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23432"
+    },
+    {
+      "text": "%md\n## Logistic Regression Project\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:58:25+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Logistic Regression Project</h2>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769261426_-1885220270",
+      "id": "paragraph_1594769261426_-1885220270",
+      "dateCreated": "2020-07-15T04:57:41+0530",
+      "dateStarted": "2020-07-15T04:58:21+0530",
+      "dateFinished": "2020-07-15T04:58:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23433"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.classification.LogisticRegression\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:58:42+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.classification.LogisticRegression\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769301613_1706942986",
+      "id": "paragraph_1594769301613_1706942986",
+      "dateCreated": "2020-07-15T04:58:21+0530",
+      "dateStarted": "2020-07-15T04:58:42+0530",
+      "dateFinished": "2020-07-15T04:58:43+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23434"
+    },
+    {
+      "text": "%spark\n// Use Spark to read in the Advertising csv file.\nval data = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").format(\"csv\").load(\"data/advertising.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:03:34+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Daily Time Spent on Site: double, Age: int ... 8 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=95",
+              "$$hashKey": "object:26327"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=96",
+              "$$hashKey": "object:26328"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769322922_-399061151",
+      "id": "paragraph_1594769322922_-399061151",
+      "dateCreated": "2020-07-15T04:58:42+0530",
+      "dateStarted": "2020-07-15T05:03:34+0530",
+      "dateFinished": "2020-07-15T05:03:36+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23435"
+    },
+    {
+      "text": "%spark\n// Print the Schema of the DataFrame\ndata.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:04:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Daily Time Spent on Site: double (nullable = true)\n |-- Age: integer (nullable = true)\n |-- Area Income: double (nullable = true)\n |-- Daily Internet Usage: double (nullable = true)\n |-- Ad Topic Line: string (nullable = true)\n |-- City: string (nullable = true)\n |-- Male: integer (nullable = true)\n |-- Country: string (nullable = true)\n |-- Timestamp: timestamp (nullable = true)\n |-- Clicked on Ad: integer (nullable = true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769340945_518998348",
+      "id": "paragraph_1594769340945_518998348",
+      "dateCreated": "2020-07-15T04:59:00+0530",
+      "dateStarted": "2020-07-15T05:04:13+0530",
+      "dateFinished": "2020-07-15T05:04:14+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23436"
+    },
+    {
+      "text": "%spark\ndata.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:04:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------------------------+---+-----------+--------------------+--------------------+-----------------+----+--------------------+-------------------+-------------+\n|Daily Time Spent on Site|Age|Area Income|Daily Internet Usage|       Ad Topic Line|             City|Male|             Country|          Timestamp|Clicked on Ad|\n+------------------------+---+-----------+--------------------+--------------------+-----------------+----+--------------------+-------------------+-------------+\n|                   68.95| 35|    61833.9|              256.09|Cloned 5thgenerat...|      Wrightburgh|   0|             Tunisia|2016-03-27 00:53:11|            0|\n|                   80.23| 31|   68441.85|              193.77|Monitored nationa...|        West Jodi|   1|               Nauru|2016-04-04 01:39:02|            0|\n|                   69.47| 26|   59785.94|               236.5|Organic bottom-li...|         Davidton|   0|          San Marino|2016-03-13 20:35:42|            0|\n|                   74.15| 29|   54806.18|              245.89|Triple-buffered r...|   West Terrifurt|   1|               Italy|2016-01-10 02:31:19|            0|\n|                   68.37| 35|   73889.99|              225.58|Robust logistical...|     South Manuel|   0|             Iceland|2016-06-03 03:36:18|            0|\n|                   59.99| 23|   59761.56|              226.74|Sharable client-d...|        Jamieberg|   1|              Norway|2016-05-19 14:30:17|            0|\n|                   88.91| 33|   53852.85|              208.36|Enhanced dedicate...|      Brandonstad|   0|             Myanmar|2016-01-28 20:59:32|            0|\n|                    66.0| 48|   24593.33|              131.76|Reactive local ch...| Port Jefferybury|   1|           Australia|2016-03-07 01:40:15|            1|\n|                   74.53| 30|    68862.0|              221.51|Configurable cohe...|       West Colin|   1|             Grenada|2016-04-18 09:33:42|            0|\n|                   69.88| 20|   55642.32|              183.82|Mandatory homogen...|       Ramirezton|   1|               Ghana|2016-07-11 01:42:51|            0|\n|                   47.64| 49|   45632.51|              122.02|Centralized neutr...|  West Brandonton|   0|               Qatar|2016-03-16 20:19:01|            1|\n|                   83.07| 37|   62491.01|              230.87|Team-oriented gri...|East Theresashire|   1|             Burundi|2016-05-08 08:10:10|            0|\n|                   69.57| 48|   51636.92|              113.12|Centralized conte...|   West Katiefurt|   1|               Egypt|2016-06-03 01:14:41|            1|\n|                   79.52| 24|   51739.63|              214.23|Synergistic fresh...|       North Tara|   0|Bosnia and Herzeg...|2016-04-20 21:49:22|            0|\n|                   42.95| 33|    30976.0|              143.56|Grass-roots coher...|     West William|   0|            Barbados|2016-03-24 09:31:49|            1|\n|                   63.45| 23|   52182.23|              140.64|Persistent demand...|   New Travistown|   1|               Spain|2016-03-09 03:41:30|            1|\n|                   55.39| 37|   23936.86|              129.41|Customizable mult...|   West Dylanberg|   0|Palestinian Terri...|2016-01-30 19:20:41|            1|\n|                   82.03| 41|   71511.08|              187.53|Intuitive dynamic...|      Pruittmouth|   0|         Afghanistan|2016-05-02 07:00:58|            0|\n|                    54.7| 36|   31087.54|              118.39|Grass-roots solut...|      Jessicastad|   1|British Indian Oc...|2016-02-13 07:53:55|            1|\n|                   74.58| 40|   23821.72|              135.51|Advanced 24/7 pro...|       Millertown|   1|  Russian Federation|2016-02-27 04:43:07|            1|\n+------------------------+---+-----------+--------------------+--------------------+-----------------+----+--------------------+-------------------+-------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=98",
+              "$$hashKey": "object:26442"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769626488_-975790416",
+      "id": "paragraph_1594769626488_-975790416",
+      "dateCreated": "2020-07-15T05:03:46+0530",
+      "dateStarted": "2020-07-15T05:04:18+0530",
+      "dateFinished": "2020-07-15T05:04:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23437"
+    },
+    {
+      "text": "%spark\n// Print out a sample row of the data (multiple ways to do this)\nval colnames = data.columns\nval firstrow = data.head(1)(0)\nprintln(\"\\n\")\nprintln(\"Example Data Row\")\nfor(ind <- Range(1,colnames.length)){\n  println(colnames(ind))\n  println(firstrow(ind))\n  println(\"\\n\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:04:46+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\nExample Data Row\nAge\n35\n\n\nArea Income\n61833.9\n\n\nDaily Internet Usage\n256.09\n\n\nAd Topic Line\nCloned 5thgeneration orchestration\n\n\nCity\nWrightburgh\n\n\nMale\n0\n\n\nCountry\nTunisia\n\n\nTimestamp\n2016-03-27 00:53:11.0\n\n\nClicked on Ad\n0\n\n\n\u001b[1m\u001b[34mcolnames\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(Daily Time Spent on Site, Age, Area Income, Daily Internet Usage, Ad Topic Line, City, Male, Country, Timestamp, Clicked on Ad)\n\u001b[1m\u001b[34mfirstrow\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Row\u001b[0m = [68.95,35,61833.9,256.09,Cloned 5thgeneration orchestration,Wrightburgh,0,Tunisia,2016-03-27 00:53:11.0,0]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=99",
+              "$$hashKey": "object:26500"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769632492_1004917885",
+      "id": "paragraph_1594769632492_1004917885",
+      "dateCreated": "2020-07-15T05:03:52+0530",
+      "dateStarted": "2020-07-15T05:04:46+0530",
+      "dateFinished": "2020-07-15T05:04:47+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23438"
+    },
+    {
+      "text": "%spark\nval timedata = data.withColumn(\"Hour\",hour(data(\"Timestamp\")))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:05:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtimedata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Daily Time Spent on Site: double, Age: int ... 9 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769686526_-1291598921",
+      "id": "paragraph_1594769686526_-1291598921",
+      "dateCreated": "2020-07-15T05:04:46+0530",
+      "dateStarted": "2020-07-15T05:05:01+0530",
+      "dateFinished": "2020-07-15T05:05:02+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23439"
+    },
+    {
+      "text": "%spark\nval logregdata = (timedata.select(data(\"Clicked on Ad\").as(\"label\"),\n                    $\"Daily Time Spent on Site\", $\"Age\", $\"Area Income\",\n                    $\"Daily Internet Usage\",$\"Hour\",$\"Male\"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlogregdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: int, Daily Time Spent on Site: double ... 5 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769701938_-866303595",
+      "id": "paragraph_1594769701938_-866303595",
+      "dateCreated": "2020-07-15T05:05:01+0530",
+      "dateStarted": "2020-07-15T05:07:16+0530",
+      "dateFinished": "2020-07-15T05:07:17+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23440"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.feature.{VectorAssembler,StringIndexer,VectorIndexer,OneHotEncoder}\nimport org.apache.spark.ml.linalg.Vectors",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.feature.{VectorAssembler, StringIndexer, VectorIndexer, OneHotEncoder}\nimport org.apache.spark.ml.linalg.Vectors\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769710685_-1627995947",
+      "id": "paragraph_1594769710685_-1627995947",
+      "dateCreated": "2020-07-15T05:05:10+0530",
+      "dateStarted": "2020-07-15T05:07:21+0530",
+      "dateFinished": "2020-07-15T05:07:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23441"
+    },
+    {
+      "text": "%spark\nval assembler = (new VectorAssembler()\n                  .setInputCols(Array(\"Daily Time Spent on Site\", \"Age\", \"Area Income\",\n                  \"Daily Internet Usage\",\"Hour\"))\n                  .setOutputCol(\"features\") )",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:24+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34massembler\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.VectorAssembler\u001b[0m = vecAssembler_7522ae4aabc0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769725575_1576371801",
+      "id": "paragraph_1594769725575_1576371801",
+      "dateCreated": "2020-07-15T05:05:25+0530",
+      "dateStarted": "2020-07-15T05:07:24+0530",
+      "dateFinished": "2020-07-15T05:07:25+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23442"
+    },
+    {
+      "text": "%spark\n// Use randomSplit to create a train test split of 70/30\nval Array(training, test) = logregdata.randomSplit(Array(0.7, 0.3), seed = 12345)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:28+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtraining\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [label: int, Daily Time Spent on Site: double ... 5 more fields]\n\u001b[1m\u001b[34mtest\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [label: int, Daily Time Spent on Site: double ... 5 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769734077_-908991682",
+      "id": "paragraph_1594769734077_-908991682",
+      "dateCreated": "2020-07-15T05:05:34+0530",
+      "dateStarted": "2020-07-15T05:07:28+0530",
+      "dateFinished": "2020-07-15T05:07:29+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23443"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.Pipeline\n\n// Create a new LogisticRegression object called lr\nval lr = new LogisticRegression()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.Pipeline\n\u001b[1m\u001b[34mlr\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.classification.LogisticRegression\u001b[0m = logreg_e608e8f5c49e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769744903_-60239815",
+      "id": "paragraph_1594769744903_-60239815",
+      "dateCreated": "2020-07-15T05:05:44+0530",
+      "dateStarted": "2020-07-15T05:07:32+0530",
+      "dateFinished": "2020-07-15T05:07:32+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23444"
+    },
+    {
+      "text": "%spark\n// Create a new pipeline with the stages: assembler, lr\nval pipeline = new Pipeline().setStages(Array(assembler, lr))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mpipeline\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.Pipeline\u001b[0m = pipeline_700e4d7d2c66\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769759316_-300398993",
+      "id": "paragraph_1594769759316_-300398993",
+      "dateCreated": "2020-07-15T05:05:59+0530",
+      "dateStarted": "2020-07-15T05:07:35+0530",
+      "dateFinished": "2020-07-15T05:07:36+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23445"
+    },
+    {
+      "text": "%spark\n// Fit the pipeline to training set.\nval model = pipeline.fit(training)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmodel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.PipelineModel\u001b[0m = pipeline_700e4d7d2c66\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=100",
+              "$$hashKey": "object:26922"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=101",
+              "$$hashKey": "object:26923"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=102",
+              "$$hashKey": "object:26924"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=103",
+              "$$hashKey": "object:26925"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=104",
+              "$$hashKey": "object:26926"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=105",
+              "$$hashKey": "object:26927"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=106",
+              "$$hashKey": "object:26928"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=107",
+              "$$hashKey": "object:26929"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=108",
+              "$$hashKey": "object:26930"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=109",
+              "$$hashKey": "object:26931"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=110",
+              "$$hashKey": "object:26932"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=111",
+              "$$hashKey": "object:26933"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=112",
+              "$$hashKey": "object:26934"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=113",
+              "$$hashKey": "object:26935"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=114",
+              "$$hashKey": "object:26936"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=115",
+              "$$hashKey": "object:26937"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=116",
+              "$$hashKey": "object:26938"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=117",
+              "$$hashKey": "object:26939"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=118",
+              "$$hashKey": "object:26940"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=119",
+              "$$hashKey": "object:26941"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=120",
+              "$$hashKey": "object:26942"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=121",
+              "$$hashKey": "object:26943"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=122",
+              "$$hashKey": "object:26944"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=123",
+              "$$hashKey": "object:26945"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=124",
+              "$$hashKey": "object:26946"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=125",
+              "$$hashKey": "object:26947"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=126",
+              "$$hashKey": "object:26948"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=127",
+              "$$hashKey": "object:26949"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=128",
+              "$$hashKey": "object:26950"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=129",
+              "$$hashKey": "object:26951"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=130",
+              "$$hashKey": "object:26952"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=131",
+              "$$hashKey": "object:26953"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=132",
+              "$$hashKey": "object:26954"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=133",
+              "$$hashKey": "object:26955"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769777019_-474483363",
+      "id": "paragraph_1594769777019_-474483363",
+      "dateCreated": "2020-07-15T05:06:17+0530",
+      "dateStarted": "2020-07-15T05:07:39+0530",
+      "dateFinished": "2020-07-15T05:07:44+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23446"
+    },
+    {
+      "text": "%spark\n// For Metrics and Evaluation import MulticlassMetrics\nimport org.apache.spark.mllib.evaluation.MulticlassMetrics",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:07:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.mllib.evaluation.MulticlassMetrics\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769783235_151288940",
+      "id": "paragraph_1594769783235_151288940",
+      "dateCreated": "2020-07-15T05:06:23+0530",
+      "dateStarted": "2020-07-15T05:07:57+0530",
+      "dateFinished": "2020-07-15T05:07:57+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23447"
+    },
+    {
+      "text": "%spark\n// Convert the test results to an RDD using .as and .rdd\nval predictionAndLabels = results.select($\"prediction\",$\"label\").as[(Double, Double)].rdd",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:08:05+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mpredictionAndLabels\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(Double, Double)]\u001b[0m = MapPartitionsRDD[366] at rdd at <console>:48\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769877708_-1563650203",
+      "id": "paragraph_1594769877708_-1563650203",
+      "dateCreated": "2020-07-15T05:07:57+0530",
+      "dateStarted": "2020-07-15T05:08:05+0530",
+      "dateFinished": "2020-07-15T05:08:06+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23448"
+    },
+    {
+      "text": "%spark\n// Instantiate a new MulticlassMetrics object\nval metrics = new MulticlassMetrics(predictionAndLabels)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:08:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmetrics\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.mllib.evaluation.MulticlassMetrics\u001b[0m = org.apache.spark.mllib.evaluation.MulticlassMetrics@677a85cd\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769885385_-744871109",
+      "id": "paragraph_1594769885385_-744871109",
+      "dateCreated": "2020-07-15T05:08:05+0530",
+      "dateStarted": "2020-07-15T05:08:16+0530",
+      "dateFinished": "2020-07-15T05:08:16+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23449"
+    },
+    {
+      "text": "%spark\n// Print out the Confusion matrix\nprintln(\"Confusion matrix:\")\nprintln(metrics.confusionMatrix)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:08:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Confusion matrix:\n114.0  16.0  \n27.0   61.0  \n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=134",
+              "$$hashKey": "object:27301"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=135",
+              "$$hashKey": "object:27302"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769896234_1404273458",
+      "id": "paragraph_1594769896234_1404273458",
+      "dateCreated": "2020-07-15T05:08:16+0530",
+      "dateStarted": "2020-07-15T05:08:21+0530",
+      "dateFinished": "2020-07-15T05:08:21+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23450"
+    },
+    {
+      "text": "%md\n---\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T05:08:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<hr />\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594769901044_-1307263303",
+      "id": "paragraph_1594769901044_-1307263303",
+      "dateCreated": "2020-07-15T05:08:21+0530",
+      "dateStarted": "2020-07-15T05:08:50+0530",
+      "dateFinished": "2020-07-15T05:08:50+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:23451"
+    }
+  ],
+  "name": "Logistic Regression",
+  "id": "2FF25WHS7",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/Logistic Regression"
+}

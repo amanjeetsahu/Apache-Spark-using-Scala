@@ -1,0 +1,1898 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# Linear Regression Example\n\nLet's walk through the steps of the official documentation example. Doing this will help your ability to read from the documentation, understand it, and then apply it to your own problems.",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-14T18:08:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Linear Regression Example</h1>\n<p>Let&rsquo;s walk through the steps of the official documentation example. Doing this will help your ability to read from the documentation, understand it, and then apply it to your own problems.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594729584664_2054019556",
+      "id": "paragraph_1594729584664_2054019556",
+      "dateCreated": "2020-07-14T17:56:24+0530",
+      "dateStarted": "2020-07-14T18:08:12+0530",
+      "dateFinished": "2020-07-14T18:08:16+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:641"
+    },
+    {
+      "text": "%spark\nsc",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:30:04+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.SparkContext\u001b[0m = org.apache.spark.SparkContext@6c8c4410\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730292001_2051708391",
+      "id": "paragraph_1594730292001_2051708391",
+      "dateCreated": "2020-07-14T18:08:12+0530",
+      "dateStarted": "2020-07-15T04:30:06+0530",
+      "dateFinished": "2020-07-15T04:30:54+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:642"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.regression.LinearRegression",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:30:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.regression.LinearRegression\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730306580_478555957",
+      "id": "paragraph_1594730306580_478555957",
+      "dateCreated": "2020-07-14T18:08:26+0530",
+      "dateStarted": "2020-07-15T04:30:57+0530",
+      "dateFinished": "2020-07-15T04:30:58+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:643"
+    },
+    {
+      "text": "%spark\nval path = \"data/sample_linear_regression_data.txt\"\n\n// Training Data\nval training = spark.read.format(\"libsvm\").load(path)\ntraining.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:31:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- label: double (nullable = true)\n |-- features: vector (nullable = true)\n\n\u001b[1m\u001b[34mpath\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = data/sample_linear_regression_data.txt\n\u001b[1m\u001b[34mtraining\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: double, features: vector]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=0",
+              "$$hashKey": "object:2827"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730372509_1509400078",
+      "id": "paragraph_1594730372509_1509400078",
+      "dateCreated": "2020-07-14T18:09:32+0530",
+      "dateStarted": "2020-07-15T04:31:01+0530",
+      "dateFinished": "2020-07-15T04:31:13+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:644"
+    },
+    {
+      "text": "%spark\n// Create new LinearRegression Object\nval lr = new LinearRegression().setMaxIter(100).setRegParam(0.3).setElasticNetParam(0.8)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:31:17+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlr\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegression\u001b[0m = linReg_424a31889124\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730393903_629108799",
+      "id": "paragraph_1594730393903_629108799",
+      "dateCreated": "2020-07-14T18:09:53+0530",
+      "dateStarted": "2020-07-15T04:31:17+0530",
+      "dateFinished": "2020-07-15T04:31:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:645"
+    },
+    {
+      "text": "%spark\n// Fit the model\nval lrModel = lr.fit(training)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:31:23+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlrModel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegressionModel\u001b[0m = linReg_424a31889124\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=1",
+              "$$hashKey": "object:2969"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=2",
+              "$$hashKey": "object:2970"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=3",
+              "$$hashKey": "object:2971"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=4",
+              "$$hashKey": "object:2972"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=5",
+              "$$hashKey": "object:2973"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730460936_21064085",
+      "id": "paragraph_1594730460936_21064085",
+      "dateCreated": "2020-07-14T18:11:00+0530",
+      "dateStarted": "2020-07-15T04:31:23+0530",
+      "dateFinished": "2020-07-15T04:31:37+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:646"
+    },
+    {
+      "text": "%spark\n// Print the coefficients and intercept for linear regression\nprintln(s\"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:31:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Coefficients: [0.0,0.32292516677405936,-0.3438548034562218,1.9156017023458414,0.05288058680386263,0.765962720459771,0.0,-0.15105392669186682,-0.21587930360904642,0.22025369188813426] Intercept: 0.1598936844239736\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730481876_287270329",
+      "id": "paragraph_1594730481876_287270329",
+      "dateCreated": "2020-07-14T18:11:21+0530",
+      "dateStarted": "2020-07-15T04:31:40+0530",
+      "dateFinished": "2020-07-15T04:31:42+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:647"
+    },
+    {
+      "text": "%spark\n// Summarize the model over the training set and print out some metrics\nval trainingSummary = lrModel.summary\nprintln(s\"numIterations: ${trainingSummary.totalIterations}\")\nprintln(s\"objectiveHistory: ${trainingSummary.objectiveHistory.toList}\")\ntrainingSummary.residuals.show()\nprintln(s\"RMSE: ${trainingSummary.rootMeanSquaredError}\")\nprintln(s\"r2: ${trainingSummary.r2}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:31:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "numIterations: 7\nobjectiveHistory: List(0.49999999999999994, 0.4967620357443381, 0.4936361664340463, 0.4936351537897608, 0.4936351214177871, 0.49363512062528014, 0.4936351206216114)\n+--------------------+\n|           residuals|\n+--------------------+\n|  -9.889232683103197|\n|  0.5533794340053554|\n|  -5.204019455758823|\n| -20.566686715507508|\n|    -9.4497405180564|\n|  -6.909112502719486|\n|  -10.00431602969873|\n|   2.062397807050484|\n|  3.1117508432954772|\n| -15.893608229419382|\n|  -5.036284254673026|\n|   6.483215876994333|\n|  12.429497299109002|\n|  -20.32003219007654|\n| -2.0049838218725005|\n| -17.867901734183793|\n|   7.646455887420495|\n| -2.2653482182417406|\n|-0.10308920436195645|\n|  -1.380034070385301|\n+--------------------+\nonly showing top 20 rows\n\nRMSE: 10.189077167598475\nr2: 0.022861466913958184\n\u001b[1m\u001b[34mtrainingSummary\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegressionTrainingSummary\u001b[0m = org.apache.spark.ml.regression.LinearRegressionTrainingSummary@ab2f81e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=6",
+              "$$hashKey": "object:3056"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730497623_122276676",
+      "id": "paragraph_1594730497623_122276676",
+      "dateCreated": "2020-07-14T18:11:37+0530",
+      "dateStarted": "2020-07-15T04:31:48+0530",
+      "dateFinished": "2020-07-15T04:31:51+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:648"
+    },
+    {
+      "text": "%md\n# Linear Regression Code Along\n\nBasically what we do here is examine a dataset with Ecommerce Customer Data for a company's website and mobile app. Then we want to see if we can build a regression model that will predict the customer's yearly spend on the company's product.\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:31:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Linear Regression Code Along</h1>\n<p>Basically what we do here is examine a dataset with Ecommerce Customer Data for a company&rsquo;s website and mobile app. Then we want to see if we can build a regression model that will predict the customer&rsquo;s yearly spend on the company&rsquo;s product.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730526203_100138288",
+      "id": "paragraph_1594730526203_100138288",
+      "dateCreated": "2020-07-14T18:12:06+0530",
+      "dateStarted": "2020-07-15T04:31:54+0530",
+      "dateFinished": "2020-07-15T04:31:59+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:649"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.evaluation.RegressionEvaluator\nimport org.apache.spark.ml.tuning.{ParamGridBuilder, TrainValidationSplit}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:32:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.evaluation.RegressionEvaluator\nimport org.apache.spark.ml.tuning.{ParamGridBuilder, TrainValidationSplit}\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594731679705_1305248917",
+      "id": "paragraph_1594731679705_1305248917",
+      "dateCreated": "2020-07-14T18:31:19+0530",
+      "dateStarted": "2020-07-15T04:32:01+0530",
+      "dateFinished": "2020-07-15T04:32:02+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:650"
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.sql.types.{StructType, StructField, StringType, DoubleType};\nval schema = StructType(\n  List(\n    StructField(\"Avg Area Income\", DoubleType, true),\n    StructField(\"Avg Area House Age\", DoubleType, true),\n    StructField(\"Avg Area Number of Rooms\", DoubleType, true),\n    StructField(\"Avg Area Number of Bedrooms\", DoubleType, true),\n    StructField(\"Area Population\", DoubleType, true),\n    StructField(\"Price\", DoubleType, true),\n    StructField(\"Address\", StringType, true)\n  )\n)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:32:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.types.{StructType, StructField, StringType, DoubleType}\n\u001b[1m\u001b[34mschema\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.types.StructType\u001b[0m = StructType(StructField(Avg Area Income,DoubleType,true), StructField(Avg Area House Age,DoubleType,true), StructField(Avg Area Number of Rooms,DoubleType,true), StructField(Avg Area Number of Bedrooms,DoubleType,true), StructField(Area Population,DoubleType,true), StructField(Price,DoubleType,true), StructField(Address,StringType,true))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594733205803_2012267764",
+      "id": "paragraph_1594733205803_2012267764",
+      "dateCreated": "2020-07-14T18:56:45+0530",
+      "dateStarted": "2020-07-15T04:32:07+0530",
+      "dateFinished": "2020-07-15T04:32:09+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:651"
+    },
+    {
+      "text": "%spark\n// Prepare training and test data.\nval data = spark.read.option(\"header\",\"true\").schema(schema).format(\"csv\").load(\"data/USA_Housing.csv\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:32:12+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Avg Area Income: double, Avg Area House Age: double ... 5 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594730651200_-1476437801",
+      "id": "paragraph_1594730651200_-1476437801",
+      "dateCreated": "2020-07-14T18:14:11+0530",
+      "dateStarted": "2020-07-15T04:32:12+0530",
+      "dateFinished": "2020-07-15T04:32:13+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:652"
+    },
+    {
+      "text": "%spark\n// Check out the Data\ndata.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:32:30+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Avg Area Income: double (nullable = true)\n |-- Avg Area House Age: double (nullable = true)\n |-- Avg Area Number of Rooms: double (nullable = true)\n |-- Avg Area Number of Bedrooms: double (nullable = true)\n |-- Area Population: double (nullable = true)\n |-- Price: double (nullable = true)\n |-- Address: string (nullable = true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594731408467_-1251123260",
+      "id": "paragraph_1594731408467_-1251123260",
+      "dateCreated": "2020-07-14T18:26:48+0530",
+      "dateStarted": "2020-07-15T04:32:30+0530",
+      "dateFinished": "2020-07-15T04:32:30+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:653"
+    },
+    {
+      "text": "%spark\ndata.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:32:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=7",
+              "$$hashKey": "object:3351"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594767755083_541314720",
+      "id": "paragraph_1594767755083_541314720",
+      "dateCreated": "2020-07-15T04:32:35+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3251",
+      "dateFinished": "2020-07-15T04:32:43+0530",
+      "dateStarted": "2020-07-15T04:32:41+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------------------+------------------+------------------------+---------------------------+------------------+------------------+--------------------+\n|   Avg Area Income|Avg Area House Age|Avg Area Number of Rooms|Avg Area Number of Bedrooms|   Area Population|             Price|             Address|\n+------------------+------------------+------------------------+---------------------------+------------------+------------------+--------------------+\n| 79545.45857431678| 5.682861321615587|       7.009188142792237|                       4.09|23086.800502686456|1059033.5578701235|208 Michael Ferry...|\n|              null|              null|                    null|                       null|              null|              null|                null|\n| 79248.64245482568|6.0028998082752425|       6.730821019094919|                       3.09| 40173.07217364482|  1505890.91484695|188 Johnson Views...|\n|              null|              null|                    null|                       null|              null|              null|                null|\n|61287.067178656784| 5.865889840310001|       8.512727430375099|                       5.13| 36882.15939970458|1058987.9878760849|9127 Elizabeth St...|\n|              null|              null|                    null|                       null|              null|              null|                null|\n| 63345.24004622798|7.1882360945186425|       5.586728664827653|                       3.26| 34310.24283090706|1260616.8066294468|         USS Barnett|\n|              null|              null|                    null|                       null|              null|              null|                null|\n|59982.197225708034| 5.040554523106283|       7.839387785120487|                       4.23|26354.109472103148| 630943.4893385402|        USNS Raymond|\n|              null|              null|                    null|                       null|              null|              null|                null|\n|  80175.7541594853|4.9884077575337145|       6.104512439428879|                       4.04|26748.428424689715|1068138.0743935304|06039 Jennifer Is...|\n|              null|              null|                    null|                       null|              null|              null|                null|\n| 64698.46342788773| 6.025335906887153|       8.147759585023431|                       3.41| 60828.24908540716|1502055.8173744078|4759 Daniel Shoal...|\n|              null|              null|                    null|                       null|              null|              null|                null|\n| 78394.33927753085|6.9897797477182815|       6.620477995185026|                       2.42|36516.358972493836|1573936.5644777215|   972 Joyce Viaduct|\n|              null|              null|                    null|                       null|              null|              null|                null|\n| 59927.66081334963|  5.36212556960358|      6.3931209805509015|                        2.3| 29387.39600281585| 798869.5328331633|         USS Gilbert|\n|              null|              null|                    null|                       null|              null|              null|                null|\n| 81885.92718409566| 4.423671789897876|       8.167688003472351|                        6.1| 40149.96574921337|1545154.8126419624|  Unit 9446 Box 0958|\n|              null|              null|                    null|                       null|              null|              null|                null|\n+------------------+------------------+------------------------+---------------------------+------------------+------------------+--------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nval df = data.filter($\"Avg Area Income\".isNotNull)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:33:06+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [Avg Area Income: double, Avg Area House Age: double ... 5 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594759887660_-870119424",
+      "id": "paragraph_1594759887660_-870119424",
+      "dateCreated": "2020-07-15T02:21:27+0530",
+      "dateStarted": "2020-07-15T04:33:06+0530",
+      "dateFinished": "2020-07-15T04:33:07+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:654"
+    },
+    {
+      "text": "%spark\n// See an example of what the data looks like\n// by printing out a Row\nval colnames = df.columns\nval firstrow = df.head(1)(0)\nprintln(\"\\n\")\nprintln(\"Example Data Row\")\nfor(ind <- Range(1,colnames.length)){\n  println(colnames(ind))\n  println(firstrow(ind))\n  println(\"\\n\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:33:11+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\nExample Data Row\nAvg Area House Age\n5.682861321615587\n\n\nAvg Area Number of Rooms\n7.009188142792237\n\n\nAvg Area Number of Bedrooms\n4.09\n\n\nArea Population\n23086.800502686456\n\n\nPrice\n1059033.5578701235\n\n\nAddress\n208 Michael Ferry Apt. 674\n\n\n\u001b[1m\u001b[34mcolnames\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(Avg Area Income, Avg Area House Age, Avg Area Number of Rooms, Avg Area Number of Bedrooms, Area Population, Price, Address)\n\u001b[1m\u001b[34mfirstrow\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Row\u001b[0m = [79545.45857431678,5.682861321615587,7.009188142792237,4.09,23086.800502686456,1059033.5578701235,208 Michael Ferry Apt. 674]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=8",
+              "$$hashKey": "object:3457"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594731419732_-9055037",
+      "id": "paragraph_1594731419732_-9055037",
+      "dateCreated": "2020-07-14T18:26:59+0530",
+      "dateStarted": "2020-07-15T04:33:11+0530",
+      "dateFinished": "2020-07-15T04:33:14+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:655"
+    },
+    {
+      "text": "%spark\n// This will allow us to join multiple feature columns\n// into a single column of an array of feautre values\nimport org.apache.spark.ml.feature.VectorAssembler\nimport org.apache.spark.ml.linalg.Vectors",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:33:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.feature.VectorAssembler\nimport org.apache.spark.ml.linalg.Vectors\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594731441635_-1244992884",
+      "id": "paragraph_1594731441635_-1244992884",
+      "dateCreated": "2020-07-14T18:27:21+0530",
+      "dateStarted": "2020-07-15T04:33:18+0530",
+      "dateFinished": "2020-07-15T04:33:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:656"
+    },
+    {
+      "text": "%spark\n// Rename Price to label column for naming convention.\n// Grab only numerical columns from the data\nval dataframe= df.select(data(\"Price\").as(\"label\"),$\"Avg Area Income\",$\"Avg Area House Age\",$\"Avg Area Number of Rooms\",$\"Area Population\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:34:43+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdataframe\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: double, Avg Area Income: double ... 3 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594731468644_765530938",
+      "id": "paragraph_1594731468644_765530938",
+      "dateCreated": "2020-07-14T18:27:48+0530",
+      "dateStarted": "2020-07-15T04:34:43+0530",
+      "dateFinished": "2020-07-15T04:34:44+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:657"
+    },
+    {
+      "text": "%spark\n// Set the input columns from which we are supposed to read the values\n// Set the name of the column where the vector will be stored\nval assembler = new VectorAssembler().setInputCols(Array(\"Avg Area Income\",\"Avg Area House Age\",\"Avg Area Number of Rooms\",\"Area Population\")).setOutputCol(\"features\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:34:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34massembler\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.VectorAssembler\u001b[0m = vecAssembler_d6854beb0c76\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594731531204_407844155",
+      "id": "paragraph_1594731531204_407844155",
+      "dateCreated": "2020-07-14T18:28:51+0530",
+      "dateStarted": "2020-07-15T04:34:50+0530",
+      "dateFinished": "2020-07-15T04:34:52+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:658"
+    },
+    {
+      "text": "%spark\n// Use the assembler to transform our DataFrame to the two columns\nval output = assembler.transform(dataframe).select($\"label\",$\"features\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:35:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34moutput\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: double, features: vector]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594731599785_-395412482",
+      "id": "paragraph_1594731599785_-395412482",
+      "dateCreated": "2020-07-14T18:29:59+0530",
+      "dateStarted": "2020-07-15T04:35:21+0530",
+      "dateFinished": "2020-07-15T04:35:22+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:660"
+    },
+    {
+      "text": "%spark\noutput.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:35:26+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------------------+--------------------+\n|             label|            features|\n+------------------+--------------------+\n|1059033.5578701235|[79545.4585743167...|\n|  1505890.91484695|[79248.6424548256...|\n|1058987.9878760849|[61287.0671786567...|\n|1260616.8066294468|[63345.2400462279...|\n| 630943.4893385402|[59982.1972257080...|\n|1068138.0743935304|[80175.7541594853...|\n|1502055.8173744078|[64698.4634278877...|\n|1573936.5644777215|[78394.3392775308...|\n| 798869.5328331633|[59927.6608133496...|\n|1545154.8126419624|[81885.9271840956...|\n| 1707045.722158058|[80527.4720829228...|\n| 663732.3968963273|[50593.6954970428...|\n|1042814.0978200927|[39033.8092369823...|\n|1291331.5184858206|[73163.6634410467...|\n|1402818.2101658515|[69391.3801843616...|\n|1306674.6599511993|[73091.8667458232...|\n|1556786.6001947748|[79706.9630576574...|\n| 528485.2467305964|[61929.0770180892...|\n|1019425.9367578316|[63508.1942994299...|\n|1030591.4292116085|[62085.2764034048...|\n+------------------+--------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=9",
+              "$$hashKey": "object:3678"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594758824275_-1354221514",
+      "id": "paragraph_1594758824275_-1354221514",
+      "dateCreated": "2020-07-15T02:03:44+0530",
+      "dateStarted": "2020-07-15T04:35:26+0530",
+      "dateFinished": "2020-07-15T04:35:27+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:661"
+    },
+    {
+      "text": "%spark\n// Create a Linear Regression Model object\nval lr = new LinearRegression()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:35:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlr\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegression\u001b[0m = linReg_0c1a4b666527\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594739451916_389444128",
+      "id": "paragraph_1594739451916_389444128",
+      "dateCreated": "2020-07-14T20:40:51+0530",
+      "dateStarted": "2020-07-15T04:35:32+0530",
+      "dateFinished": "2020-07-15T04:35:33+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:662"
+    },
+    {
+      "text": "%spark\n// Fit the model to the data\n\n// Note: Later we will see why we should split\n// the data first, but for now we will fit to all the data.\nval lrModel = lr.fit(output)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:35:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlrModel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegressionModel\u001b[0m = linReg_0c1a4b666527\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=10",
+              "$$hashKey": "object:3821"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=11",
+              "$$hashKey": "object:3822"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=12",
+              "$$hashKey": "object:3823"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=13",
+              "$$hashKey": "object:3824"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=14",
+              "$$hashKey": "object:3825"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594758762195_722770153",
+      "id": "paragraph_1594758762195_722770153",
+      "dateCreated": "2020-07-15T02:02:42+0530",
+      "dateStarted": "2020-07-15T04:35:36+0530",
+      "dateFinished": "2020-07-15T04:35:44+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:663"
+    },
+    {
+      "text": "%spark\n// Print the coefficients and intercept for linear regression\nprintln(s\"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:35:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594758767733_-1470720265",
+      "id": "paragraph_1594758767733_-1470720265",
+      "dateCreated": "2020-07-15T02:02:47+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:664",
+      "dateFinished": "2020-07-15T04:35:57+0530",
+      "dateStarted": "2020-07-15T04:35:57+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Coefficients: [21.58274357311807,165657.87243296555,121598.16461647744,15.196119819750953] Intercept: -2637560.6725476743\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Summarize the model over the training set and print out some metrics!\n// Explore this in the spark-shell for more methods to call\nval trainingSummary = lrModel.summary",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:36:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594758769168_663907687",
+      "id": "paragraph_1594758769168_663907687",
+      "dateCreated": "2020-07-15T02:02:49+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:665",
+      "dateFinished": "2020-07-15T04:36:14+0530",
+      "dateStarted": "2020-07-15T04:36:14+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtrainingSummary\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegressionTrainingSummary\u001b[0m = org.apache.spark.ml.regression.LinearRegressionTrainingSummary@5e65d6a\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nprintln(s\"numIterations: ${trainingSummary.totalIterations}\")\nprintln(s\"objectiveHistory: ${trainingSummary.objectiveHistory.toList}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:36:26+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594767974419_-1985627123",
+      "id": "paragraph_1594767974419_-1985627123",
+      "dateCreated": "2020-07-15T04:36:14+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3871",
+      "dateFinished": "2020-07-15T04:36:27+0530",
+      "dateStarted": "2020-07-15T04:36:26+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "numIterations: 1\nobjectiveHistory: List(0.0)\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ntrainingSummary.residuals.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:36:40+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=15",
+              "$$hashKey": "object:4159"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594767986920_-124366002",
+      "id": "paragraph_1594767986920_-124366002",
+      "dateCreated": "2020-07-15T04:36:26+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3965",
+      "dateFinished": "2020-07-15T04:36:41+0530",
+      "dateStarted": "2020-07-15T04:36:40+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+\n|          residuals|\n+-------------------+\n|-164759.92057681875|\n|  9690.547545110108|\n|-193522.97057657293|\n| 139506.99576144433|\n|-214819.12963698083|\n| 147.15634991880506|\n|-170004.15564831905|\n| 1675.3336070587393|\n|  30782.38727523957|\n|  79276.89880586835|\n| -64967.26304097194|\n|  34514.36829394649|\n|  89443.83140248689|\n|-16448.102787818527|\n|  95327.46257374925|\n|  65660.76816228312|\n|  31450.78445377224|\n|   42636.2121003737|\n|-115709.42082964047|\n|-167589.65318883548|\n+-------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nprintln(s\"RMSE: ${trainingSummary.rootMeanSquaredError}\")\nprintln(s\"MSE: ${trainingSummary.meanSquaredError}\")\nprintln(s\"r2: ${trainingSummary.r2}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:36:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768000337_-41803026",
+      "id": "paragraph_1594768000337_-41803026",
+      "dateCreated": "2020-07-15T04:36:40+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4059",
+      "dateFinished": "2020-07-15T04:36:54+0530",
+      "dateStarted": "2020-07-15T04:36:54+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "RMSE: 101108.81222494373\nMSE: 1.022299190953893E10\nr2: 0.9179976891524393\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n## Linear Regression Project\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:39:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768118341_-1503844390",
+      "id": "paragraph_1594768118341_-1503844390",
+      "dateCreated": "2020-07-15T04:38:38+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4258",
+      "dateFinished": "2020-07-15T04:39:13+0530",
+      "dateStarted": "2020-07-15T04:39:13+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Linear Regression Project</h2>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use Spark to read in the Ecommerce Customers csv file.\nval data = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").format(\"csv\").load(\"data/Ecommerce_Customers.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:44:55+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=22",
+              "$$hashKey": "object:5383"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=23",
+              "$$hashKey": "object:5384"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768014133_203302652",
+      "id": "paragraph_1594768014133_203302652",
+      "dateCreated": "2020-07-15T04:36:54+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4164",
+      "dateFinished": "2020-07-15T04:44:57+0530",
+      "dateStarted": "2020-07-15T04:44:55+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Email: string, Address: string ... 6 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Print the Schema of the DataFrame\ndata.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:44:59+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768163944_-1598857216",
+      "id": "paragraph_1594768163944_-1598857216",
+      "dateCreated": "2020-07-15T04:39:23+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4346",
+      "dateFinished": "2020-07-15T04:45:00+0530",
+      "dateStarted": "2020-07-15T04:44:59+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Email: string (nullable = true)\n |-- Address: string (nullable = true)\n |-- Avatar: string (nullable = true)\n |-- Avg Session Length: double (nullable = true)\n |-- Time on App: double (nullable = true)\n |-- Time on Website: double (nullable = true)\n |-- Length of Membership: double (nullable = true)\n |-- Yearly Amount Spent: double (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Print out an example Row\n// Various ways to do this, just\n// choose whichever way you prefer\nval colnames = data.columns\nval firstrow = data.head(1)(0)\nprintln(\"\\n\")\nprintln(\"Example Data Row\")\nfor(ind <- Range(1,colnames.length)){\n  println(colnames(ind))\n  println(firstrow(ind))\n  println(\"\\n\")\n}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:04+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=24",
+              "$$hashKey": "object:5462"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768180452_822498411",
+      "id": "paragraph_1594768180452_822498411",
+      "dateCreated": "2020-07-15T04:39:40+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4466",
+      "dateFinished": "2020-07-15T04:45:05+0530",
+      "dateStarted": "2020-07-15T04:45:04+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\nExample Data Row\nAddress\n835 Frank TunnelWrightmouth, MI 82180-9605\n\n\nAvatar\nViolet\n\n\nAvg Session Length\n34.49726772511229\n\n\nTime on App\n12.65565114916675\n\n\nTime on Website\n39.57766801952616\n\n\nLength of Membership\n4.0826206329529615\n\n\nYearly Amount Spent\n587.9510539684005\n\n\n\u001b[1m\u001b[34mcolnames\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(Email, Address, Avatar, Avg Session Length, Time on App, Time on Website, Length of Membership, Yearly Amount Spent)\n\u001b[1m\u001b[34mfirstrow\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Row\u001b[0m = [mstephenson@fernandez.com,835 Frank TunnelWrightmouth, MI 82180-9605,Violet,34.49726772511229,12.65565114916675,39.57766801952616,4.0826206329529615,587.9510539684005]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Set all of this as a new dataframe called df\nval df = data.select(data(\"Yearly Amount Spent\").as(\"label\"),$\"Avg Session Length\",$\"Time on App\",$\"Time on Website\",$\"Length of Membership\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:09+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768276241_-1922502937",
+      "id": "paragraph_1594768276241_-1922502937",
+      "dateCreated": "2020-07-15T04:41:16+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4665",
+      "dateFinished": "2020-07-15T04:45:10+0530",
+      "dateStarted": "2020-07-15T04:45:09+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: double, Avg Session Length: double ... 3 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use VectorAssembler to convert the input columns of df\n// to a single output column of an array called \"features\"\n// Set the input columns from which we are supposed to read the values.\n// Call this new object assembler\nval assembler = new VectorAssembler().setInputCols(Array(\"Avg Session Length\",\"Time on App\",\"Time on Website\",\"Length of Membership\")).setOutputCol(\"features\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:14+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768361137_-369775122",
+      "id": "paragraph_1594768361137_-369775122",
+      "dateCreated": "2020-07-15T04:42:41+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4827",
+      "dateFinished": "2020-07-15T04:45:14+0530",
+      "dateStarted": "2020-07-15T04:45:14+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34massembler\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.VectorAssembler\u001b[0m = vecAssembler_0e0131a6de2c\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use the assembler to transform our DataFrame to the two columns: label and features\nval output = assembler.transform(df).select($\"label\",$\"features\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768383375_-1579724018",
+      "id": "paragraph_1594768383375_-1579724018",
+      "dateCreated": "2020-07-15T04:43:03+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4924",
+      "dateFinished": "2020-07-15T04:45:17+0530",
+      "dateStarted": "2020-07-15T04:45:16+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34moutput\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: double, features: vector]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Create a Linear Regression Model object\nval lr = new LinearRegression()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:20+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768394804_-2025229915",
+      "id": "paragraph_1594768394804_-2025229915",
+      "dateCreated": "2020-07-15T04:43:14+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5018",
+      "dateFinished": "2020-07-15T04:45:20+0530",
+      "dateStarted": "2020-07-15T04:45:20+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlr\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegression\u001b[0m = linReg_3c0f2bb9e02a\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Fit the model to the data and call this model lrModel\nval lrModel = lr.fit(output)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:23+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=25",
+              "$$hashKey": "object:5687"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=26",
+              "$$hashKey": "object:5688"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=27",
+              "$$hashKey": "object:5689"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=28",
+              "$$hashKey": "object:5690"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=29",
+              "$$hashKey": "object:5691"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768405951_-1151488173",
+      "id": "paragraph_1594768405951_-1151488173",
+      "dateCreated": "2020-07-15T04:43:25+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5112",
+      "dateFinished": "2020-07-15T04:45:26+0530",
+      "dateStarted": "2020-07-15T04:45:23+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlrModel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegressionModel\u001b[0m = linReg_3c0f2bb9e02a\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Print the coefficients and intercept for linear regression\nprintln(s\"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:37+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768413524_1927323010",
+      "id": "paragraph_1594768413524_1927323010",
+      "dateCreated": "2020-07-15T04:43:33+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5206",
+      "dateFinished": "2020-07-15T04:45:38+0530",
+      "dateStarted": "2020-07-15T04:45:37+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Coefficients: [25.734271084670716,38.709153810828816,0.43673883558514964,61.57732375487594] Intercept: -1051.5942552990748\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Summarize the model over the training set and print out some metrics!\n// Use the .summary method off your model to create an object\n// called trainingSummary\nval trainingSummary = lrModel.summary",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:45:51+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768537765_1741707595",
+      "id": "paragraph_1594768537765_1741707595",
+      "dateCreated": "2020-07-15T04:45:37+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5712",
+      "dateFinished": "2020-07-15T04:45:52+0530",
+      "dateStarted": "2020-07-15T04:45:51+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtrainingSummary\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.regression.LinearRegressionTrainingSummary\u001b[0m = org.apache.spark.ml.regression.LinearRegressionTrainingSummary@68ae4c25\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Show the residuals, the RMSE, the MSE, and the R^2 Values.\ntrainingSummary.residuals.show()\nprintln(s\"RMSE: ${trainingSummary.rootMeanSquaredError}\")\nprintln(s\"MSE: ${trainingSummary.meanSquaredError}\")\nprintln(s\"r2: ${trainingSummary.r2}\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T04:46:26+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=30",
+              "$$hashKey": "object:6003"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594768551799_1102266212",
+      "id": "paragraph_1594768551799_1102266212",
+      "dateCreated": "2020-07-15T04:45:51+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:5806",
+      "dateFinished": "2020-07-15T04:46:27+0530",
+      "dateStarted": "2020-07-15T04:46:26+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+\n|          residuals|\n+-------------------+\n| -6.788234090018818|\n| 11.841128565326073|\n| -17.65262700858966|\n| 11.454889631178617|\n| 7.7833824373080915|\n|-1.8347332184773677|\n|  4.620232401352382|\n| -8.526545950978175|\n| 11.012210896516763|\n|-13.828032682158891|\n| -16.04456458615175|\n|  8.786634365463442|\n| 10.425717191807507|\n| 12.161293785003522|\n|  9.989313714461446|\n| 10.626662732649379|\n|  20.15641408428496|\n|-3.7708446586326545|\n| -4.129505481591934|\n|  9.206694655890487|\n+-------------------+\nonly showing top 20 rows\n\nRMSE: 9.923256785022229\nMSE: 98.47102522148971\nr2: 0.9843155370226727\n"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "Linear Regression",
+  "id": "2FG77FX49",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/Linear Regression"
+}
