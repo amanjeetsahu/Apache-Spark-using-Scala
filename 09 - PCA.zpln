@@ -1,0 +1,929 @@
+﻿{
+  "paragraphs": [
+    {
+      "user": "anonymous",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809893811_-458418208",
+      "id": "paragraph_1594809893811_-458418208",
+      "dateCreated": "2020-07-15T16:14:53+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:41884",
+      "text": "%md\n# Principal Component Analysis using Spark",
+      "dateUpdated": "2020-07-15T16:15:43+0530",
+      "dateFinished": "2020-07-15T16:15:42+0530",
+      "dateStarted": "2020-07-15T16:15:42+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Principal Component Analysis using Spark</h1>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.feature.PCA\nimport org.apache.spark.ml.linalg.Vectors",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:15:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809916750_-989593594",
+      "id": "paragraph_1594809916750_-989593594",
+      "dateCreated": "2020-07-15T16:15:16+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:41959",
+      "dateFinished": "2020-07-15T16:15:57+0530",
+      "dateStarted": "2020-07-15T16:15:57+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.feature.PCA\nimport org.apache.spark.ml.linalg.Vectors\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Create some Data\nval data = Array(\n  Vectors.sparse(5, Seq((1, 1.0), (3, 7.0))),\n  Vectors.dense(2.0, 0.0, 3.0, 4.0, 5.0),\n  Vectors.dense(4.0, 0.0, 0.0, 6.0, 7.0)\n)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:16:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809957326_-779334278",
+      "id": "paragraph_1594809957326_-779334278",
+      "dateCreated": "2020-07-15T16:15:57+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42103",
+      "dateFinished": "2020-07-15T16:16:07+0530",
+      "dateStarted": "2020-07-15T16:16:06+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.ml.linalg.Vector]\u001b[0m = Array((5,[1,3],[1.0,7.0]), [2.0,0.0,3.0,4.0,5.0], [4.0,0.0,0.0,6.0,7.0])\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Perform the operation\nval df = spark.createDataFrame(data.map(Tuple1.apply)).toDF(\"features\")\nval pca = (new PCA()\n  .setInputCol(\"features\")\n  .setOutputCol(\"pcaFeatures\")\n  .setK(3)\n  .fit(df))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:16:38+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=157",
+              "$$hashKey": "object:42456"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=158",
+              "$$hashKey": "object:42457"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=159",
+              "$$hashKey": "object:42458"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=160",
+              "$$hashKey": "object:42459"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809966277_1178890491",
+      "id": "paragraph_1594809966277_1178890491",
+      "dateCreated": "2020-07-15T16:16:06+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42197",
+      "dateFinished": "2020-07-15T16:16:26+0530",
+      "dateStarted": "2020-07-15T16:16:15+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [features: vector]\n\u001b[1m\u001b[34mpca\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.PCAModel\u001b[0m = pca_0c3d93296500\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Transform and check out the results\n// Check out the results\nval pcaDF = pca.transform(df)\nval result = pcaDF.select(\"pcaFeatures\")\nresult.show()\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:16:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809975985_-238672018",
+      "id": "paragraph_1594809975985_-238672018",
+      "dateCreated": "2020-07-15T16:16:15+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42291",
+      "dateFinished": "2020-07-15T16:16:49+0530",
+      "dateStarted": "2020-07-15T16:16:48+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+\n|         pcaFeatures|\n+--------------------+\n|[1.64857282308838...|\n|[-4.6451043317815...|\n|[-6.4288805356764...|\n+--------------------+\n\n\u001b[1m\u001b[34mpcaDF\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [features: vector, pcaFeatures: vector]\n\u001b[1m\u001b[34mresult\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [pcaFeatures: vector]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n## PCA Exercise",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:17:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810008135_34828308",
+      "id": "paragraph_1594810008135_34828308",
+      "dateCreated": "2020-07-15T16:16:48+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42476",
+      "dateFinished": "2020-07-15T16:17:36+0530",
+      "dateStarted": "2020-07-15T16:17:36+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>PCA Exercise</h2>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use Spark to read in the Cancer_Data file.\nval data = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").format(\"csv\").load(\"data/Cancer_Data\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:19:22+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=161",
+              "$$hashKey": "object:42809"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=162",
+              "$$hashKey": "object:42810"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810056475_-860780217",
+      "id": "paragraph_1594810056475_-860780217",
+      "dateCreated": "2020-07-15T16:17:36+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42570",
+      "dateFinished": "2020-07-15T16:19:23+0530",
+      "dateStarted": "2020-07-15T16:19:22+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [mean radius: int, mean texture: double ... 28 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Print the Schema of the data\ndata.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:19:39+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810075584_-1589441575",
+      "id": "paragraph_1594810075584_-1589441575",
+      "dateCreated": "2020-07-15T16:17:55+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42651",
+      "dateFinished": "2020-07-15T16:19:39+0530",
+      "dateStarted": "2020-07-15T16:19:39+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- mean radius: integer (nullable = true)\n |-- mean texture: double (nullable = true)\n |-- mean perimeter: double (nullable = true)\n |-- mean area: double (nullable = true)\n |-- mean smoothness: double (nullable = true)\n |-- mean compactness: double (nullable = true)\n |-- mean concavity: double (nullable = true)\n |-- mean concave points: double (nullable = true)\n |-- mean symmetry: double (nullable = true)\n |-- mean fractal dimension: double (nullable = true)\n |-- radius error: double (nullable = true)\n |-- texture error: double (nullable = true)\n |-- perimeter error: double (nullable = true)\n |-- area error: double (nullable = true)\n |-- smoothness error: double (nullable = true)\n |-- compactness error: double (nullable = true)\n |-- concavity error: double (nullable = true)\n |-- concave points error: double (nullable = true)\n |-- symmetry error: double (nullable = true)\n |-- fractal dimension error: double (nullable = true)\n |-- worst radius: double (nullable = true)\n |-- worst texture: double (nullable = true)\n |-- worst perimeter: double (nullable = true)\n |-- worst area: double (nullable = true)\n |-- worst smoothness: double (nullable = true)\n |-- worst compactness: double (nullable = true)\n |-- worst concavity: double (nullable = true)\n |-- worst concave points: double (nullable = true)\n |-- worst symmetry: double (nullable = true)\n |-- worst fractal dimension: double (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nimport org.apache.spark.ml.feature.{PCA,StandardScaler,VectorAssembler}",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:19:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810179518_1176710012",
+      "id": "paragraph_1594810179518_1176710012",
+      "dateCreated": "2020-07-15T16:19:39+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42819",
+      "dateFinished": "2020-07-15T16:19:53+0530",
+      "dateStarted": "2020-07-15T16:19:52+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.feature.{PCA, StandardScaler, VectorAssembler}\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nval colnames = (Array(\"mean radius\", \"mean texture\", \"mean perimeter\", \"mean area\", \"mean smoothness\",\n\"mean compactness\", \"mean concavity\", \"mean concave points\", \"mean symmetry\", \"mean fractal dimension\",\n\"radius error\", \"texture error\", \"perimeter error\", \"area error\", \"smoothness error\", \"compactness error\",\n\"concavity error\", \"concave points error\", \"symmetry error\", \"fractal dimension error\", \"worst radius\",\n\"worst texture\", \"worst perimeter\", \"worst area\", \"worst smoothness\", \"worst compactness\", \"worst concavity\",\n\"worst concave points\", \"worst symmetry\", \"worst fractal dimension\"))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:20:07+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810192806_850605406",
+      "id": "paragraph_1594810192806_850605406",
+      "dateCreated": "2020-07-15T16:19:52+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:42913",
+      "dateFinished": "2020-07-15T16:20:07+0530",
+      "dateStarted": "2020-07-15T16:20:07+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mcolnames\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(mean radius, mean texture, mean perimeter, mean area, mean smoothness, mean compactness, mean concavity, mean concave points, mean symmetry, mean fractal dimension, radius error, texture error, perimeter error, area error, smoothness error, compactness error, concavity error, concave points error, symmetry error, fractal dimension error, worst radius, worst texture, worst perimeter, worst area, worst smoothness, worst compactness, worst concavity, worst concave points, worst symmetry, worst fractal dimension)\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nval assembler = new VectorAssembler().setInputCols(colnames).setOutputCol(\"features\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:20:18+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810207011_-1329011976",
+      "id": "paragraph_1594810207011_-1329011976",
+      "dateCreated": "2020-07-15T16:20:07+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43007",
+      "dateFinished": "2020-07-15T16:20:18+0530",
+      "dateStarted": "2020-07-15T16:20:18+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34massembler\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.VectorAssembler\u001b[0m = vecAssembler_2838d52e415b\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use the assembler to transform our DataFrame to a single column: features\nval output = assembler.transform(data).select($\"features\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:20:26+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810218191_-523019479",
+      "id": "paragraph_1594810218191_-523019479",
+      "dateCreated": "2020-07-15T16:20:18+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43101",
+      "dateFinished": "2020-07-15T16:20:27+0530",
+      "dateStarted": "2020-07-15T16:20:26+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34moutput\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [features: vector]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use StandardScaler on the data\n// Create a new StandardScaler() object called scaler\n// Set the input to the features column and the ouput to a column called\n// scaledFeatures\nval scaler = (new StandardScaler()\n  .setInputCol(\"features\")\n  .setOutputCol(\"scaledFeatures\")\n  .setWithStd(true)\n  .setWithMean(false))\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:20:45+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810226916_1113573195",
+      "id": "paragraph_1594810226916_1113573195",
+      "dateCreated": "2020-07-15T16:20:26+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43195",
+      "dateFinished": "2020-07-15T16:20:46+0530",
+      "dateStarted": "2020-07-15T16:20:45+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mscaler\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.StandardScaler\u001b[0m = stdScal_655711695901\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Compute summary statistics by fitting the StandardScaler.\n// Basically create a new object called scalerModel by using scaler.fit()\n// on the output of the VectorAssembler\nval scalerModel = scaler.fit(output)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:20:57+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=163",
+              "$$hashKey": "object:43483"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810245924_-724684978",
+      "id": "paragraph_1594810245924_-724684978",
+      "dateCreated": "2020-07-15T16:20:45+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43289",
+      "dateFinished": "2020-07-15T16:20:59+0530",
+      "dateStarted": "2020-07-15T16:20:57+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mscalerModel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.StandardScalerModel\u001b[0m = stdScal_655711695901\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Normalize each feature to have unit standard deviation.\n// Use transform() off of this scalerModel object to create your scaledData\nval scaledData = scalerModel.transform(output)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:21:06+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810257688_1830556605",
+      "id": "paragraph_1594810257688_1830556605",
+      "dateCreated": "2020-07-15T16:20:57+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43383",
+      "dateFinished": "2020-07-15T16:21:07+0530",
+      "dateStarted": "2020-07-15T16:21:06+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mscaledData\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [features: vector, scaledFeatures: vector]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Create a new PCA() object that will take in the scaledFeatures\n// and output the pcs features, use 4 principal components\n// Then fit this to the scaledData\nval pca = (new PCA()\n  .setInputCol(\"scaledFeatures\")\n  .setOutputCol(\"pcaFeatures\")\n  .setK(4)\n  .fit(scaledData))",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:21:21+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=164",
+              "$$hashKey": "object:43727"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=165",
+              "$$hashKey": "object:43728"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=166",
+              "$$hashKey": "object:43729"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=167",
+              "$$hashKey": "object:43730"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810266607_-167229140",
+      "id": "paragraph_1594810266607_-167229140",
+      "dateCreated": "2020-07-15T16:21:06+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43488",
+      "dateFinished": "2020-07-15T16:21:23+0530",
+      "dateStarted": "2020-07-15T16:21:21+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mpca\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.PCAModel\u001b[0m = pca_22954a468ade\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Once your pca has been created and fit, transform the scaledData\n// Call this new dataframe pcaDF\nval pcaDF = pca.transform(scaledData)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:21:31+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810281902_512342566",
+      "id": "paragraph_1594810281902_512342566",
+      "dateCreated": "2020-07-15T16:21:21+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43582",
+      "dateFinished": "2020-07-15T16:21:32+0530",
+      "dateStarted": "2020-07-15T16:21:31+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mpcaDF\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [features: vector, scaledFeatures: vector ... 1 more field]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Show the new pcaFeatures\nval result = pcaDF.select(\"pcaFeatures\")\nresult.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:21:41+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=168",
+              "$$hashKey": "object:43941"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810291898_1449611757",
+      "id": "paragraph_1594810291898_1449611757",
+      "dateCreated": "2020-07-15T16:21:31+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43747",
+      "dateFinished": "2020-07-15T16:21:42+0530",
+      "dateStarted": "2020-07-15T16:21:41+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+\n|         pcaFeatures|\n+--------------------+\n|[21.6219973823647...|\n|[15.1217370347581...|\n|[18.4325856097776...|\n|[18.9549565028936...|\n|[16.7333072691961...|\n|[14.6702143413854...|\n|[14.9731218113081...|\n|[14.5441067848485...|\n|[15.5980062310545...|\n|[17.9720563963988...|\n|[11.9024481321383...|\n|[15.1741616728685...|\n|[20.7357773767193...|\n|[13.1902413206621...|\n|[16.4793766691527...|\n|[16.3184525605223...|\n|[12.9382787109833...|\n|[16.8474451580442...|\n|[17.7858229434144...|\n|[11.5044884686408...|\n+--------------------+\nonly showing top 20 rows\n\n\u001b[1m\u001b[34mresult\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [pcaFeatures: vector]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use .head() to confirm that your output column Array of pcaFeatures\n// only has 4 principal components\nresult.head(1)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:21:50+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=169",
+              "$$hashKey": "object:44046"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594810301414_-2113475662",
+      "id": "paragraph_1594810301414_-2113475662",
+      "dateCreated": "2020-07-15T16:21:41+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:43841",
+      "dateFinished": "2020-07-15T16:21:50+0530",
+      "dateStarted": "2020-07-15T16:21:50+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres34\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.Row]\u001b[0m = Array([[21.62199738236476,8.516595739466684,-3.7318474175794782,-0.4181244970133412]])\n"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "PCA",
+  "id": "2FCB6RKHS",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/PCA"
+}

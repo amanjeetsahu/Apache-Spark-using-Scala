@@ -1,0 +1,1028 @@
+﻿{
+  "paragraphs": [
+    {
+      "user": "anonymous",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594808646305_-231697591",
+      "id": "paragraph_1594808646305_-231697591",
+      "dateCreated": "2020-07-15T15:54:06+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:37752",
+      "text": "%md\n# KMeans Clustering using Spark",
+      "dateUpdated": "2020-07-15T15:57:18+0530",
+      "dateFinished": "2020-07-15T15:56:51+0530",
+      "dateStarted": "2020-07-15T15:56:51+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>KMeans Clustering using Spark</h1>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\nsc",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T15:58:35+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594808811028_1454508869",
+      "id": "paragraph_1594808811028_1454508869",
+      "dateCreated": "2020-07-15T15:56:51+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:37830",
+      "dateFinished": "2020-07-15T15:58:36+0530",
+      "dateStarted": "2020-07-15T15:58:35+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres21\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.SparkContext\u001b[0m = org.apache.spark.SparkContext@4071cd06\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Import clustering Algorithm\nimport org.apache.spark.ml.clustering.KMeans",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T15:58:52+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594808915692_820436499",
+      "id": "paragraph_1594808915692_820436499",
+      "dateCreated": "2020-07-15T15:58:35+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:37927",
+      "dateFinished": "2020-07-15T15:58:52+0530",
+      "dateStarted": "2020-07-15T15:58:52+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.clustering.KMeans\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Loads data.\nval dataset = spark.read.format(\"libsvm\").load(\"data/sample_kmeans_data.txt\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:04:54+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=121",
+              "$$hashKey": "object:38620"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594808932089_-1108253965",
+      "id": "paragraph_1594808932089_-1108253965",
+      "dateCreated": "2020-07-15T15:58:52+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:38021",
+      "dateFinished": "2020-07-15T16:04:55+0530",
+      "dateStarted": "2020-07-15T16:04:54+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdataset\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [label: double, features: vector]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\ndataset.show()",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:04:59+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=122",
+              "$$hashKey": "object:38664"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809000333_7327469",
+      "id": "paragraph_1594809000333_7327469",
+      "dateCreated": "2020-07-15T16:00:00+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:38353",
+      "dateFinished": "2020-07-15T16:05:00+0530",
+      "dateStarted": "2020-07-15T16:04:59+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+--------------------+\n|label|            features|\n+-----+--------------------+\n|  0.0|           (3,[],[])|\n|  1.0|(3,[0,1,2],[0.1,0...|\n|  2.0|(3,[0,1,2],[0.2,0...|\n|  3.0|(3,[0,1,2],[9.0,9...|\n|  4.0|(3,[0,1,2],[9.1,9...|\n|  5.0|(3,[0,1,2],[9.2,9...|\n+-----+--------------------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Trains a k-means model.\nval kmeans = new KMeans().setK(2).setSeed(1L)\nval model = kmeans.fit(dataset)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:05:01+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=123",
+              "$$hashKey": "object:38971"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=124",
+              "$$hashKey": "object:38972"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=125",
+              "$$hashKey": "object:38973"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=126",
+              "$$hashKey": "object:38974"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=127",
+              "$$hashKey": "object:38975"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=128",
+              "$$hashKey": "object:38976"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=129",
+              "$$hashKey": "object:38977"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=130",
+              "$$hashKey": "object:38978"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=131",
+              "$$hashKey": "object:38979"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=132",
+              "$$hashKey": "object:38980"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594808951145_1516007578",
+      "id": "paragraph_1594808951145_1516007578",
+      "dateCreated": "2020-07-15T15:59:11+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:38115",
+      "dateFinished": "2020-07-15T16:05:13+0530",
+      "dateStarted": "2020-07-15T16:05:01+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mkmeans\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.clustering.KMeans\u001b[0m = kmeans_e86829904d59\n\u001b[1m\u001b[34mmodel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.clustering.KMeansModel\u001b[0m = kmeans_e86829904d59\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Evaluate clustering by computing Within Set Sum of Squared Errors.\nval WSSSE = model.computeCost(dataset)\nprintln(s\"Within Set Sum of Squared Errors = $WSSSE\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:05:16+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=133",
+              "$$hashKey": "object:39121"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594808971128_-1550215721",
+      "id": "paragraph_1594808971128_-1550215721",
+      "dateCreated": "2020-07-15T15:59:31+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:38259",
+      "dateFinished": "2020-07-15T16:05:17+0530",
+      "dateStarted": "2020-07-15T16:05:16+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[33mwarning: \u001b[0mthere was one deprecation warning; re-run with -deprecation for details\nWithin Set Sum of Squared Errors = 0.11999999999994547\n\u001b[1m\u001b[34mWSSSE\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 0.11999999999994547\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Shows the result.\nprintln(\"Cluster Centers: \")\nmodel.clusterCenters.foreach(println)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:05:36+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809316466_-1982674906",
+      "id": "paragraph_1594809316466_-1982674906",
+      "dateCreated": "2020-07-15T16:05:16+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39021",
+      "dateFinished": "2020-07-15T16:05:37+0530",
+      "dateStarted": "2020-07-15T16:05:36+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Cluster Centers: \n[0.1,0.1,0.1]\n[9.1,9.1,9.1]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Import Kmeans clustering Algorithm\nimport org.apache.spark.ml.clustering.KMeans",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:06:08+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809336038_-14848061",
+      "id": "paragraph_1594809336038_-14848061",
+      "dateCreated": "2020-07-15T16:05:36+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39126",
+      "dateFinished": "2020-07-15T16:06:08+0530",
+      "dateStarted": "2020-07-15T16:06:08+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.clustering.KMeans\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%md\n## KMeans Clustering Exercise\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:12:13+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809633671_630934059",
+      "id": "paragraph_1594809633671_630934059",
+      "dateCreated": "2020-07-15T16:10:33+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:41344",
+      "dateFinished": "2020-07-15T16:12:10+0530",
+      "dateStarted": "2020-07-15T16:12:10+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>KMeans Clustering Exercise</h2>\n\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Load the Wholesale Customers Data\nval dataset = spark.read.option(\"header\",\"true\").option(\"inferSchema\",\"true\").csv(\"data/Wholesale customers data.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:06:32+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=134",
+              "$$hashKey": "object:39448"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=135",
+              "$$hashKey": "object:39449"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809368581_-1691450438",
+      "id": "paragraph_1594809368581_-1691450438",
+      "dateCreated": "2020-07-15T16:06:08+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39220",
+      "dateFinished": "2020-07-15T16:06:33+0530",
+      "dateStarted": "2020-07-15T16:06:32+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdataset\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Channel: int, Region: int ... 6 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Select the following columns for the training set:\n// Fresh, Milk, Grocery, Frozen, Detergents_Paper, Delicassen\n// Cal this new subset feature_data\nval feature_data = dataset.select($\"Fresh\", $\"Milk\", $\"Grocery\", $\"Frozen\", $\"Detergents_Paper\", $\"Delicassen\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:06:44+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809376956_-612207067",
+      "id": "paragraph_1594809376956_-612207067",
+      "dateCreated": "2020-07-15T16:06:16+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39314",
+      "dateFinished": "2020-07-15T16:06:45+0530",
+      "dateStarted": "2020-07-15T16:06:44+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mfeature_data\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Fresh: int, Milk: int ... 4 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Import VectorAssembler and Vectors\nimport org.apache.spark.ml.feature.{VectorAssembler,StringIndexer,VectorIndexer,OneHotEncoder}\nimport org.apache.spark.ml.linalg.Vectors",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:07:02+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809404907_-883871400",
+      "id": "paragraph_1594809404907_-883871400",
+      "dateCreated": "2020-07-15T16:06:44+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39458",
+      "dateFinished": "2020-07-15T16:07:02+0530",
+      "dateStarted": "2020-07-15T16:07:02+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.ml.feature.{VectorAssembler, StringIndexer, VectorIndexer, OneHotEncoder}\nimport org.apache.spark.ml.linalg.Vectors\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Create a new VectorAssembler object called assembler for the feature\n// columns as the input Set the output column to be called features\n// Remember there is no Label column\nval assembler = new VectorAssembler().setInputCols(Array(\"Fresh\", \"Milk\", \"Grocery\", \"Frozen\", \"Detergents_Paper\", \"Delicassen\")).setOutputCol(\"features\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:07:10+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809422192_1913453195",
+      "id": "paragraph_1594809422192_1913453195",
+      "dateCreated": "2020-07-15T16:07:02+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39552",
+      "dateFinished": "2020-07-15T16:07:11+0530",
+      "dateStarted": "2020-07-15T16:07:10+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34massembler\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.feature.VectorAssembler\u001b[0m = vecAssembler_8fca00e63d53\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Use the assembler object to transform the feature_data\n// Call this new data training_data\nval training_data = assembler.transform(feature_data).select(\"features\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:07:23+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809430932_1346161600",
+      "id": "paragraph_1594809430932_1346161600",
+      "dateCreated": "2020-07-15T16:07:10+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39646",
+      "dateFinished": "2020-07-15T16:07:23+0530",
+      "dateStarted": "2020-07-15T16:07:23+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mtraining_data\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [features: vector]\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Create a Kmeans Model with K=3\nval kmeans = new KMeans().setK(3).setSeed(1L)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:07:33+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809443353_-2044962543",
+      "id": "paragraph_1594809443353_-2044962543",
+      "dateCreated": "2020-07-15T16:07:23+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39740",
+      "dateFinished": "2020-07-15T16:07:34+0530",
+      "dateStarted": "2020-07-15T16:07:33+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mkmeans\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.clustering.KMeans\u001b[0m = kmeans_60c8a031d43e\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Fit that model to the training_data\nval model = kmeans.fit(training_data)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:08:48+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=137",
+              "$$hashKey": "object:41114"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=138",
+              "$$hashKey": "object:41115"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=139",
+              "$$hashKey": "object:41116"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=140",
+              "$$hashKey": "object:41117"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=141",
+              "$$hashKey": "object:41118"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=142",
+              "$$hashKey": "object:41119"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=143",
+              "$$hashKey": "object:41120"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=144",
+              "$$hashKey": "object:41121"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=145",
+              "$$hashKey": "object:41122"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=146",
+              "$$hashKey": "object:41123"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=147",
+              "$$hashKey": "object:41124"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=148",
+              "$$hashKey": "object:41125"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=149",
+              "$$hashKey": "object:41126"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=150",
+              "$$hashKey": "object:41127"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=151",
+              "$$hashKey": "object:41128"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=152",
+              "$$hashKey": "object:41129"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=153",
+              "$$hashKey": "object:41130"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=154",
+              "$$hashKey": "object:41131"
+            },
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=155",
+              "$$hashKey": "object:41132"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809516809_1640945104",
+      "id": "paragraph_1594809516809_1640945104",
+      "dateCreated": "2020-07-15T16:08:36+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:40067",
+      "dateFinished": "2020-07-15T16:08:56+0530",
+      "dateStarted": "2020-07-15T16:08:48+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmodel\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.ml.clustering.KMeansModel\u001b[0m = kmeans_60c8a031d43e\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Evaluate clustering by computing Within Set Sum of Squared Errors.\nval WSSSE = model.computeCost(training_data)\nprintln(s\"Within Set Sum of Squared Errors = $WSSSE\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:08:58+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.225.195:4040/jobs/job?id=156",
+              "$$hashKey": "object:41238"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809453956_-369278970",
+      "id": "paragraph_1594809453956_-369278970",
+      "dateCreated": "2020-07-15T16:07:33+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39834",
+      "dateFinished": "2020-07-15T16:08:59+0530",
+      "dateStarted": "2020-07-15T16:08:58+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[33mwarning: \u001b[0mthere was one deprecation warning; re-run with -deprecation for details\nWithin Set Sum of Squared Errors = 8.095172370767671E10\n\u001b[1m\u001b[34mWSSSE\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m = 8.095172370767671E10\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n// Shows the result.\nprintln(\"Cluster Centers: \")\nmodel.clusterCenters.foreach(println)",
+      "user": "anonymous",
+      "dateUpdated": "2020-07-15T16:09:05+0530",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1594809463115_410864191",
+      "id": "paragraph_1594809463115_410864191",
+      "dateCreated": "2020-07-15T16:07:43+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:39928",
+      "dateFinished": "2020-07-15T16:09:06+0530",
+      "dateStarted": "2020-07-15T16:09:05+0530",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Cluster Centers: \n[7993.574780058651,4196.803519061584,5837.4926686217,2546.624633431085,2016.2873900293255,1151.4193548387098]\n[9928.18918918919,21513.081081081084,30993.486486486487,2960.4324324324325,13996.594594594595,3772.3243243243246]\n[35273.854838709674,5213.919354838709,5826.096774193548,6027.6612903225805,1006.9193548387096,2237.6290322580644]\n"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "KMeans Clustering",
+  "id": "2FDXSB3RJ",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/SparkPractice/KMeans Clustering"
+}
